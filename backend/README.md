@@ -1,4 +1,5 @@
 # Cropsy Backend
+n> This is the backend-only note, parts of it are older. The current, full description of Cropsy is in the [top-level README](../README.md).
 
 Multi-model, multimodal, agentic agriculture advisory backend for Then Malai, Tamil Nadu.
 
