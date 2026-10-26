@@ -109,7 +109,7 @@ backend/
   presentation/   Judge briefing and architecture PDFs
   RELEASE_STATUS.md, STAGING_CHECKLIST.md, SATELLITE.md, reports
 frontend/         React + Vite + TanStack app: chat, map, field, satellite, trust pages
-design/           Design notes
+design/           Dashboard sample and field test sheet
 ```
 
 ## Run it locally
