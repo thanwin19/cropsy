@@ -1,0 +1,18 @@
+{
+  "note": "Positions are approximate (town or area level), not building-exact. Addresses come from the TNAU Agritech pages named in each source; ask the district agriculture office to confirm before travelling.",
+  "village": {"name": "Then Malai", "lat": 8.92, "lon": 77.33},
+  "items": [
+    {"id": "kvk-rvs", "kind": "kvk", "name": "RVS Krishi Vigyan Kendra (RVS-KVK)", "area": "Oormelalagian, Tenkasi Taluk, Tirunelveli District",
+     "lat": 9.084, "lon": 77.283, "precision": "approximate: about 7 km west of Kadayanallur on the National Highway, as the TNAU page says",
+     "services": "Training, demonstrations and advice on crops, soil, weather, seed, farm enterprises and post-harvest work. Free for farmers.",
+     "source": {"title": "TNAU Agritech: RVS-KVK Tirunelveli District", "url": "https://agritech.tnau.ac.in/kvk/kvk_tirunelveli_about.html"}},
+    {"id": "stl-palayamkottai", "kind": "soil_lab", "name": "Soil Testing Laboratory, Tirunelveli (Senior Agricultural Officer)", "area": "Flat No. 37, Sankar Colony, Palayamkottai, Tirunelveli 2",
+     "lat": 8.7199, "lon": 77.7371, "precision": "approximate: Palayamkottai town centre",
+     "services": "Soil sample testing by the agriculture department; ask for the Soil Health Card.",
+     "source": {"title": "TNAU Agritech: Soil Testing Labs in TN", "url": "https://agritech.tnau.ac.in/agriculture/agri_soil_testinglabs.html"}},
+    {"id": "stl-kovilpatti", "kind": "soil_lab", "name": "Soil Testing Laboratory, Kovilpatti (Senior Agricultural Officer)", "area": "Sathur Road, Kovilpatti 628 501, Thoothukudi District",
+     "lat": 9.1826, "lon": 77.8731, "precision": "approximate: Kovilpatti town centre",
+     "services": "Soil sample testing by the agriculture department.",
+     "source": {"title": "TNAU Agritech: Soil Testing Labs in TN", "url": "https://agritech.tnau.ac.in/agriculture/agri_soil_testinglabs.html"}}
+  ]
+}

@@ -1,0 +1,196 @@
+[
+ {
+  "id": "Q01",
+  "q": "wheat seed rate per hectare",
+  "ok": true,
+  "why": [],
+  "answer": "For wheat, use 100 kg of seed per hectare. Sow seeds to a depth of 5 cm after applying fertilizers.",
+  "pages": [
+   "134",
+   "136"
+  ]
+ },
+ {
+  "id": "Q02",
+  "q": "bengal gram seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "For Bengalgram, the seed rate is 90 kg/ha for CO 3 and 75 kg/ha for CO 4. Use 90 kg/ha of CO 3 seeds and 75 kg/ha of CO 4 seeds.",
+  "pages": [
+   "173"
+  ]
+ },
+ {
+  "id": "Q03",
+  "q": "What is the seed rate for cowpea?",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['169', '168'], expected none",
+   "behaviour: got answer, expected no_info"
+  ],
+  "answer": "The seed rate for cowpea is 4 kg per hectare. Sow the seeds at a rate of 4 kg per hectare.",
+  "pages": [
+   "169",
+   "168"
+  ]
+ },
+ {
+  "id": "Q04",
+  "q": "pearl millet seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Use 5 kg of cumbu seeds per hectare to achieve the optimum population of 1,45,000 per ha. In shoot fly endemic areas, use up to 12.5 kg per hectare. Soaking cumbu seeds in 2% Potassium chloride (KCl) or 3% Sodium Chloride (NaCl) for 16 hours followed by 5 hours shade drying improves germination and stand. Adopt a spacing of 45 x 15 cm for cumbu, and if intercropped with pulses, use a spacing of 30",
+  "pages": [
+   "98"
+  ]
+ },
+ {
+  "id": "Q05",
+  "q": "கம்பு விதை அளவு எவ்வளவு",
+  "ok": true,
+  "why": [],
+  "answer": "கும்பு விதை ஒரு எக்டருக்கு 3.75 கிலோகிராம் (0.5 கிலோகிராம் ஒரு சென்டுக்கு) அல்லது சுட்டு பூச்சி பரவலான பகுதிகளில் 12.5 கிலோகிராம் வரை தேவைப்படுகிறது. விதைகளை 2% KCl அல்லது 3% NaCl தண்ணீரில் 16 மணி நேரம் ஊறவிட்டு, பின்னர் காட்டில் 5 மணி நேரம் உலர்த்தி விதை நேர்த்தி செய்யவும். விதைகளை 1 சென்டுக்கு 0.5 கிலோகிராம் (ஒரு எக்டருக்கு 3.75 கிலோகிராம்) அல்லது சுட்டு பூச்சி பரவலான பகுதிகளில் 5 கிலோகிராம் வரை",
+  "pages": [
+   "98",
+   "95"
+  ]
+ },
+ {
+  "id": "Q06",
+  "q": "ragi blast spray dose",
+  "ok": true,
+  "why": [],
+  "answer": "For managing ragi blast, spray carbendazim @ 500 g/ha immediately after symptom development and repeat at flowering stage and 15 days later. Also, spray aureofungin sol 100 ppm at 50% ear head emergence followed by mancozeb 1000 g/ha or Pseudomonas fluorescens @ 0.2% ten days later. Spray carbendazim @ 500 g/ha immediately after symptom development. Repeat the spray at the flowering stage and 15 d",
+  "pages": [
+   "113"
+  ]
+ },
+ {
+  "id": "Q07",
+  "q": "cowpea spacing",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['168'], expected none",
+   "behaviour: got answer, expected no_info"
+  ],
+  "answer": "For cowpea in Tamil Nadu, sow seeds at **[amount: confirm with your KVK] × [amount: confirm with your KVK] spacing** ([amount: confirm with your KVK] between rows and [amount: confirm with your KVK] between plants in the row) as per TNAU guidelines for seed production fields. Sow seeds in **September–October or June–July** seasons to avoid volunteer plants and ensure isolation of 5 m from other co",
+  "pages": [
+   "168"
+  ]
+ },
+ {
+  "id": "Q08",
+  "q": "What is the sowing time for wheat?",
+  "ok": true,
+  "why": [],
+  "answer": "The ideal sowing time for wheat in Tamil Nadu is between 15th October to the 1st week of November. Sowing must be completed within the first fortnight of November. Sow seeds continuously after application of fertilizers to a depth of 5 cm, avoiding deep sowing.",
+  "pages": [
+   "134"
+  ]
+ },
+ {
+  "id": "Q09",
+  "q": "uram evlo podanum nel ku",
+  "ok": true,
+  "why": [],
+  "answer": "For rice, apply 75:25:37.5 kg N:P2O5:K2O per hectare. Apply a basal dose of 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha). Apply N & K in three splits at 20-25, 40-45 and 60-65 days after germination. Apply a basal dose of 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha) before transplanting. Apply N & K in three splits at 20-25, 40-45 and 60-65 days after germ",
+  "pages": [
+   "48",
+   "46"
+  ]
+ },
+ {
+  "id": "Q10",
+  "q": "ulundhu pooch marundhu",
+  "ok": true,
+  "why": [],
+  "answer": "Use Chlorantraniliprole 18.5% SC @150 ml/ha or Flubendiamide 39.35% SC @100ml/ha to control insect pests in blackgram. Spray Chlorantraniliprole 18.5% SC @150 ml/ha or Flubendiamide 39.35% SC @100ml/ha to control insect pests.",
+  "pages": [
+   "152"
+  ]
+ },
+ {
+  "id": "Q11",
+  "q": "wheat seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Sow the wheat seeds continuously after application of fertilizers to a depth of 5 cm, with lines drawn 20 cm apart. Avoid deep sowing. Draw lines 20 cm apart and sow seeds continuously to a depth of 5 cm.",
+  "pages": [
+   "136"
+  ]
+ },
+ {
+  "id": "Q12",
+  "q": "TM-999 satellite",
+  "ok": true,
+  "why": [],
+  "answer": "I could not find that parcel. The demo village (Then Malai) has parcels TM-01 to TM-120 (dummy data): pick one on the map or type a valid id such as TM-05.",
+  "pages": []
+ },
+ {
+  "id": "Q13",
+  "q": "what is the price of tomato today",
+  "ok": true,
+  "why": [],
+  "answer": "Market price:\n1. Cropsy does not hold today's market (mandi) prices, so it will not quote one. For a live price, look at your nearest market's board, the Agmarknet site (agmarknet.gov.in) or the eNAM portal (enam.gov.in).",
+  "pages": []
+ },
+ {
+  "id": "Q14",
+  "q": "wheat sowing time",
+  "ok": true,
+  "why": [],
+  "answer": "Wheat is best sown in the early part of the winter season to ensure good growth and yield. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Water the field thoroughly before sowing to ensure good seed-soil contact. Keep the soil moist but not waterlogged during the early growth stages. Prepare the soil well by ploughing and harr",
+  "pages": []
+ },
+ {
+  "id": "Q15",
+  "q": "which fertilizer",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q16",
+  "q": "ground nut leaf spot",
+  "ok": false,
+  "why": [
+   "values: missing [] forbidden-hit ['Alternaria']"
+  ],
+  "answer": "Use Mancozeb (0.3%) or Copper oxychloride (0.3%) or Carbendazim (0.1%) for Alternaria leaf disease. Apply Mancozeb 0.3% or Copper oxychloride 0.3% or Carbendazim 0.1% foliar spray.",
+  "pages": []
+ },
+ {
+  "id": "Q17",
+  "q": "how to grow brinjal",
+  "ok": true,
+  "why": [],
+  "answer": "Brinjal, also known as eggplant, is a popular vegetable crop in Tamil Nadu. It requires careful management of water, soil, planting, and pest control to ensure healthy growth and good yield. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Common Pests: Watch for pests like shoot and fruit borer, aphids, and mites. Pest Control:",
+  "pages": []
+ },
+ {
+  "id": "Q18",
+  "q": "TM-05 satellite health this week",
+  "ok": true,
+  "why": [],
+  "answer": "The latest Sentinel-2 satellite data for your maize parcel (Hybrid CO 6, tasseling, Tenkasi) shows an NDVI value of 0.2653 on 2026-09-29 (latest scene), which is within the normal range for this stage and region. The monthly composite NDVI for September 2026 is 0.269, indicating stable vegetation health over the month. Satellite data reflects overall vegetation condition but cannot diagnose specif",
+  "pages": []
+ },
+ {
+  "id": "Q19",
+  "q": "what is the seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q20",
+  "q": "paddy sowing time in Kerala",
+  "ok": true,
+  "why": [],
+  "answer": "Paddy sowing in Kerala typically depends on the season and the type of paddy being cultivated. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Time: For the kharif season, sowing is usually done from the last week of June to the first week of August. Monitoring: Regularly check for pests like brown plant hoppers and leaf folder",
+  "pages": []
+ }
+]

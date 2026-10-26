@@ -1,0 +1,122 @@
+{
+  "year": "2024-25",
+  "source": "CCEA / PIB India",
+  "license": "Public",
+  "data": [
+    {
+      "crop": "Paddy (Common)",
+      "msp_rs_per_quintal": 2300,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Paddy (Grade A)",
+      "msp_rs_per_quintal": 2320,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Jowar (Hybrid)",
+      "msp_rs_per_quintal": 3371,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Jowar (Maldandi)",
+      "msp_rs_per_quintal": 3421,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Bajra (Pearl Millet)",
+      "msp_rs_per_quintal": 2625,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Maize",
+      "msp_rs_per_quintal": 2225,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Ragi",
+      "msp_rs_per_quintal": 4290,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Arhar (Tur / Redgram)",
+      "msp_rs_per_quintal": 7550,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Moong (Greengram)",
+      "msp_rs_per_quintal": 8682,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Urad (Blackgram)",
+      "msp_rs_per_quintal": 7400,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Groundnut",
+      "msp_rs_per_quintal": 6783,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Sunflower",
+      "msp_rs_per_quintal": 7280,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Soybean",
+      "msp_rs_per_quintal": 4892,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Sesamum (Gingelly)",
+      "msp_rs_per_quintal": 9267,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Nigerseed",
+      "msp_rs_per_quintal": 8717,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Cotton (Medium)",
+      "msp_rs_per_quintal": 7121,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Cotton (Long)",
+      "msp_rs_per_quintal": 7521,
+      "season": "Kharif"
+    },
+    {
+      "crop": "Wheat",
+      "msp_rs_per_quintal": 2275,
+      "season": "Rabi"
+    },
+    {
+      "crop": "Barley",
+      "msp_rs_per_quintal": 1735,
+      "season": "Rabi"
+    },
+    {
+      "crop": "Gram (Bengal Gram)",
+      "msp_rs_per_quintal": 5440,
+      "season": "Rabi"
+    },
+    {
+      "crop": "Masur (Lentil)",
+      "msp_rs_per_quintal": 6425,
+      "season": "Rabi"
+    },
+    {
+      "crop": "Rapeseed/Mustard",
+      "msp_rs_per_quintal": 5950,
+      "season": "Rabi"
+    },
+    {
+      "crop": "Safflower",
+      "msp_rs_per_quintal": 5800,
+      "season": "Rabi"
+    }
+  ]
+}

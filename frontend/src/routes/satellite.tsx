@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SatelliteScreen } from "@/features/cropsy/satellite-screen";
+export const Route=createFileRoute("/satellite")({head:()=>({meta:[{title:"Satellite layers — Cropsy"},{name:"description",content:"Explore sixteen labelled crop and land intelligence layers."},{property:"og:title",content:"Satellite layers — Cropsy"},{property:"og:description",content:"Explore sixteen labelled crop and land intelligence layers."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:SatelliteScreen});

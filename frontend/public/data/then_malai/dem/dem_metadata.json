@@ -1,0 +1,34 @@
+{
+  "crs": "EPSG:4326 (WGS84)",
+  "source": "Copernicus GLO-30 / SRTM 30m via AWS Terrarium elevation tiles",
+  "download_date": "2026-09-28",
+  "display_grid": {
+    "file": "dem_display_30m.bin",
+    "format": "int16_little_endian",
+    "rows": 482,
+    "cols": 482,
+    "lat_max": 8.975000381469727,
+    "lat_min": 8.844724655151367,
+    "lon_min": 77.25499725341797,
+    "lon_max": 77.3871078491211,
+    "d_lat": 0.00027,
+    "d_lon": 0.00027,
+    "elevation_min_m": 118,
+    "elevation_max_m": 1573
+  },
+  "full_grid": {
+    "file": "dem_full_90m.bin",
+    "format": "int16_little_endian",
+    "rows": 717,
+    "cols": 741,
+    "lat_max": 9.199999809265137,
+    "lat_min": 8.62027645111084,
+    "lon_min": 77.0199966430664,
+    "lon_max": 77.62409210205078,
+    "d_lat": 0.00081,
+    "d_lon": 0.00081,
+    "elevation_min_m": -12,
+    "elevation_max_m": 1916
+  },
+  "parcels": {}
+}

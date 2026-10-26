@@ -1,0 +1,15 @@
+{
+  "village": "Then Malai",
+  "taluk": "Sengottai",
+  "district": "Tenkasi",
+  "state": "Tamil Nadu",
+  "centre": {
+    "lat": 8.91,
+    "lon": 77.32
+  },
+  "parcel_count": 120,
+  "as_of": "2026-10-03",
+  "climate_note": "Western Ghats foothill; SW monsoon Jun-Sep, NE monsoon Oct-Dec",
+  "note": "Demo village. Administrative hierarchy and all parcel/owner/crop records are dummy; only anchor-parcel coordinates, elevation, soil and terrain shadow are real.",
+  "data_source": "dummy"
+}

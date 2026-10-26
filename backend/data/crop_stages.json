@@ -1,0 +1,265 @@
+{
+  "Rice": [
+    {
+      "from_day": 0,
+      "to_day": 15,
+      "stage": "Establishment"
+    },
+    {
+      "from_day": 16,
+      "to_day": 40,
+      "stage": "Tillering"
+    },
+    {
+      "from_day": 41,
+      "to_day": 60,
+      "stage": "Panicle Initiation"
+    },
+    {
+      "from_day": 61,
+      "to_day": 80,
+      "stage": "Flowering"
+    },
+    {
+      "from_day": 81,
+      "to_day": 100,
+      "stage": "Milk / Dough"
+    },
+    {
+      "from_day": 101,
+      "to_day": 130,
+      "stage": "Maturity"
+    }
+  ],
+  "Banana": [
+    {
+      "from_day": 0,
+      "to_day": 60,
+      "stage": "Establishment"
+    },
+    {
+      "from_day": 61,
+      "to_day": 150,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 151,
+      "to_day": 210,
+      "stage": "Flower Initiation"
+    },
+    {
+      "from_day": 211,
+      "to_day": 270,
+      "stage": "Shooting"
+    },
+    {
+      "from_day": 271,
+      "to_day": 330,
+      "stage": "Bunch Development"
+    },
+    {
+      "from_day": 331,
+      "to_day": 420,
+      "stage": "Harvest"
+    }
+  ],
+  "Sugarcane": [
+    {
+      "from_day": 0,
+      "to_day": 35,
+      "stage": "Germination"
+    },
+    {
+      "from_day": 36,
+      "to_day": 120,
+      "stage": "Tillering"
+    },
+    {
+      "from_day": 121,
+      "to_day": 270,
+      "stage": "Grand Growth"
+    },
+    {
+      "from_day": 271,
+      "to_day": 400,
+      "stage": "Maturity"
+    }
+  ],
+  "Maize": [
+    {
+      "from_day": 0,
+      "to_day": 10,
+      "stage": "Emergence"
+    },
+    {
+      "from_day": 11,
+      "to_day": 35,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 36,
+      "to_day": 55,
+      "stage": "Tasseling"
+    },
+    {
+      "from_day": 56,
+      "to_day": 70,
+      "stage": "Silking"
+    },
+    {
+      "from_day": 71,
+      "to_day": 95,
+      "stage": "Grain Filling"
+    },
+    {
+      "from_day": 96,
+      "to_day": 120,
+      "stage": "Maturity"
+    }
+  ],
+  "Groundnut": [
+    {
+      "from_day": 0,
+      "to_day": 10,
+      "stage": "Emergence"
+    },
+    {
+      "from_day": 11,
+      "to_day": 30,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 31,
+      "to_day": 45,
+      "stage": "Flowering"
+    },
+    {
+      "from_day": 46,
+      "to_day": 75,
+      "stage": "Pegging & Pod Formation"
+    },
+    {
+      "from_day": 76,
+      "to_day": 100,
+      "stage": "Pod Development"
+    },
+    {
+      "from_day": 101,
+      "to_day": 125,
+      "stage": "Maturity"
+    }
+  ],
+  "Cotton": [
+    {
+      "from_day": 0,
+      "to_day": 20,
+      "stage": "Emergence"
+    },
+    {
+      "from_day": 21,
+      "to_day": 60,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 61,
+      "to_day": 90,
+      "stage": "Squaring"
+    },
+    {
+      "from_day": 91,
+      "to_day": 120,
+      "stage": "Flowering & Boll Formation"
+    },
+    {
+      "from_day": 121,
+      "to_day": 150,
+      "stage": "Boll Development"
+    },
+    {
+      "from_day": 151,
+      "to_day": 200,
+      "stage": "Boll Opening & Picking"
+    }
+  ],
+  "Blackgram": [
+    {
+      "from_day": 0,
+      "to_day": 10,
+      "stage": "Emergence"
+    },
+    {
+      "from_day": 11,
+      "to_day": 30,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 31,
+      "to_day": 45,
+      "stage": "Flowering"
+    },
+    {
+      "from_day": 46,
+      "to_day": 60,
+      "stage": "Pod Formation"
+    },
+    {
+      "from_day": 61,
+      "to_day": 85,
+      "stage": "Maturity"
+    }
+  ],
+  "Chilli": [
+    {
+      "from_day": 0,
+      "to_day": 20,
+      "stage": "Establishment"
+    },
+    {
+      "from_day": 21,
+      "to_day": 60,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 61,
+      "to_day": 90,
+      "stage": "Flowering"
+    },
+    {
+      "from_day": 91,
+      "to_day": 150,
+      "stage": "Fruiting & Picking"
+    },
+    {
+      "from_day": 151,
+      "to_day": 220,
+      "stage": "Late Picking"
+    }
+  ],
+  "Turmeric": [
+    {
+      "from_day": 0,
+      "to_day": 45,
+      "stage": "Establishment"
+    },
+    {
+      "from_day": 46,
+      "to_day": 120,
+      "stage": "Vegetative"
+    },
+    {
+      "from_day": 121,
+      "to_day": 210,
+      "stage": "Rhizome Bulking"
+    },
+    {
+      "from_day": 211,
+      "to_day": 270,
+      "stage": "Maturity"
+    },
+    {
+      "from_day": 271,
+      "to_day": 320,
+      "stage": "Harvest"
+    }
+  ]
+}

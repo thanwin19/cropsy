@@ -1,0 +1,275 @@
+[
+  {
+    "document_id": "DOC_TNAU_AGRON_001",
+    "title": "Crop Production Guide: Agriculture 2020",
+    "organization": "Tamil Nadu Agricultural University & Directorate of Agriculture",
+    "year": 2020,
+    "url": "https://agritech.tnau.ac.in/",
+    "source_quality": "A",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "DOC_TNAU_HORT_002",
+    "title": "Crop Production Guide: Horticulture 2020",
+    "organization": "Tamil Nadu Agricultural University & Directorate of Horticulture",
+    "year": 2020,
+    "url": "https://agritech.tnau.ac.in/",
+    "source_quality": "A",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_BANANA_ES",
+    "title": "TNAU Agritech Banana Expert System",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/expert_system/banana/index.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_CHILLI_VAR",
+    "title": "TNAU Agritech Horticulture: Chilli varieties",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": 2023,
+    "url": "https://agritech.tnau.ac.in/horticulture/horti_vegetables_chilli_variety_K.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_BLACKGRAM_INT",
+    "title": "TNAU Agritech: Blackgram intercropping",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/agriculture/CropProduction/Pulses/BlackgramIntercropping.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "PDF_SPICES_TURMERIC",
+    "title": "Turmeric: Cultivation practices",
+    "organization": "Spices Board India (ICAR-IISR)",
+    "year": null,
+    "url": "https://www.indianspices.com/sites/default/files/cultivation_practices-TURMERIC-1.pdf",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": null,
+      "applies_to": "all India (national publication)"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_CHILLI_DIS",
+    "title": "TNAU Agritech Crop Protection: Chilli diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_veg_chilli.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_BLACKGRAM_DIS",
+    "title": "TNAU Agritech Crop Protection: Blackgram diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_pulses_blackgram.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_TOMATO_DIS",
+    "title": "TNAU Agritech Crop Protection: Tomato diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_veg_tomato.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_BANANA_DIS",
+    "title": "TNAU Agritech Crop Protection: Banana diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_fruits_banana.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_TURMERIC_DIS",
+    "title": "TNAU Agritech Crop Protection: Turmeric diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_spices_turmeric.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_PPP_CORDANA",
+    "title": "Pacific Pests & Pathogens fact sheet 072: Banana (Cordana) leaf spot, Cordana musae",
+    "organization": "Pacific Community (SPC) / Lucid",
+    "year": null,
+    "url": "https://apps.lucidcentral.org/ppp/text/web_full/entities/banana_diamond_leaf_spot_072.htm",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_RICE_DIS",
+    "title": "TNAU Agritech Crop Protection: Rice diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/rice_diseases/rice_1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_GROUNDNUT_DIS",
+    "title": "TNAU Agritech Crop Protection: Groundnut diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/groundnut_diseases/groundnut_d1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_SUGARCANE_DIS",
+    "title": "TNAU Agritech Crop Protection: Sugarcane diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/sugarcane_diseases/sugarcane_d1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_COTTON_DIS",
+    "title": "TNAU Agritech Crop Protection: Cotton diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/cotton_diseases/cotton_d1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_MAIZE_DIS",
+    "title": "TNAU Agritech Crop Protection: Maize diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/maize_disease_new/maize_1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_COCONUT_DIS",
+    "title": "TNAU Agritech Crop Protection: Coconut diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/coconut_diseases_1.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_RICE_ES",
+    "title": "TNAU Agritech Expert System: Rice diseases",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/expert_system/paddy/cpdisbrownspot.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_CHILLI_PEST",
+    "title": "TNAU Agritech Crop Protection: Pests of chilli",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insect-veg_chillies.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  },
+  {
+    "document_id": "WEB_TNAU_BLACKGRAM_PEST",
+    "title": "TNAU Agritech Crop Protection: Pests of black and green gram",
+    "organization": "Tamil Nadu Agricultural University",
+    "year": null,
+    "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insect_pul_bla%20and%20greenmain.html",
+    "source_quality": "B",
+    "region": {
+      "country": "India",
+      "state": "Tamil Nadu",
+      "applies_to": "Tamil Nadu"
+    }
+  }
+]

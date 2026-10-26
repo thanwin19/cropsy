@@ -1,0 +1,39 @@
+{
+  "description": "Recommendations in the knowledge base that differ between passages. Cropsy shows the difference to the farmer when the passages involved are retrieved together; it does NOT choose one. 'status' stays 'unresolved' until a qualified reviewer decides, and then the reviewer, date and decision are recorded here. Created 2026-10-16.",
+  "conflicts": [
+    {
+      "id": "turmeric_basal_fym",
+      "crop": "Turmeric",
+      "topic": "basal farmyard manure",
+      "items": [
+        {"chunk_id": "turmeric-002-p186-003", "claim": "Basal FYM 25 t/ha (with neem or groundnut cake 200 kg/ha), as part of NPK 150:60:108 kg/ha", "source": "Crop Production Guide: Horticulture 2020, TNAU and Directorate of Horticulture", "page": "186", "year": 2020, "region": "Tamil Nadu", "context": "recommended dose of fertilizer for turmeric"},
+        {"chunk_id": "turmeric-web-010", "claim": "Basal FYM 10 t, tank silt 10 t, neem cake 200 kg, SSP 150 kg, MOP 25 kg (sole crop)", "source": "Turmeric: Cultivation practices, Spices Board India / ICAR-IISR", "page": "table, Application time: Basal", "year": null, "region": "India (national)", "context": "fertilizer schedule table for a sole crop and for turmeric intercropped with maize"}
+      ],
+      "difference": "25 t/ha FYM against 10 t/ha FYM plus 10 t/ha tank silt",
+      "status": "unresolved", "reviewer": "", "review_date": "", "decision": ""
+    },
+    {
+      "id": "rice_zinc_sulphate",
+      "crop": "Rice",
+      "topic": "zinc sulphate dose",
+      "items": [
+        {"chunk_id": "rice-001-p31-023", "claim": "37.5 kg zinc sulphate per ha mixed with sand to 75 kg and spread on the levelled field, not incorporated", "source": "Crop Production Guide: Agriculture 2020, TNAU", "page": "31", "year": 2020, "region": "Tamil Nadu", "context": "special technologies for problem soils (sodic and saline soils), before transplanting"},
+        {"chunk_id": "rice-001-p50-086", "claim": "ZnSO4 25 kg/ha with FeSO4 50 kg/ha and 12.5 t FYM as basal, where zinc and iron deficiency were noted", "source": "Crop Production Guide: Agriculture 2020, TNAU", "page": "50", "year": 2020, "region": "Tamil Nadu", "context": "manures and fertilizer application, dry-seeded rice"}
+      ],
+      "difference": "37.5 kg/ha against 25 kg/ha; the contexts differ (problem soils before transplanting, against dry-seeded rice with a documented deficiency), so these may not contradict each other",
+      "status": "unresolved", "reviewer": "", "review_date": "", "decision": ""
+    },
+    {
+      "id": "chilli_pheromone_traps",
+      "crop": "Chilli",
+      "topic": "pheromone traps for Helicoverpa and Spodoptera",
+      "items": [
+        {"chunk_id": "chilli-002-p89-007", "claim": "Pheromone traps for Helicoverpa armigera / Spodoptera litura at 12 per ha", "source": "Crop Production Guide: Horticulture 2020, TNAU and Directorate of Horticulture", "page": "89", "year": 2020, "region": "Tamil Nadu", "context": "integrated pest management of fruit borer"},
+        {"chunk_id": "chilli-web-012", "claim": "Pheromone trap at 15 per ha for tobacco cutworm (Spodoptera litura)", "source": "TNAU Agritech Crop Protection: Pests of chilli", "page": "chilli_3.html", "year": null, "region": "Tamil Nadu", "context": "management of tobacco cutworm"},
+        {"chunk_id": "chilli-web-013", "claim": "Pheromone trap with Helilure at 15 per ha for gram caterpillar (Helicoverpa armigera)", "source": "TNAU Agritech Crop Protection: Pests of chilli", "page": "chilli_4.html", "year": null, "region": "Tamil Nadu", "context": "management of gram caterpillar"}
+      ],
+      "difference": "12 per ha against 15 per ha for the same two pests; the web pages carry no date",
+      "status": "unresolved", "reviewer": "", "review_date": "", "decision": ""
+    }
+  ]
+}

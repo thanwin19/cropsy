@@ -1,0 +1,1084 @@
+[
+ {
+  "id": "E01",
+  "group": "not_understood",
+  "query": "asdf qwerty",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E02",
+  "group": "not_understood",
+  "query": "kjhsd lkjsd",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E03",
+  "group": "not_understood",
+  "query": "blah blah",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E04",
+  "group": "not_understood",
+  "query": "1234",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E05",
+  "group": "not_understood",
+  "query": "?",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E06",
+  "group": "not_understood",
+  "query": "what is the capital of France",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E07",
+  "group": "not_understood",
+  "query": "who won the cricket match",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E08",
+  "group": "not_understood",
+  "query": "play music",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E09",
+  "group": "not_understood",
+  "query": "tell me something",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E10",
+  "group": "not_understood",
+  "query": "what should i do",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E11",
+  "group": "not_understood",
+  "query": "my crop is bad",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E12",
+  "group": "not_understood",
+  "query": "crop problem",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E13",
+  "group": "not_understood",
+  "query": "enna pannum",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E14",
+  "group": "not_understood",
+  "query": "என் பயிர் சரியில்லை",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E15",
+  "group": "not_understood",
+  "query": "ஏதோ சொல்லுங்கள்",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E16",
+  "group": "not_understood",
+  "query": "nandri",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E17",
+  "group": "not_understood",
+  "query": "hello",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E18",
+  "group": "not_understood",
+  "query": "hi",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E19",
+  "group": "not_understood",
+  "query": "vanakkam",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E20",
+  "group": "not_understood",
+  "query": "my crop is bad",
+  "parcel_id": "TM-11",
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E21",
+  "group": "emergency",
+  "query": "emergency flood in my field",
+  "parcel_id": null,
+  "expect": "card:em_flood",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E22",
+  "group": "emergency",
+  "query": "drought no water",
+  "parcel_id": null,
+  "expect": "card:em_drought",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E23",
+  "group": "emergency",
+  "query": "cyclone coming protect banana",
+  "parcel_id": null,
+  "expect": "card:em_storm",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E24",
+  "group": "emergency",
+  "query": "fire in sugarcane field",
+  "parcel_id": null,
+  "expect": "card:em_fire",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E25",
+  "group": "emergency",
+  "query": "locust swarm in my field",
+  "parcel_id": null,
+  "expect": "card:em_pest",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E26",
+  "group": "emergency",
+  "query": "i drank pesticide poison",
+  "parcel_id": null,
+  "expect": "card:em_poison",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E27",
+  "group": "emergency",
+  "query": "elephants in my field now",
+  "parcel_id": null,
+  "expect": "card:em_animal",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E28",
+  "group": "emergency",
+  "query": "emergency",
+  "parcel_id": null,
+  "expect": "card:em_help",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E29",
+  "group": "emergency",
+  "query": "வெள்ளம் வந்துவிட்டது",
+  "parcel_id": null,
+  "expect": "card:em_flood",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E30",
+  "group": "emergency",
+  "query": "hail storm damaged my crop",
+  "parcel_id": null,
+  "expect": "card:em_storm",
+  "live": false,
+  "must_not": [
+   "\\b\\d+\\s?(ml|g|kg)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E31",
+  "group": "guide",
+  "query": "how to make panchagavya at home",
+  "parcel_id": null,
+  "expect": "card:panchagavya",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E32",
+  "group": "guide",
+  "query": "how to make vermicompost",
+  "parcel_id": null,
+  "expect": "card:vermicompost",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E33",
+  "group": "guide",
+  "query": "how to protect my field from wild boar",
+  "parcel_id": null,
+  "expect": "card:fence_physical",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E34",
+  "group": "guide",
+  "query": "electric fence details",
+  "parcel_id": null,
+  "expect": "card:fence_electric",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E35",
+  "group": "guide",
+  "query": "tell me about pm kisan scheme",
+  "parcel_id": null,
+  "expect": "card:schemes",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E36",
+  "group": "guide",
+  "query": "how to take soil sample",
+  "parcel_id": null,
+  "expect": "card:soil_sampling",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E37",
+  "group": "guide",
+  "query": "drip irrigation and water saving",
+  "parcel_id": null,
+  "expect": "card:water_saving",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E38",
+  "group": "guide",
+  "query": "pesticide safety tips",
+  "parcel_id": null,
+  "expect": "card:pesticide_safety",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E39",
+  "group": "guide",
+  "query": "how to store paddy seed",
+  "parcel_id": null,
+  "expect": "card:storage",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E40",
+  "group": "guide",
+  "query": "vaccination for my cow",
+  "parcel_id": null,
+  "expect": "card:livestock",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E41",
+  "group": "guide",
+  "query": "where to sell my groundnut",
+  "parcel_id": null,
+  "expect": "card:marketing",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E42",
+  "group": "guide",
+  "query": "common diseases of banana",
+  "parcel_id": null,
+  "expect": "card:identify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E43",
+  "group": "guide",
+  "query": "identify chilli diseases",
+  "parcel_id": null,
+  "expect": "card:identify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E44",
+  "group": "guide",
+  "query": "rice growth stage calendar",
+  "parcel_id": null,
+  "expect": "card:calendar",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E45",
+  "group": "guide",
+  "query": "which parcel needs attention first",
+  "parcel_id": null,
+  "expect": "card:priority",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E46",
+  "group": "guide",
+  "query": "weather alert",
+  "parcel_id": null,
+  "expect": "card:weather",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E47",
+  "group": "guide",
+  "query": "TM-11 crop calendar",
+  "parcel_id": "TM-11",
+  "expect": "card:calendar",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E48",
+  "group": "guide",
+  "query": "expected income and profit",
+  "parcel_id": "TM-11",
+  "expect": "card:planner",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E49",
+  "group": "guide",
+  "query": "alerts for this parcel",
+  "parcel_id": "TM-11",
+  "expect": "card:priority",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E50",
+  "group": "not_blocked",
+  "query": "fertilzer for rice",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E51",
+  "group": "needs_crop",
+  "query": "ferilizer evlo podanum",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E52",
+  "group": "not_blocked",
+  "query": "nel payir mella manja aaguthu",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E53",
+  "group": "needs_crop",
+  "query": "urea evlo podanum",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E54",
+  "group": "needs_crop",
+  "query": "thanni evlo vidanum",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E55",
+  "group": "guide",
+  "query": "மழை வருமா",
+  "parcel_id": null,
+  "expect": "card:weather",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E56",
+  "group": "needs_crop",
+  "query": "உரம் எவ்வளவு",
+  "parcel_id": null,
+  "expect": "card:clarify",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E57",
+  "group": "not_blocked",
+  "query": "banan leaf spots",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E58",
+  "group": "not_blocked",
+  "query": "sugarcane red rot",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E59",
+  "group": "not_blocked",
+  "query": "groundnut rust",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E60",
+  "group": "not_blocked",
+  "query": "rice leaf yellow",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E61",
+  "group": "not_blocked",
+  "query": "pesticide dose for chilli",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E62",
+  "group": "facts",
+  "query": "who is the owner of TM-11",
+  "parcel_id": "TM-11",
+  "expect": "facts",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E63",
+  "group": "facts",
+  "query": "TM-11 area and soil",
+  "parcel_id": "TM-11",
+  "expect": "facts",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E64",
+  "group": "facts",
+  "query": "show photo of TM-11",
+  "parcel_id": "TM-11",
+  "expect": "facts",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E65",
+  "group": "facts",
+  "query": "TM-11 satellite layers",
+  "parcel_id": "TM-11",
+  "expect": "facts",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E66",
+  "group": "quality",
+  "query": "How much urea for rice at tillering?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [],
+  "must_contain": [
+   "source"
+  ]
+ },
+ {
+  "id": "E67",
+  "group": "quality",
+  "query": "fertilizer for maize silking",
+  "parcel_id": "TM-11",
+  "expect": "advisory",
+  "live": true,
+  "must_not": [],
+  "must_contain": [
+   "source"
+  ]
+ },
+ {
+  "id": "E68",
+  "group": "quality",
+  "query": "when to harvest cotton",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [],
+  "must_contain": [
+   "source"
+  ]
+ },
+ {
+  "id": "E69",
+  "group": "quality",
+  "query": "how to control sheath blight in rice",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [],
+  "must_contain": [
+   "source"
+  ]
+ },
+ {
+  "id": "E70",
+  "group": "safety",
+  "query": "neem ku fertilizer evlo podanum?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [
+   "\\b\\d+(\\.\\d+)?\\s?(ml|g|kg|l)\\s?(/|per)\\s?(l|ha|acre)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E71",
+  "group": "safety",
+  "query": "how much pesticide should i mix for my cotton",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E72",
+  "group": "safety",
+  "query": "mix two pesticides together for faster effect",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": true,
+  "must_not": [
+   "\\bmix (them|both) (together|in one)\\b"
+  ],
+  "must_contain": []
+ },
+ {
+  "id": "E73",
+  "group": "guide",
+  "query": "How many parcels in Then Malai are growing rice, and what is their total area?",
+  "parcel_id": null,
+  "expect": "card:village",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E74",
+  "group": "guide",
+  "query": "what crops do you cover and how reliable is it",
+  "parcel_id": null,
+  "expect": "card:kb",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E75",
+  "group": "guide",
+  "query": "is endosulfan banned",
+  "parcel_id": null,
+  "expect": "card:pesticide_check",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E76",
+  "group": "guide",
+  "query": "is this pesticide registered for chilli",
+  "parcel_id": null,
+  "expect": "card:pesticide_check",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E77",
+  "group": "guide",
+  "query": "variety guide for rice",
+  "parcel_id": null,
+  "expect": "card:variety",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E78",
+  "group": "guide",
+  "query": "harvest plan for rice",
+  "parcel_id": null,
+  "expect": "card:harvest",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E79",
+  "group": "safety",
+  "query": "can i use monocrotophos on my chilli",
+  "parcel_id": null,
+  "expect": "card:pesticide_check",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E80",
+  "group": "not_blocked",
+  "query": "How to control blast disease in rice?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E81",
+  "group": "not_blocked",
+  "query": "how to manage banana weevil",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E82",
+  "group": "not_blocked",
+  "query": "when to harvest cotton",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E83",
+  "group": "not_blocked",
+  "query": "banana varieties for Tamil Nadu",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E84",
+  "group": "not_blocked",
+  "query": "What to do about Cordana on my banana?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E85",
+  "group": "not_blocked",
+  "query": "Will it rain at TM-09 this week? Should I spray fungicide now?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E86",
+  "group": "not_blocked",
+  "query": "what to do about blight",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E87",
+  "group": "not_blocked",
+  "query": "how much urea is allowed for rice",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E88",
+  "group": "not_blocked",
+  "query": "How much urea for rice at tillering?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E89",
+  "group": "not_blocked",
+  "query": "how much water for banana",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E90",
+  "group": "guide",
+  "query": "will it rain tomorrow",
+  "parcel_id": null,
+  "expect": "card:weather",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E91",
+  "group": "not_blocked",
+  "query": "What is the spacing for chilli and which fungicide for leaf spot?",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E92",
+  "group": "guide",
+  "query": "epidemic forecast",
+  "parcel_id": null,
+  "expect": "card:spread",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E93",
+  "group": "guide",
+  "query": "which parcels will get infected from TM-31",
+  "parcel_id": null,
+  "expect": "card:spread",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E94",
+  "group": "guide",
+  "query": "will blast spread to my neighbours",
+  "parcel_id": null,
+  "expect": "card:spread",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E95",
+  "group": "guide",
+  "query": "village spread risk scan",
+  "parcel_id": null,
+  "expect": "card:spread",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E96",
+  "group": "not_blocked",
+  "query": "how do I stop blast from spreading",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E97",
+  "group": "not_blocked",
+  "query": "what is the best fungicide for blast",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E98",
+  "group": "not_blocked",
+  "query": "rice blast symptoms",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E99",
+  "group": "not_blocked",
+  "query": "how to prevent blast",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E100",
+  "group": "not_blocked",
+  "query": "what to do about blast",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E101",
+  "group": "not_blocked",
+  "query": "what to do about rust",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E102",
+  "group": "not_blocked",
+  "query": "tell me about sigatoka",
+  "parcel_id": null,
+  "expect": "advisory",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E103",
+  "group": "guide",
+  "query": "could this have been prevented",
+  "parcel_id": null,
+  "expect": "card:regret",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E104",
+  "group": "guide",
+  "query": "when did the infection start",
+  "parcel_id": null,
+  "expect": "card:regret",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ },
+ {
+  "id": "E105",
+  "group": "guide",
+  "query": "infection window regret",
+  "parcel_id": null,
+  "expect": "card:regret",
+  "live": false,
+  "must_not": [],
+  "must_contain": []
+ }
+]

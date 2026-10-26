@@ -1,0 +1,195 @@
+[
+ {
+  "id": "Q01",
+  "q": "wheat seed rate per hectare",
+  "ok": true,
+  "why": [],
+  "answer": "For wheat, the seed rate is 100 kg/ha. This is recommended for the mutant of NP 200. Use 100 kg of wheat seeds per hectare.",
+  "pages": [
+   "134"
+  ]
+ },
+ {
+  "id": "Q02",
+  "q": "bengal gram seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "For Bengalgram, the seed rate is 90 kg/ha for CO 3 and 75 kg/ha for CO 4. Use 90 kg/ha of CO 3 seeds and 75 kg/ha of CO 4 seeds.",
+  "pages": [
+   "173"
+  ]
+ },
+ {
+  "id": "Q03",
+  "q": "What is the seed rate for cowpea?",
+  "ok": true,
+  "why": [],
+  "answer": "Evidence not available in current knowledge base for the seed rate of cowpea in Tamil Nadu.",
+  "pages": []
+ },
+ {
+  "id": "Q04",
+  "q": "pearl millet seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Use 5 kg of cumbu seed per hectare to achieve the optimum population of 1,45,000 plants per hectare. Increase the seed rate up to 12.5 kg per hectare in shoot fly endemic areas. Soaking cumbu seeds in 2% Potassium chloride (KCl) or 3% Sodium Chloride (NaCl) for 16 hours followed by 5 hours shade drying improves germination and stand.",
+  "pages": [
+   "98"
+  ]
+ },
+ {
+  "id": "Q05",
+  "q": "கம்பு விதை அளவு எவ்வளவு",
+  "ok": true,
+  "why": [],
+  "answer": "கும்பு விதை ஒரு செண்டுக்கு 0.5 கிலோ (3.75 கிலோ விதை 7.5 செண்டுக்கு) அளவில் விதைக்க வேண்டும். சுட்டி பூச்சி பரவலான பகுதிகளில் 5 கிலோ முதல் 12.5 கிலோ வரை விதை பயன்படுத்தலாம். விதை விதைக்கும் முன் 2% கே.சி.லி (பொட்டாசியம் குளோரைடு) அல்லது 3% சோடியம் குளோரைடு (NaCl) இல் 16 மணி நேரம் நீரில் ஊறவிட்டு, பின்னர் 5 மணி நேரம் நிழலில் உலர்த்த வேண்டும். விதை விதைக்கும் போது, ஒரு செண்டுக்கு 0.5 கிலோ விதை பயன்பட",
+  "pages": [
+   "95",
+   "98"
+  ]
+ },
+ {
+  "id": "Q06",
+  "q": "ragi blast spray dose",
+  "ok": true,
+  "why": [],
+  "answer": "For managing ragi blast, spray carbendazim @ 500 g/ha immediately after symptom development and repeat at flowering stage and 15 days later. Also, spray aureofungin sol 100 ppm at 50% ear head emergence followed by mancozeb 1000 g/ha or Pseudomonas fluorescens @ 0.2% ten days later. Spray carbendazim @ 500 g/ha immediately after symptom development Repeat spray at flowering stage and 15 days later",
+  "pages": [
+   "113"
+  ]
+ },
+ {
+  "id": "Q07",
+  "q": "cowpea spacing",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['167', '168'], expected none",
+   "behaviour: got answer, expected no_info"
+  ],
+  "answer": "For cowpea in Tamil Nadu, the recommended spacing is **not explicitly mentioned** in the provided TNAU evidence.",
+  "pages": [
+   "167",
+   "168"
+  ]
+ },
+ {
+  "id": "Q08",
+  "q": "What is the sowing time for wheat?",
+  "ok": true,
+  "why": [],
+  "answer": "The ideal sowing time for wheat is between 15th October to 1st week of November. Sowing must be completed within the first fortnight of November. Sow seeds continuously after application of fertilizers to a depth of 5 cm, avoiding deep sowing.",
+  "pages": [
+   "134"
+  ]
+ },
+ {
+  "id": "Q09",
+  "q": "uram evlo podanum nel ku",
+  "ok": true,
+  "why": [],
+  "answer": "For rice, apply 75:25:37.5 kg N:P2O5:K2O per hectare. Apply a basal dose of 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha). Apply N & K in three splits at 20-25, 40-45 and 60-65 days after germination. Apply a basal dose of 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha) before transplanting. Apply N & K in three splits at 20-25, 40-45 and 60-65 days after germ",
+  "pages": [
+   "48",
+   "46"
+  ]
+ },
+ {
+  "id": "Q10",
+  "q": "ulundhu pooch marundhu",
+  "ok": true,
+  "why": [],
+  "answer": "Use Chlorantraniliprole 18.5% SC @150 ml/ha or Flubendiamide 39.35% SC @100ml/ha to control insect pests in blackgram. Spray Chlorantraniliprole 18.5% SC @150 ml/ha or Flubendiamide 39.35% SC @100ml/ha to manage insect pests.",
+  "pages": [
+   "152"
+  ]
+ },
+ {
+  "id": "Q11",
+  "q": "wheat seed rate",
+  "ok": false,
+  "why": [
+   "values: missing ['20\\\\s*cm'] forbidden-hit []",
+   "citation: cited pages ['281', '75'], expected ['136']"
+  ],
+  "answer": "For wheat, adopt a spacing of 45 cm between rows and 15 cm between plants. This is recommended for a pure crop of varieties/hybrids. Adopt a spacing of 45 cm between rows and 15 cm between plants for wheat.",
+  "pages": [
+   "281",
+   "75"
+  ]
+ },
+ {
+  "id": "Q12",
+  "q": "TM-999 satellite",
+  "ok": true,
+  "why": [],
+  "answer": "I could not find that parcel. The demo village (Then Malai) has parcels TM-01 to TM-120 (dummy data): pick one on the map or type a valid id such as TM-05.",
+  "pages": []
+ },
+ {
+  "id": "Q13",
+  "q": "what is the price of tomato today",
+  "ok": true,
+  "why": [],
+  "answer": "Market price:\n1. Cropsy does not hold today's market (mandi) prices, so it will not quote one. For a live price, look at your nearest market's board, the Agmarknet site (agmarknet.gov.in) or the eNAM portal (enam.gov.in).",
+  "pages": []
+ },
+ {
+  "id": "Q14",
+  "q": "wheat sowing time",
+  "ok": true,
+  "why": [],
+  "answer": "Wheat sowing time in Tamil Nadu is crucial for achieving optimal growth and yield. Timing can vary based on the region and climate conditions. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Sowing Time: The ideal time for wheat sowing in Tamil Nadu is from mid-October to mid-November. This timing ensures the crop gets sufficie",
+  "pages": []
+ },
+ {
+  "id": "Q15",
+  "q": "which fertilizer",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q16",
+  "q": "ground nut leaf spot",
+  "ok": false,
+  "why": [
+   "values: missing ['500\\\\s*g', '1000\\\\s*g'] forbidden-hit []",
+   "citation: cited pages [], expected ['206']"
+  ],
+  "answer": "For groundnut leaf spot, spray Mancozeb (0.3%) or Carbendazim (0.1%) foliarly. Spray Mancozeb (0.3%) or Carbendazim (0.1%) foliarly.",
+  "pages": []
+ },
+ {
+  "id": "Q17",
+  "q": "how to grow brinjal",
+  "ok": true,
+  "why": [],
+  "answer": "Brinjal, also known as eggplant, is a popular vegetable in Tamil Nadu. It requires careful management of water, soil, planting, and pest control for a good yield. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Drip Irrigation: Use drip irrigation to save water and ensure the roots get enough moisture. Soil Preparation: Prepare",
+  "pages": []
+ },
+ {
+  "id": "Q18",
+  "q": "TM-05 satellite health this week",
+  "ok": true,
+  "why": [],
+  "answer": "The latest Sentinel-2 satellite data for your maize parcel (Hybrid CO 6, tasseling, 54 days after planting) shows an NDVI value of 0.2653 on 2026-09-29 (latest scene), which is within the normal range for this stage. The monthly composite NDVI for September 2026 is 0.269, based on cloud-masked median values. Satellite data reflects vegetation health but cannot diagnose specific diseases or pests l",
+  "pages": []
+ },
+ {
+  "id": "Q19",
+  "q": "what is the seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q20",
+  "q": "paddy sowing time in Kerala",
+  "ok": true,
+  "why": [],
+  "answer": "Paddy sowing in Kerala is crucial for a successful harvest, and timing is key to ensure optimal growth and yield. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. The best time to sow paddy in Kerala is usually from the last week of June to the first week of August. This timing allows the seedlings to establish well before the m",
+  "pages": []
+ }
+]

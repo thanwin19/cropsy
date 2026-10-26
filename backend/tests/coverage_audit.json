@@ -1,0 +1,341 @@
+{
+ "total_chunks": 874,
+ "crops": {
+  "Banana": {
+   "group": "fruit",
+   "chunks": 244,
+   "topics": {
+    "disease": 119,
+    "variety_season": 75,
+    "nursery_seed": 70,
+    "planting": 85,
+    "irrigation": 52,
+    "nutrient": 60,
+    "pest": 57,
+    "general": 9,
+    "harvest": 49,
+    "climate_soil": 30,
+    "weed": 9
+   },
+   "documents": {
+    "DOC_TNAU_HORT_002": 15,
+    "WEB_TNAU_BANANA_ES": 211,
+    "WEB_TNAU_BANANA_DIS": 14,
+    "WEB_PPP_CORDANA": 4
+   },
+   "quality": {
+    "A": 15,
+    "B": 229
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Rice": {
+   "group": "cereal",
+   "chunks": 166,
+   "topics": {
+    "climate_soil": 9,
+    "variety_season": 49,
+    "disease": 69,
+    "harvest": 35,
+    "irrigation": 50,
+    "planting": 64,
+    "general": 3,
+    "nursery_seed": 46,
+    "nutrient": 51,
+    "weed": 18,
+    "pest": 18
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 126,
+    "WEB_TNAU_RICE_DIS": 25,
+    "WEB_TNAU_RICE_ES": 15
+   },
+   "quality": {
+    "A": 126,
+    "B": 40
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Cotton": {
+   "group": "fibre",
+   "chunks": 102,
+   "topics": {
+    "variety_season": 29,
+    "irrigation": 23,
+    "planting": 51,
+    "pest": 22,
+    "harvest": 17,
+    "nutrient": 27,
+    "disease": 36,
+    "nursery_seed": 23,
+    "weed": 6,
+    "general": 1,
+    "climate_soil": 9
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 86,
+    "WEB_TNAU_COTTON_DIS": 16
+   },
+   "quality": {
+    "A": 86,
+    "B": 16
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Sugarcane": {
+   "group": "cash crop",
+   "chunks": 75,
+   "topics": {
+    "climate_soil": 2,
+    "variety_season": 14,
+    "irrigation": 18,
+    "planting": 37,
+    "harvest": 13,
+    "disease": 33,
+    "pest": 16,
+    "weed": 4,
+    "nutrient": 24,
+    "nursery_seed": 25
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 59,
+    "WEB_TNAU_AGRITECH": 2,
+    "WEB_TNAU_SUGARCANE_DIS": 14
+   },
+   "quality": {
+    "A": 59,
+    "A-web": 2,
+    "B": 14
+   },
+   "no_chunks_on": [],
+   "thin_on": [
+    "climate_soil"
+   ]
+  },
+  "Coconut": {
+   "group": "plantation",
+   "chunks": 68,
+   "topics": {
+    "climate_soil": 6,
+    "variety_season": 12,
+    "irrigation": 17,
+    "planting": 20,
+    "nursery_seed": 19,
+    "harvest": 13,
+    "nutrient": 25,
+    "disease": 31,
+    "weed": 5,
+    "pest": 18,
+    "general": 3
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 28,
+    "DOC_TNAU_HORT_002": 29,
+    "WEB_TNAU_AGRITECH": 1,
+    "WEB_TNAU_COCONUT_DIS": 10
+   },
+   "quality": {
+    "A": 57,
+    "A-web": 1,
+    "B": 10
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Blackgram": {
+   "group": "pulse",
+   "chunks": 48,
+   "topics": {
+    "variety_season": 8,
+    "climate_soil": 4,
+    "harvest": 12,
+    "general": 2,
+    "disease": 29,
+    "irrigation": 9,
+    "pest": 14,
+    "planting": 13,
+    "nutrient": 10,
+    "nursery_seed": 12,
+    "weed": 6
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 26,
+    "WEB_TNAU_BLACKGRAM_INT": 1,
+    "WEB_TNAU_BLACKGRAM_DIS": 11,
+    "WEB_TNAU_BLACKGRAM_PEST": 10
+   },
+   "quality": {
+    "A": 26,
+    "B": 22
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Groundnut": {
+   "group": "oilseed",
+   "chunks": 49,
+   "topics": {
+    "climate_soil": 3,
+    "variety_season": 10,
+    "nursery_seed": 5,
+    "planting": 25,
+    "irrigation": 15,
+    "disease": 22,
+    "harvest": 11,
+    "nutrient": 16,
+    "pest": 6,
+    "weed": 4
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 45,
+    "WEB_TNAU_GROUNDNUT_DIS": 4
+   },
+   "quality": {
+    "A": 45,
+    "B": 4
+   },
+   "no_chunks_on": [],
+   "thin_on": []
+  },
+  "Maize": {
+   "group": "cereal",
+   "chunks": 47,
+   "topics": {
+    "climate_soil": 3,
+    "variety_season": 12,
+    "disease": 17,
+    "irrigation": 11,
+    "pest": 4,
+    "nutrient": 14,
+    "planting": 16,
+    "harvest": 10,
+    "nursery_seed": 4,
+    "weed": 2,
+    "general": 2
+   },
+   "documents": {
+    "DOC_TNAU_AGRON_001": 38,
+    "WEB_TNAU_AGRITECH": 4,
+    "WEB_TNAU_MAIZE_DIS": 5
+   },
+   "quality": {
+    "A": 38,
+    "A-web": 4,
+    "B": 5
+   },
+   "no_chunks_on": [],
+   "thin_on": [
+    "weed"
+   ]
+  },
+  "Turmeric": {
+   "group": "spice",
+   "chunks": 36,
+   "topics": {
+    "planting": 15,
+    "nursery_seed": 5,
+    "variety_season": 10,
+    "disease": 14,
+    "nutrient": 9,
+    "irrigation": 8,
+    "harvest": 13,
+    "general": 2,
+    "climate_soil": 5,
+    "pest": 7,
+    "weed": 2
+   },
+   "documents": {
+    "DOC_TNAU_HORT_002": 7,
+    "PDF_SPICES_TURMERIC": 26,
+    "WEB_TNAU_TURMERIC_DIS": 3
+   },
+   "quality": {
+    "A": 7,
+    "B": 29
+   },
+   "no_chunks_on": [],
+   "thin_on": [
+    "weed"
+   ]
+  },
+  "Chilli": {
+   "group": "vegetable/spice",
+   "chunks": 26,
+   "topics": {
+    "nursery_seed": 10,
+    "variety_season": 3,
+    "disease": 18,
+    "planting": 10,
+    "irrigation": 5,
+    "weed": 2,
+    "nutrient": 6,
+    "pest": 9,
+    "harvest": 3,
+    "general": 1
+   },
+   "documents": {
+    "DOC_TNAU_HORT_002": 12,
+    "WEB_TNAU_CHILLI_VAR": 1,
+    "WEB_TNAU_CHILLI_DIS": 8,
+    "WEB_TNAU_CHILLI_PEST": 5
+   },
+   "quality": {
+    "A": 12,
+    "B": 14
+   },
+   "no_chunks_on": [
+    "climate_soil"
+   ],
+   "thin_on": [
+    "weed"
+   ]
+  },
+  "Tomato": {
+   "group": "vegetable",
+   "chunks": 13,
+   "topics": {
+    "nursery_seed": 9,
+    "disease": 12,
+    "climate_soil": 3,
+    "planting": 2,
+    "irrigation": 2,
+    "weed": 1,
+    "general": 1,
+    "variety_season": 1
+   },
+   "documents": {
+    "WEB_TNAU_TOMATO_DIS": 13
+   },
+   "quality": {
+    "B": 13
+   },
+   "no_chunks_on": [
+    "nutrient",
+    "pest",
+    "harvest"
+   ],
+   "thin_on": [
+    "variety_season",
+    "planting",
+    "irrigation",
+    "weed"
+   ]
+  }
+ },
+ "not_covered_at_all": {
+  "cereals and millets": "wheat, sorghum (cholam), pearl millet (cumbu), finger millet (ragi), minor millets",
+  "pulses": "redgram, greengram, bengalgram, cowpea, horsegram",
+  "oilseeds": "sunflower, gingelly (sesame), castor, soybean, mustard",
+  "vegetables": "brinjal, bhendi, onion, cabbage, cauliflower, carrot, beans, cucurbits, potato (tomato has only a few chunks)",
+  "fruits": "mango, guava, papaya, sapota, citrus, pomegranate, grapes, jackfruit",
+  "plantation and spices": "cashew, arecanut, tea, coffee, rubber, pepper, cardamom, ginger",
+  "other": "flowers, fodder crops, tobacco, jute, medicinal plants, mushrooms, livestock, fisheries, beekeeping"
+ },
+ "regions": {
+  "Tamil Nadu (TNAU)": "all crop guides",
+  "India (national)": "Spices Board turmeric PDF; no other state is covered"
+ }
+}

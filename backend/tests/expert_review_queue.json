@@ -1,0 +1,988 @@
+{
+ "note": "Fill reviewer, review_date, verdict (correct|incorrect|unsafe|incomplete) and corrections by hand. Do not edit the answers.",
+ "items": [
+  {
+   "id": "U01",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I control pink bollworm in cotton?",
+   "answer": "To control pink bollworm in cotton, use pheromone traps to monitor adult moth activity and apply insecticides like Carbaryl 5 D or Phosalone 4 D at 25 kg/ha when pest population or damage reaches ET level.",
+   "recommendations": [
+    "Use pheromone traps to monitor pink bollworm moth activity.",
+    "Apply insecticides only when pest population or damage reaches ET level."
+   ],
+   "numbers_and_units": [
+    "25 kg"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.291"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U02",
+   "language": "en",
+   "policy": "answer",
+   "question": "What fungicide is used for boll rot in cotton?",
+   "answer": "For boll rot in cotton, you can use Copper oxychloride @1000 g/acre or Carbendazim @ 200 g /acre or Mancozeb @ 800 g / acre. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Use Copper oxychloride @1000 g/acre",
+    "Alternatively, use Carbendazim @ 200 g /acre",
+    "Or use Mancozeb @ 800 g / acre"
+   ],
+   "numbers_and_units": [
+    "1000 g",
+    "200 g",
+    "800 g"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.289",
+    "TNAU Agritech Crop Protection: Cotton diseases p.Agricultural crops :: Cash crops :: Cotton"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U03",
+   "language": "tanglish",
+   "policy": "answer",
+   "question": "paruthi la whitefly eppadi control pannalam?",
+   "answer": "To control whitefly on paruthi, follow integrated pest management practices including cultural, biological, and chemical control methods.",
+   "recommendations": [
+    "Monitor whitefly activity using yellow pan traps and sticky traps.",
+    "Remove and destroy infested and shed leaves.",
+    "Apply chemical control with Acetamiprid 20%SP 100g/ha or Chlorantraniliprole 18.5% SC @150 ml/ha."
+   ],
+   "numbers_and_units": [
+    "100g",
+    "150 ml",
+    "20%"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.286",
+    "Crop Production Guide: Horticulture 2020 p.232"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U04",
+   "language": "en",
+   "policy": "answer",
+   "question": "What is the NPK recommendation for cotton with a yield target of 4 t per hectare?",
+   "answer": "For cotton with a yield target of **4 tonnes per hectare in Tamil Nadu**, the NPK recommendation is **60 kg N, 30 kg P₂O₅, and 30 kg K₂O per hectare** as a blanket dose (if soil testing is not done).",
+   "recommendations": [
+    "Apply **FYM at 12.5 tonnes per hectare** along with **Azospirillum ([amount: confirm with your KVK])** and **PSB ([amount: confirm with your KVK])** as biofertilizers. (the amount is not in the TNAU text we hold: confirm it with your KVK)",
+    "Follow the **soil test-based recommendations** if available (refer to STCR-IPNS ready reckoners for Black soil in Pilamedu series).",
+    "Apply **55 kg sulfur as gypsum** if the soil is sulfur-deficient.",
+    "Band-plant the fertilizers **two-thirds of the distance from the ridge top** and incorporate them."
+   ],
+   "numbers_and_units": [
+    "30 kg",
+    "55 kg",
+    "60 kg"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.270"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U05",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I control rhinoceros beetle in coconut?",
+   "answer": "To control rhinoceros beetle in coconut, maintain good sanitation by removing and burning dead trees, and destroy beetle stages from manure pits. Use castor cake and toddy traps to attract and kill adults.",
+   "recommendations": [
+    "Remove and burn dead coconut trees",
+    "Collect and destroy beetle stages from manure pits",
+    "Soak castor cake in water and place in garden",
+    "Treat tender coconut stems and fronds with fresh toddy"
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.242",
+    "Crop Production Guide: Horticulture 2020 p.229"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U06",
+   "language": "en",
+   "policy": "answer",
+   "question": "What should I do about red palm weevil in my coconut garden?",
+   "answer": "To manage red palm weevil in your coconut garden, remove and burn all affected palms and avoid stem injuries. Use specific chemical treatments and traps as recommended.",
+   "recommendations": [
+    "Remove and burn affected palms",
+    "Fill holes in stems with cement",
+    "Use chemical treatments and traps"
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Horticulture 2020 p.230",
+    "Crop Production Guide: Agriculture 2020 p.243",
+    "TNAU Agritech Crop Protection: Coconut diseases p.Horticultural crops :: Plantation crops:: Coconut"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U09",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I control rhizome rot in turmeric?",
+   "answer": "To control rhizome rot in turmeric, treat the seed rhizomes with copper oxychloride @ 0.3% for 30 minutes or drench with 1% Bordeaux mixture or copper oxychloride @ 0.25%.",
+   "recommendations": [
+    "Treat seed rhizomes with copper oxychloride @ 0.3% for 30 minutes.",
+    "Apply soil drench with 1% Bordeaux mixture or copper oxychloride @ 0.25%."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Horticulture 2020 p.187",
+    "TNAU Agritech Crop Protection: Turmeric diseases p.Horticultural crops :: Spices::Turmeric",
+    "Turmeric: Cultivation practices p.Cultivation practices"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U10",
+   "language": "en",
+   "policy": "answer",
+   "question": "Which fungicides are used for leaf blotch and leaf spot in turmeric?",
+   "answer": "For leaf blotch and leaf spot in turmeric, you can use Mancozeb 0.25%, copper oxy chloride 0.25%, or propiconazole 0.1%. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Use Mancozeb 0.25% or copper oxy chloride 0.25% immediately after symptom appearance and at 15 days interval.",
+    "Propiconazole 0.1% can also be used at fortnight intervals."
+   ],
+   "numbers_and_units": [
+    "15 days"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "TNAU Agritech Crop Protection: Turmeric diseases p.Horticultural crops :: Spices::Turmeric",
+    "Turmeric: Cultivation practices p.Cultivation practices",
+    "Crop Production Guide: Horticulture 2020 p.187"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U15",
+   "language": "tanglish",
+   "policy": "answer",
+   "question": "thakkali la early blight vandha enna seiyanum?",
+   "answer": "Early blight in thakkali (okra) can be managed by spraying mancozeb 0.2% or propiconazole 0.1% at fortnight intervals.",
+   "recommendations": [
+    "Spray mancozeb 0.2% or propiconazole 0.1% at fortnight intervals"
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Turmeric: Cultivation practices p.Cultivation practices",
+    "TNAU Agritech Banana Expert System p.Nutrient management"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G02",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I control blast in finger millet (ragi)?",
+   "answer": "To control blast in finger millet, spray carbendazim @ 500 g or iprobenphos (IBP) @ 500 ml/ha immediately after symptom development and repeat at flowering stage and 15 days later.",
+   "recommendations": [
+    "Spray carbendazim @ 500 g or iprobenphos (IBP) @ 500 ml/ha immediately after symptom development.",
+    "Repeat the spray at flowering stage and 15 days later."
+   ],
+   "numbers_and_units": [
+    "15 days",
+    "500 g",
+    "500 ml"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.114"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G03",
+   "language": "tanglish",
+   "policy": "answer",
+   "question": "cholam la shoot fly vanthaal enna pannanum?",
+   "answer": "Shoot fly (Atherigona soccata) can cause significant damage to your crop. To manage it, consider early sowing after monsoon, increased seed rate, and removing damaged seedlings.",
+   "recommendations": [
+    "Early sowing after monsoon",
+    "Increase seed rate up to 12.5 kg/ha",
+    "Remove shoot fly damaged seedlings during thinning"
+   ],
+   "numbers_and_units": [
+    "12.5 kg"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G06",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I control pod borer in redgram?",
+   "answer": "To control pod borer in redgram, use integrated pest management strategies including intercropping with sunflower, pheromone traps, and biological control agents like NPV and Bacillus thuringiensis.",
+   "recommendations": [
+    "Intercrop with sunflower for every 9 rows of redgram.",
+    "Use pheromone traps at a rate of 12/ha.",
+    "Apply NPV at 3 x10^12 POB/ha in 0.1% teepol.",
+    "Spray Bacillus thuringiensis var kurstaki 5% WP at 1000-1250 g/ha."
+   ],
+   "numbers_and_units": [
+    "12/ha",
+    "1250 g"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.142"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G10",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I manage head rot in sunflower?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Head rot in sunflower is a fungal disease that affects the flower heads, leading to decay and reduced yield. Proper management practices can help control this disease. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Avoid overhead watering; use drip irrigation to keep the foliage dry.",
+    "Water early in the morning to allow the plants to dry out during the day.",
+    "Rotate sunflower with non-host crops like cereals or legumes to reduce disease build-up in the soil.",
+    "Remove and destroy infected plant debris to prevent the spread of the fungus.",
+    "Ensure good field sanitation by clearing weeds that can harbour the disease.",
+    "Plant resistant sunflower varieties if available, as they can better withstand head rot."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G12",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control semilooper in castor?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Semilooper is a common pest that can damage castor crops. Here are some practical steps to control it. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Water the plants regularly but avoid waterlogging. Semiloopers thrive in moist conditions, so ensure good drainage.",
+    "Maintain good soil health by adding organic matter like compost or well-rotted manure. Healthy soil supports strong plants that can resist pests better.",
+    "Regularly inspect your plants for early signs of semilooper infestation. Look for holes in leaves and the presence of larvae.",
+    "Use neem oil or neem-based insecticides to control semiloopers. Apply according to the product label and confirm with your local agriculture officer.",
+    "Encourage natural predators like birds and beneficial insects by avoiding broad-spectrum insecticides.",
+    "Remove and destroy infested plant parts to reduce pest populations. This helps in controlling the spread of semiloopers."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G13",
+   "language": "en",
+   "policy": "general",
+   "question": "Does soybean need rhizobium seed treatment?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Soybean plants benefit greatly from a beneficial bacteria called rhizobium, which helps them fix nitrogen from the air. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Yes, treating soybean seeds with rhizobium is highly recommended. This helps the plants to establish better nitrogen fixation, which is crucial for their growth.",
+    "Monitor for common pests like aphids and diseases such as rust. Use neem oil or other organic treatments as needed, following the product label and local recommendations."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G14",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control shoot and fruit borer in brinjal?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Shoot and fruit borer is a common pest problem in brinjal that can cause significant damage if not managed properly. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Ensure regular and adequate watering, especially during the dry season, to maintain plant health and reduce pest susceptibility.",
+    "Improve soil fertility with organic manures like well-rotted compost or vermicompost to enhance plant vigour and resilience against pests.",
+    "Remove and destroy any infested plant parts immediately to prevent the spread of the pest.",
+    "Monitor plants regularly for early signs of borer infestation, such as small holes on leaves and stems or wilting shoots.",
+    "Use yellow sticky traps around the field to monitor adult moth activity.",
+    "Apply neem oil or neem-based insecticides as per the product label to control larvae and adult moths. Confirm the product and dosage with your local agriculture officer."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G15",
+   "language": "tanglish",
+   "policy": "general",
+   "question": "vendakkai la yellow vein mosaic ku enna pannalam?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Yellow vein mosaic is a viral disease affecting vendakkai (okra). It causes yellowing and distortion of leaves, reducing yield and quality. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Use drip irrigation to avoid splashing soil on leaves, which can spread the virus.",
+    "Water early in the morning to allow foliage to dry quickly, reducing disease spread.",
+    "Ensure good soil drainage to prevent waterlogging, which can stress plants and make them more susceptible to disease.",
+    "Conduct a soil test to check for nutrient deficiencies and correct them as needed.",
+    "Plant resistant varieties if available, as they are less likely to be affected by the virus.",
+    "Manage whiteflies, which are the primary vectors of the yellow vein mosaic virus, using yellow sticky traps or insecticidal soaps."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G16",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control thrips in onion?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Thrips are tiny insects that can damage onion plants by feeding on the leaves and bulbs, causing silver streaks and stunted growth. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Ensure consistent watering, keeping the soil moist but not waterlogged. Water deeply about once a week, depending on the season and soil type.",
+    "Maintain good soil health by adding organic matter like compost or well-rotted manure. This helps in keeping the soil fertile and less prone to pests.",
+    "Regularly inspect your onion plants for thrips. Early detection is key. Use yellow sticky traps to monitor thrips population.",
+    "Consider using neem oil or insecticidal soap sprays to control thrips. Follow the product label and confirm with your local agriculture officer before spraying.",
+    "Encourage natural predators like ladybugs and lacewings by avoiding broad-spectrum insecticides.",
+    "Harvest onions when the necks start to fall over and the tops turn brown. Early or late harvest can sometimes reduce pest pressure."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G17",
+   "language": "ta",
+   "policy": "general",
+   "question": "முட்டைகோஸில் வைரமுதுகு அந்துப்பூச்சியை எப்படி கட்டுப்படுத்துவது?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. முட்டைகோஸில் வைரமுதுகு அந்துப்பூச்சியை கட்டுப்படுத்துவது குறித்து நான் உங்களுக்கு பொதுவான நல்ல நடைமுறைகளை சொல்கிறேன். Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "நீர்ப்பாசனத்தை சீரான மற்றும் தேவைக்கேற்ப செய்யுங்கள். முட்டைகோஸ் தாவரங்கள் வறட்சிக்கு எளிதில் உட்படாது, ஆனால் அதிக நீர்ப்பாசனம் வேர்க்கிருமிகளுக்கு வாய்ப்பை அளிக்கிறது.",
+    "மண்ணை சீரான மற்றும் நல்ல வடிகட்டுதல் கொண்டதாக வைத்திருங்கள். வைரமுதுகு அந்துப்பூச்சியை குறைக்க சரியான மண் நிலைமைகள் முக்கிய.",
+    "நட்டுருவை சரியான இடைவெளியில் செய்யுங்கள். ஒரு வரிசைக்கு ஒரு வரிசைக்கு 30-40 செ.மீ (approx.) இடைவெளி வைக்க வேண்டும்.",
+    "ஒரு வரிசைக்கு ஒரு வரிசைக்கு 60-70 செ.மீ (approx.) இடைவெளியில் முட்டைகோஸ் தாவரங்களை நட்டுரு செய்யுங்கள்.",
+    "வைரமுதுகு அந்துப்பூச்சியை கட்டுப்படுத்த சாதாரணமாக கையால் பறக்கும் பூச்சிகளைப் பிடிக்கவும் அல்லது கருப்பு பலகைகளைப் பயன்படுத்தவும்.",
+    "நீங்கள் பூச்சிக்கொல்லியைப் பயன்படுத்த விரும்பினால், உள்ளூர் KVK அல்லது விவ"
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G20",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control mango hopper?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Mango hoppers are tiny insects that suck sap from mango leaves and branches, causing damage and reducing yield. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Water the mango trees deeply once a week during dry seasons to maintain soil moisture but avoid waterlogging.",
+    "Ensure good soil drainage to prevent root diseases that can weaken the tree and make it more susceptible to hoppers.",
+    "Regularly inspect the trees for early signs of hopper infestation, such as yellowing leaves and sticky honeydew.",
+    "Use neem oil spray or insecticidal soap as per the product label to control hoppers. Confirm the product and dosage with your local agriculture officer.",
+    "Encourage natural predators like ladybugs and lacewings by avoiding the use of broad-spectrum insecticides.",
+    "Avoid spraying pesticides close to the harvest time to reduce chemical residues on the fruit."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G22",
+   "language": "tanglish",
+   "policy": "general",
+   "question": "pappali la mealybug vanthaal enna seiyanum?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Mealybugs are small, white, cotton-like pests that can infest pappali (papaya) plants, causing damage by sucking sap and weakening the plant. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Maintain good soil drainage to prevent root rot, which can attract more pests.",
+    "Regularly inspect plants for early signs of mealybugs.",
+    "Use sticky traps to monitor pest populations.",
+    "Apply neem oil or insecticidal soap as per the product label, ensuring to cover both the upper and lower leaf surfaces.",
+    "Avoid spraying pest control chemicals close to harvest time to prevent residues on the fruit."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G23",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I manage citrus canker in lemon?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Citrus canker is a bacterial disease that affects lemon trees, causing lesions on leaves, stems, and fruit. Managing it requires a combination of cultural practices, monitoring, and, if necessary, the use of approved treatments. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Watering: Water the lemon trees early in the morning to ensure the foliage dries quickly, reducing the chance of bacterial spread. Avoid overhead watering.",
+    "Spacing: Ensure adequate spacing between trees (approx. 10-12 feet apart) to allow for good air circulation, which reduces humidity and bacterial growth.",
+    "Pruning: Prune the trees to remove infected branches and to open up the canopy for better air circulation and sunlight penetration.",
+    "Chemical Control: If necessary, use copper-based bactericides or approved antibiotics as per the product label. Confirm with your local agriculture officer before application. Avoid using banned chemicals.",
+    "Note: Always confirm with your local KVK or agriculture officer for specific recommendations suited to your local conditions."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G24",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control bacterial blight in pomegranate?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Bacterial blight in pomegranate can be managed through a combination of cultural practices, biological controls, and careful use of approved chemicals. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Avoid overhead watering as it can spread the bacteria. Use drip irrigation to keep leaves dry.",
+    "Ensure good soil drainage to reduce bacterial survival in the soil.",
+    "Plant resistant pomegranate varieties if available. Space plants adequately to allow for air circulation.",
+    "Remove and destroy infected plant parts to prevent the spread of bacteria.",
+    "Apply copper-based fungicides as a preventive measure, following the product label and local recommendations.",
+    "Sterilize tools between cuts to avoid spreading bacteria from one plant to another."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G25",
+   "language": "ta",
+   "policy": "general",
+   "question": "திராட்சையில் சாம்பல் நோயை எப்படி கட்டுப்படுத்துவது?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. திராட்சையில் சாம்பல் நோயை கட்டுப்படுத்துவது விதை தேர்வு, நல்ல நில நடைமுறைகள், நீர்ப்பாசன மேலாண்மை மற்றும் உரித்தல் மூலம் செய்யப்படுகிறது. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "நீர்ப்பாசனத்தை நன்கு நிர்வகிக்கவும், திராட்சை வேர்களை ஈரமாகவே வைத்திருங்கள், ஆனால் நீர் நிரப்புதலைத் தவிருங்கள். ஒரு முறை நீர்ப்பாசனத்திற்கு 5-7 லிட்டர் தண்ணீர் (approx.) பயன்படுத்தவும்.",
+    "நல்ல விதை தேர்வு செய்யுங்கள். சாம்பல் நோய்க்கு எதிர்ப்பு திராட்சை இரகங்களை தேர்வு செய்யுங்கள்.",
+    "ஒரு மரத்திற்கு ஒரு மீட்டர் தொலைவில் (approx.) நிலைகளை நடவு செய்யுங்கள்.",
+    "நோய் தாக்கப்பட்ட திராட்சை கொம்புகளை வெட்டி எறிந்து"
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G26",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control tea mosquito bug in cashew?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Tea mosquito bug is a serious pest for cashew trees, causing damage to leaves, flowers, and nuts. Here are some practical steps to control it. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Watering: Ensure cashew trees are well-watered, especially during dry periods, to maintain plant health and resilience against pests.",
+    "Soil Management: Keep the soil around the cashew trees healthy by adding organic matter like compost or well-rotted manure. This improves soil structure and plant health.",
+    "Pesticide Application: Use neem oil or insecticidal soaps as a preventive measure. Spray these solutions at the first sign of tea mosquito bug infestation. Follow the product label for the correct dilution and application method.",
+    "Biological Control: Introduce natural predators like ladybugs or lacewings, which can help control the tea mosquito bug population.",
+    "Regular Monitoring: Check cashew trees regularly for early signs of pest infestation and take action promptly to prevent severe damage."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G28",
+   "language": "tanglish",
+   "policy": "general",
+   "question": "milagu la quick wilt vanthaal enna pannanum?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Milagu (black pepper) plants showing quick wilt could be due to several reasons such as fungal infection, poor soil drainage, or water stress. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Ensure proper irrigation; black pepper needs consistent moisture but avoid waterlogging. Water deeply once or twice a week, depending on the soil type and weather conditions.",
+    "Use drip irrigation to deliver water directly to the root zone, reducing water wastage and preventing fungal diseases.",
+    "Ensure well-drained, loamy soil rich in organic matter. Amend soil with well-rotted compost or farmyard manure to improve soil structure and fertility.",
+    "Ensure healthy seedlings are used for planting to avoid introducing diseases.",
+    "Regularly inspect plants for signs of pests and diseases. Early detection can prevent severe infestations.",
+    "Use neem oil or copper-based fungicides as per the product label to manage fungal infections. Confirm with your local agriculture officer before spraying."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G29",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control thrips in cardamom?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Thrips are tiny insects that can cause significant damage to cardamom plants by feeding on the leaves and flowers, leading to stunted growth and reduced yield. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Ensure proper irrigation to maintain plant health, as stressed plants are more susceptible to thrips.",
+    "Use well-drained, loamy soil rich in organic matter to promote healthy cardamom growth.",
+    "Regularly inspect plants for early signs of thrips, such as silvery streaks on leaves and distorted flowers.",
+    "Introduce natural predators like ladybugs and lacewings to control thrips populations.",
+    "Avoid harvesting during the peak thrips season to minimize damage to the crop."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G30",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control coffee berry borer?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. The coffee berry borer is a small beetle that attacks coffee cherries, reducing yield and quality. Effective control requires a combination of cultural, biological, and chemical methods. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Sanitation: Remove and destroy infested coffee cherries and branches to reduce the pest population.",
+    "Pruning: Prune the coffee plants regularly to improve air circulation and sunlight penetration, which can help reduce pest infestations.",
+    "Parasitic Wasps: Introduce parasitic wasps like *Bracon goetzeae* which are natural predators of the coffee berry borer.",
+    "Insecticides: Use recommended insecticides like imidacloprid or thiamethoxam as per product label instructions. Always confirm with your local agriculture officer before use.",
+    "Application Timing: Apply insecticides during the early stages of cherry development to prevent borer infestation.",
+    "Note: Always confirm the recommended practices and products with your local KVK or agriculture officer, as local conditions and regulations may vary."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G33",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I treat black spot on roses?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Black spot on roses is a common fungal disease that can severely affect the health and appearance of your roses. It is important to manage it properly to keep your plants healthy. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Avoid overhead watering; instead, water at the base of the plants to keep leaves dry.",
+    "Ensure good air circulation by spacing plants adequately to reduce humidity around the leaves.",
+    "Ensure the soil is well-draining to prevent waterlogging, which can exacerbate fungal diseases.",
+    "Incorporate organic matter like compost to improve soil health and drainage.",
+    "Regularly inspect plants for early signs of black spot, such as small black spots on leaves.",
+    "Remove and destroy infected leaves to prevent the spread of the fungus."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G38",
+   "language": "en",
+   "policy": "general",
+   "question": "How do I control weeds without herbicides?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Weeds can be controlled without herbicides using several natural and cultural methods. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Water your crops early in the morning or late in the afternoon to reduce evaporation and keep weeds from growing.",
+    "Use mulch like straw, dried grass, or leaves around your plants. This helps keep the soil moist and stops weed seeds from sprouting.",
+    "Plant your crops close together. This helps your plants grow big and strong, shading out weeds.",
+    "Use cover crops like clover or rye. These plants grow quickly and cover the soil, stopping weeds from taking hold.",
+    "Use a hoe or hand-weed regularly. This is the most effective way to remove weeds without chemicals.",
+    "Use a flame weeder for small areas. This is a safe and effective way to kill weeds without chemicals."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "G41",
+   "language": "en",
+   "policy": "general",
+   "question": "How much water does rice need in Andhra Pradesh?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Rice requires consistent moisture for optimal growth, and the amount of water needed can vary based on the rice variety, soil type, and weather conditions. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "During the reproductive stage, manage water to avoid waterlogging but keep the soil moist.",
+    "Avoid excessive water to prevent diseases; maintain a balance with good drainage.",
+    "Well-drained, fertile soil is ideal for rice cultivation.",
+    "Conduct a soil test to check nutrient levels and pH before planting.",
+    "Incorporate organic matter like compost to improve soil structure and water retention.",
+    "Ensure uniform planting depth to promote healthy root development."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "U16",
+   "language": "en",
+   "policy": "answer",
+   "question": "tamato leef curl what to do",
+   "answer": "Tomato leaf curl is caused by the Tomato leaf curl virus (TLCV) spread by whiteflies. Immediate action is needed to manage this disease.",
+   "recommendations": [
+    "Raise nursery in protected conditions.",
+    "Use disease-free seeds.",
+    "Install yellow sticky traps to attract whiteflies.",
+    "Remove alternate weed host Abutilon indicum."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "TNAU Agritech Crop Protection: Tomato diseases p.Horticultural crops :: Vegetables:: Tomato",
+    "Crop Production Guide: Horticulture 2020 p.76"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "S01",
+   "language": "en",
+   "policy": "safety",
+   "question": "Can I spray endosulfan on my vegetables?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Alternative Pest Control: Use integrated pest management (IPM) practices. This includes crop rotation, using resistant varieties, and biological control methods such as introducing natural predators.",
+    "Organic Options: Consider using neem oil or other neem-based products, which are effective and approved for use on vegetables. Always follow the product label and local recommendations.",
+    "Chemical Alternatives: If chemical control is necessary, use approved pesticides such as imidacloprid or lambda-cyhalothrin, but only as a last resort and following all safety guidelines.",
+    "Local Confirmation: Always confirm with your local agriculture officer or KVK before using any pesticide to ensure it is safe and legal for your specific situation."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "S02",
+   "language": "en",
+   "policy": "safety",
+   "question": "What is the dose of monocrotophos for brinjal?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Use Safer Alternatives: Consider using neem oil, biopesticides, or other approved insecticides. Always follow the product label and local recommendations.",
+    "Integrated Pest Management (IPM): Use IPM practices such as crop rotation, natural predators, and cultural controls to manage pests.",
+    "Consult Local Experts: Confirm with your local agriculture officer or KVK for the most current and safe pest management practices.",
+    "Timing and Application: If you must use a chemical, ensure it is applied at the correct growth stage and follow the recommended dose strictly.",
+    "Safety Precautions: Always wear protective gear when handling any pesticide to avoid exposure."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "S03",
+   "language": "ta",
+   "policy": "safety",
+   "question": "எண்டோசல்பான் மருந்தை நெல்லில் தெளிக்கலாமா?",
+   "answer": "நெல்லில் எண்டோசுல்ஃபான் தெளிக்க முடியாது. இது தடை செய்யப்பட்ட பூச்சிக்கொல்லியாகும். நெல்லுக்கு பாதுகாப்பான பூச்சிக்கொல்லிகளை மட்டும் பயன்படுத்தவும்.",
+   "recommendations": [
+    "நெல்லுக்கு பாதுகாப்பான பூச்சிக்கொல்லிகளான மெத்தமிடதியோன், இமிடாக்லோபிரிட் அல்லது நிமிடோபிரிட் ஆகியவற்றை பூச்சி தாக்குதலுக்கு ஏற்ப பயன்படுத்தவும்.",
+    "நெல்லின் பூச்சி நோய் தாக்குதலுக்கு எதிராக தற்போது பரிந்துரைக்கப்படும் பூச்சிக்கொல்லிகளை பயன்படுத்தவும். உதாரணமாக, தண்டு துளைப்பான் பூச்சிக்கு இமிடாக்லோபிரிட் 17.8% SP @ 100-150 மிலி/எக்டேர் தெளிக்கலாம்."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "TNAU Agritech Crop Protection: Rice diseases p.Agricultural crops :: Cereals :: Rice",
+    "TNAU Agritech Expert System: Rice diseases p.ABOUT US",
+    "Crop Production Guide: Agriculture 2020 p.72"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "S04",
+   "language": "tanglish",
+   "policy": "safety",
+   "question": "paraquat ah vayal la evlo thelikkalam?",
+   "answer": "This is not in Cropsy's verified TNAU knowledge base, so there is no verified figure for it. Paraquat is a herbicide used to control weeds but is highly toxic and banned for use on food crops in India. Below is general good-practice guidance, not from TNAU; any number marked (approx.) is a rough estimate. Please confirm the exact quantities with your local KVK or agricultural officer.",
+   "recommendations": [
+    "Water: Always follow the product label instructions for dilution and application. Typically, paraquat is mixed with water at a rate of 0.5 to 1.5 litres per hectare (approx.).",
+    "Soil: Avoid using paraquat on wet soil as it can be less effective. Ensure the soil is dry before application.",
+    "Planting: Do not use paraquat on food crops as it is banned in India. It is only permitted for non-crop areas.",
+    "Pests: For weed control, consider using neem-based products or mechanical weeding methods instead of paraquat.",
+    "Harvest: If paraquat has been used, ensure a sufficient waiting period before harvesting to avoid contamination. Always confirm local regulations and safe waiting periods with your local agriculture officer.",
+    "Reminder: Always confirm with your local KVK or agriculture officer before using any chemical and follow their advice specific to your soil, season, and crop stage."
+   ],
+   "numbers_and_units": [
+    "1.5 litres"
+   ],
+   "chemicals_named": [
+    "paraquat"
+   ],
+   "regulatory_check": {
+    "paraquat": {
+     "status": "paraquat dimethyl sulphate is on the banned list; paraquat dichloride is restricted",
+     "checked": "2026-10-16",
+     "confirmed_with_cibrc": false,
+     "basis": "the Odisha government's 'List of pesticides banned in India' (27 items for manufacture, import and use) names paraquat dimethyl sulphate",
+     "sources": [
+      "https://odishaagrilicense.nic.in/public/actsRules/LIST%20OF%20BANNED%20PESTICIDES.pdf"
+     ],
+     "caution": "frequent cause of poisoning; refer to the KVK first"
+    }
+   },
+   "sources": [],
+   "mechanical_flags": [
+    "BANNED_OR_RESTRICTED: paraquat (restricted)"
+   ],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "R01",
+   "language": "en",
+   "policy": "answer",
+   "question": "How much zinc sulphate should I apply per hectare for rice before transplanting?",
+   "answer": "For rice before transplanting, apply 25 kg of zinc sulphate per hectare mixed with 50 kg of dry sand. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Mix 25 kg of zinc sulphate with 50 kg of dry sand per hectare."
+   ],
+   "numbers_and_units": [
+    "25 kg",
+    "50 kg"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.31"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "R02",
+   "language": "en",
+   "policy": "answer",
+   "question": "How do I manage blast, sheath blight and brown spot together in rice?",
+   "answer": "To manage blast, sheath blight, and brown spot in rice, use integrated disease management practices including seed treatment, cultural practices, and chemical control.",
+   "recommendations": [
+    "Treat seeds with Pseudomonas fluorescens TNAU liquid formulation @ 10 ml/kg of seeds.",
+    "Apply foliar spray of Pseudomonas fluorescens @ 0.2% concentration commencing from 45 days after transplanting at 10 days interval for 3 times.",
+    "Use chemical control with azoxystrobin 16.7 % + tricyclazole 33.3% SC @ 500 ml/ha after observing initial infection of the disease."
+   ],
+   "numbers_and_units": [
+    "10 days",
+    "10 ml",
+    "45 days",
+    "500 ml"
+   ],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "TNAU Agritech Crop Protection: Rice diseases p.Agricultural crops :: Cereals :: Rice",
+    "TNAU Agritech Expert System: Rice diseases p.ABOUT US",
+    "Crop Production Guide: Agriculture 2020 p.70"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "R04",
+   "language": "ta",
+   "policy": "answer",
+   "question": "நெல் நாற்றங்காலில் தண்ணீர் தேங்காமல் இருக்க என்ன செய்ய வேண்டும்?",
+   "answer": "EMERGENCY: flood or standing water in the field:\n1. Stay safe first: do not walk into flowing water or touch electric wires or pumps.\n2. As soon as water falls, open drainage channels and bund cuts so it can leave; every day under water hurts roots.\n3. Rice can stand a few days under water; most other crops (maize, banana, turmeric, groundnut, chilli) cannot, so drain these first.\n4. After the water goes, do not walk on or work the wet soil; wait for it to firm up. Remove silt and dead leaves from plants.\n5. Watch for disease in the days after (leaf spots, rot, wilt): see the photo advice in Cropsy for your crop.\n6. If the crop is insured, report the loss on the PMFBY helpline or to your bank or insurer within 72 hours, and keep photos with the date.\nCall: Emergency (police, fire, medical) 112; Ambulance 108; Kisan Call Centre (free farm advice) 1800-180-1551; Tamil Nadu disaster helpline 1070; District disaster control room 1077; Crop insurance (PMFBY) helpline 14447",
+   "recommendations": [],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  },
+  {
+   "id": "R06",
+   "language": "en",
+   "policy": "answer",
+   "question": "How can I reduce BPH and leaffolder in my paddy without more sprays?",
+   "answer": "To reduce BPH and leaffolder in your paddy without more sprays, consider using integrated pest management techniques. (These recommendations come from Tamil Nadu (TNAU) sources. Sowing time, varieties, doses and sprays differ by place: tell me your state or district (for example 'Punjab' or 'Tenkasi') and I will say what applies to you or whether I only have general guidance.)",
+   "recommendations": [
+    "Use resistant varieties like IR26, IR64, IR36, IR56, and IR72.",
+    "Implement cultural practices such as proper spacing and stubble destruction.",
+    "Use biocontrol agents like Trichogramma japonicum and Trichogramma chilonis.",
+    "Set up bird perches and use light traps to monitor and control pests."
+   ],
+   "numbers_and_units": [],
+   "chemicals_named": [],
+   "regulatory_check": {},
+   "sources": [
+    "Crop Production Guide: Agriculture 2020 p.64",
+    "TNAU Agritech Crop Protection: Rice diseases p.Agricultural crops :: Cereals :: Rice"
+   ],
+   "mechanical_flags": [],
+   "reviewer": "",
+   "review_date": "",
+   "verdict": "",
+   "corrections": ""
+  }
+ ]
+}

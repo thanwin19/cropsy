@@ -1,0 +1,1490 @@
+{
+ "mode": "dense+multivec/pipeline",
+ "n_questions": 171,
+ "n_answerable": 114,
+ "hit@1": 0.763,
+ "hit@3": 0.895,
+ "hit@5": 0.93,
+ "mrr": 0.829,
+ "crop_precision@5": 0.956,
+ "citation_complete": 1.0,
+ "answerable_not_blocked_by_gate": 1.0,
+ "clarify_handled": 1.0,
+ "abstain_handled": 1.0,
+ "general_questions": 35,
+ "general_caught_by_word_list": 0.743,
+ "safety_banned_name_detected": 1.0,
+ "general_by_group_word_list": {
+  "cereal/millet": 0.0,
+  "pulse": 0.0,
+  "oilseed": 1.0,
+  "vegetable": 1.0,
+  "fruit": 1.0,
+  "plantation": 1.0,
+  "spice": 1.0,
+  "flower": 1.0,
+  "fodder": 1.0,
+  "topic": 0.2,
+  "regional": 0.0,
+  "livestock": 0.0
+ },
+ "by_crop_hit@3": {
+  "Rice": 0.833,
+  "Maize": 1.0,
+  "Banana": 0.667,
+  "Groundnut": 1.0,
+  "Sugarcane": 0.8,
+  "Chilli": 1.0,
+  "Blackgram": 0.846,
+  "Cotton": 1.0,
+  "Coconut": 0.75,
+  "Turmeric": 1.0,
+  "Tomato": 1.0,
+  "Ragi": 0.75,
+  "Sorghum": 1.0,
+  "Cumbu": 0.8,
+  "Redgram": 1.0,
+  "Greengram": 1.0,
+  "Bengalgram": 0.5,
+  "Wheat": 0.5,
+  "Cowpea": 1.0,
+  "Horsegram": 1.0,
+  "Soybean": 1.0,
+  "Sesame": 1.0
+ },
+ "by_language_hit@3": {
+  "en": 0.885,
+  "tanglish": 0.941,
+  "ta": 0.9
+ },
+ "misses": [
+  {
+   "id": "R02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-010",
+   "top1_score": 0.625
+  },
+  {
+   "id": "R15",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "banana-002-p24-009",
+   "top1_score": 0.675
+  },
+  {
+   "id": "R16",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "banana-web-145",
+   "top1_score": 0.58
+  },
+  {
+   "id": "R26",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "sugarcane-web-013",
+   "top1_score": 0.677
+  },
+  {
+   "id": "R37",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "blackgram-web-001",
+   "top1_score": 0.671
+  },
+  {
+   "id": "R38",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "blackgram-001-p154-022",
+   "top1_score": 0.764
+  },
+  {
+   "id": "U08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "coconut-001-p240-007",
+   "top1_score": 0.742
+  },
+  {
+   "id": "G02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "ragi-001-p114-030",
+   "top1_score": 0.628
+  },
+  {
+   "id": "G04",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "cumbu-001-p103-030",
+   "top1_score": 0.546
+  },
+  {
+   "id": "G09",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "bengalgram-001-p173-001",
+   "top1_score": 0.468
+  },
+  {
+   "id": "M11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "wheat-001-p135-004",
+   "top1_score": 0.552
+  },
+  {
+   "id": "B11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "bengalgram-001-p177-015",
+   "top1_score": 0.618
+  }
+ ],
+ "policy_misses": [
+  {
+   "id": "G01",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G08",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G36",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G37",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G38",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G40",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G41",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G42",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "C08",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  }
+ ],
+ "detail": [
+  {
+   "id": "R01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "rice-001-p35-031",
+   "top1_score": 0.842
+  },
+  {
+   "id": "R02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-010",
+   "top1_score": 0.625
+  },
+  {
+   "id": "R03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "rice-001-p63-103",
+   "top1_score": 0.691
+  },
+  {
+   "id": "R04",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "rice-001-p37-038",
+   "top1_score": 0.669
+  },
+  {
+   "id": "R05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "rice-001-p17-003",
+   "top1_score": 0.799
+  },
+  {
+   "id": "R06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "rice-001-p63-103",
+   "top1_score": 0.61
+  },
+  {
+   "id": "R07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p125-031",
+   "top1_score": 0.683
+  },
+  {
+   "id": "R08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p119-012",
+   "top1_score": 0.875
+  },
+  {
+   "id": "R09",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p125-031",
+   "top1_score": 0.54
+  },
+  {
+   "id": "R10",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p115-002",
+   "top1_score": 0.785
+  },
+  {
+   "id": "R11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "maize-001-p128-038",
+   "top1_score": 0.603
+  },
+  {
+   "id": "R12",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-002-p26-012",
+   "top1_score": 0.895
+  },
+  {
+   "id": "R13",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-002-p23-005",
+   "top1_score": 0.826
+  },
+  {
+   "id": "R14",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-002-p25-011",
+   "top1_score": 0.737
+  },
+  {
+   "id": "R15",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "banana-002-p24-009",
+   "top1_score": 0.675
+  },
+  {
+   "id": "R16",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "banana-web-145",
+   "top1_score": 0.58
+  },
+  {
+   "id": "R17",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-002-p26-012",
+   "top1_score": 0.895
+  },
+  {
+   "id": "R18",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p197-012",
+   "top1_score": 0.773
+  },
+  {
+   "id": "R19",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p196-010",
+   "top1_score": 0.899
+  },
+  {
+   "id": "R20",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p208-045",
+   "top1_score": 0.76
+  },
+  {
+   "id": "R21",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p194-006",
+   "top1_score": 0.749
+  },
+  {
+   "id": "R22",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p201-025",
+   "top1_score": 0.655
+  },
+  {
+   "id": "R23",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sugarcane-001-p307-029",
+   "top1_score": 0.752
+  },
+  {
+   "id": "R24",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "sugarcane-001-p303-014",
+   "top1_score": 0.73
+  },
+  {
+   "id": "R25",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sugarcane-001-p311-039",
+   "top1_score": 0.763
+  },
+  {
+   "id": "R26",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "sugarcane-web-013",
+   "top1_score": 0.677
+  },
+  {
+   "id": "R27",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p89-007",
+   "top1_score": 0.76
+  },
+  {
+   "id": "R28",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p88-003",
+   "top1_score": 0.72
+  },
+  {
+   "id": "R29",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p88-005",
+   "top1_score": 0.839
+  },
+  {
+   "id": "R30",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-002",
+   "top1_score": 0.674
+  },
+  {
+   "id": "R31",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-008",
+   "top1_score": 0.661
+  },
+  {
+   "id": "R32",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-003",
+   "top1_score": 0.893
+  },
+  {
+   "id": "R33",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-004",
+   "top1_score": 0.791
+  },
+  {
+   "id": "R34",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p93-011",
+   "top1_score": 0.557
+  },
+  {
+   "id": "R35",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p151-012",
+   "top1_score": 0.736
+  },
+  {
+   "id": "R36",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "blackgram-web-008",
+   "top1_score": 0.714
+  },
+  {
+   "id": "R37",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "blackgram-web-001",
+   "top1_score": 0.671
+  },
+  {
+   "id": "R38",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "blackgram-001-p154-022",
+   "top1_score": 0.764
+  },
+  {
+   "id": "R39",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p155-025",
+   "top1_score": 0.71
+  },
+  {
+   "id": "R40",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p151-013",
+   "top1_score": 0.857
+  },
+  {
+   "id": "R41",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "blackgram-001-p152-018",
+   "top1_score": 0.697
+  },
+  {
+   "id": "R42",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-005",
+   "top1_score": 0.805
+  },
+  {
+   "id": "R43",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p197-012",
+   "top1_score": 0.639
+  },
+  {
+   "id": "R44",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p149-007",
+   "top1_score": 0.716
+  },
+  {
+   "id": "R45",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-010",
+   "top1_score": 0.759
+  },
+  {
+   "id": "R46",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-011",
+   "top1_score": 0.78
+  },
+  {
+   "id": "R47",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-014",
+   "top1_score": 0.789
+  },
+  {
+   "id": "R48",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-012",
+   "top1_score": 0.803
+  },
+  {
+   "id": "R49",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-021",
+   "top1_score": 0.725
+  },
+  {
+   "id": "R50",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "blackgram-web-015",
+   "top1_score": 0.83
+  },
+  {
+   "id": "R51",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-013",
+   "top1_score": 0.848
+  },
+  {
+   "id": "R52",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-022",
+   "top1_score": 0.835
+  },
+  {
+   "id": "A01",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.463,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A02",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.422,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A04",
+   "lang": "tanglish",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.383,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A05",
+   "lang": "ta",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.375,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A06",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.568,
+   "via": "fixed card (price or pesticide registry)"
+  },
+  {
+   "id": "A07",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.639,
+   "via": "fixed card (price or pesticide registry)"
+  },
+  {
+   "id": "A08",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.51,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "C01",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C02",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C03",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C04",
+   "lang": "ta",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C05",
+   "lang": "tanglish",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C06",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "U01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cotton-001-p282-059",
+   "top1_score": 0.561
+  },
+  {
+   "id": "U02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cotton-001-p289-073",
+   "top1_score": 0.827
+  },
+  {
+   "id": "U03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cotton-001-p286-067",
+   "top1_score": 0.724
+  },
+  {
+   "id": "U04",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cotton-001-p270-014",
+   "top1_score": 0.688
+  },
+  {
+   "id": "U05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "coconut-001-p242-011",
+   "top1_score": 0.877
+  },
+  {
+   "id": "U06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "coconut-002-p230-039",
+   "top1_score": 0.87
+  },
+  {
+   "id": "U07",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "coconut-web-004",
+   "top1_score": 0.724
+  },
+  {
+   "id": "U08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "coconut-001-p240-007",
+   "top1_score": 0.742
+  },
+  {
+   "id": "U09",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "turmeric-002-p187-006",
+   "top1_score": 0.724
+  },
+  {
+   "id": "U10",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "turmeric-web-028",
+   "top1_score": 0.668
+  },
+  {
+   "id": "U11",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "turmeric-web-010",
+   "top1_score": 0.589
+  },
+  {
+   "id": "U12",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "turmeric-002-p186-003",
+   "top1_score": 0.777
+  },
+  {
+   "id": "U13",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-web-003",
+   "top1_score": 0.798
+  },
+  {
+   "id": "U14",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-web-002",
+   "top1_score": 0.835
+  },
+  {
+   "id": "U15",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p75-008",
+   "top1_score": 0.756
+  },
+  {
+   "id": "G01",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "ragi-001-p114-030",
+   "top1_score": 0.628
+  },
+  {
+   "id": "G03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sorghum-001-p78-005",
+   "top1_score": 0.843
+  },
+  {
+   "id": "G04",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "cumbu-001-p103-030",
+   "top1_score": 0.546
+  },
+  {
+   "id": "G05",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cumbu-001-p101-026",
+   "top1_score": 0.765
+  },
+  {
+   "id": "G06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "redgram-001-p142-020",
+   "top1_score": 0.701
+  },
+  {
+   "id": "G07",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "greengram-001-p162-019",
+   "top1_score": 0.58
+  },
+  {
+   "id": "G08",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G09",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "bengalgram-001-p173-001",
+   "top1_score": 0.468
+  },
+  {
+   "id": "G10",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G11",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G12",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G13",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G14",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G15",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G16",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G17",
+   "lang": "ta",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G18",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G19",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G20",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G21",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G22",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G23",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G24",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G25",
+   "lang": "ta",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G26",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G27",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G28",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G29",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G30",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G31",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G32",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G33",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G34",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G35",
+   "lang": "en",
+   "policy": "answer_card",
+   "handled": true,
+   "top1_score": 0.516,
+   "via": "weak match"
+  },
+  {
+   "id": "G36",
+   "lang": "tanglish",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G37",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G38",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G39",
+   "lang": "en",
+   "policy": "general",
+   "handled": true
+  },
+  {
+   "id": "G40",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G41",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "G42",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "U16",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-web-006",
+   "top1_score": 0.728
+  },
+  {
+   "id": "G44",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sugarcane-web-009",
+   "top1_score": 0.87
+  },
+  {
+   "id": "S01",
+   "lang": "en",
+   "policy": "safety",
+   "handled": true
+  },
+  {
+   "id": "S02",
+   "lang": "en",
+   "policy": "safety",
+   "handled": true
+  },
+  {
+   "id": "S03",
+   "lang": "ta",
+   "policy": "safety",
+   "handled": true
+  },
+  {
+   "id": "S04",
+   "lang": "tanglish",
+   "policy": "safety",
+   "handled": true
+  },
+  {
+   "id": "C07",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C08",
+   "lang": "en",
+   "policy": "general",
+   "handled": false
+  },
+  {
+   "id": "C09",
+   "lang": "tanglish",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "A09",
+   "lang": "en",
+   "policy": "answer_card",
+   "handled": true,
+   "top1_score": 0.515,
+   "via": "weak match"
+  },
+  {
+   "id": "A10",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.54,
+   "via": "weak match"
+  },
+  {
+   "id": "M01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sorghum-001-p78-005",
+   "top1_score": 0.767
+  },
+  {
+   "id": "M02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "sorghum-001-p86-031",
+   "top1_score": 0.898
+  },
+  {
+   "id": "M03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sorghum-001-p80-014",
+   "top1_score": 0.759
+  },
+  {
+   "id": "M04",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cumbu-001-p101-026",
+   "top1_score": 0.637
+  },
+  {
+   "id": "M05",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cumbu-001-p94-007",
+   "top1_score": 0.709
+  },
+  {
+   "id": "M06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "cumbu-001-p101-027",
+   "top1_score": 0.685
+  },
+  {
+   "id": "M07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "ragi-001-p113-028",
+   "top1_score": 0.593
+  },
+  {
+   "id": "M08",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "ragi-001-p113-029",
+   "top1_score": 0.769
+  },
+  {
+   "id": "M09",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "ragi-001-p105-007",
+   "top1_score": 0.668
+  },
+  {
+   "id": "M10",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "wheat-001-p134-002",
+   "top1_score": 0.86
+  },
+  {
+   "id": "M11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "wheat-001-p135-004",
+   "top1_score": 0.552
+  },
+  {
+   "id": "B01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "redgram-001-p144-025",
+   "top1_score": 0.57
+  },
+  {
+   "id": "B02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "redgram-001-p144-025",
+   "top1_score": 0.675
+  },
+  {
+   "id": "B03",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "redgram-001-p143-021",
+   "top1_score": 0.669
+  },
+  {
+   "id": "B04",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "redgram-001-p141-016",
+   "top1_score": 0.794
+  },
+  {
+   "id": "B05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "greengram-001-p156-006",
+   "top1_score": 0.75
+  },
+  {
+   "id": "B06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "greengram-001-p159-013",
+   "top1_score": 0.762
+  },
+  {
+   "id": "B07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cowpea-001-p168-011",
+   "top1_score": 0.8
+  },
+  {
+   "id": "B08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "cowpea-001-p167-010",
+   "top1_score": 0.739
+  },
+  {
+   "id": "B09",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "horsegram-001-p170-002",
+   "top1_score": 0.696
+  },
+  {
+   "id": "B10",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "bengalgram-001-p175-010",
+   "top1_score": 0.66
+  },
+  {
+   "id": "B11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "bengalgram-001-p177-015",
+   "top1_score": 0.618
+  },
+  {
+   "id": "B12",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "bengalgram-001-p175-009",
+   "top1_score": 0.634
+  },
+  {
+   "id": "T01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p71-002",
+   "top1_score": 0.844
+  },
+  {
+   "id": "T02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "tomato-web-005",
+   "top1_score": 0.498
+  },
+  {
+   "id": "T03",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p74-005",
+   "top1_score": 0.85
+  },
+  {
+   "id": "T04",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p75-007",
+   "top1_score": 0.809
+  },
+  {
+   "id": "T05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p76-010",
+   "top1_score": 0.836
+  },
+  {
+   "id": "T06",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p75-007",
+   "top1_score": 0.622
+  },
+  {
+   "id": "T07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "tomato-002-p72-004",
+   "top1_score": 0.665
+  },
+  {
+   "id": "O01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "soybean-001-p187-013",
+   "top1_score": 0.732
+  },
+  {
+   "id": "O02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "soybean-001-p188-016",
+   "top1_score": 0.476
+  },
+  {
+   "id": "O03",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "soybean-001-p188-016",
+   "top1_score": 0.515
+  },
+  {
+   "id": "O04",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "soybean-001-p185-002",
+   "top1_score": 0.721
+  },
+  {
+   "id": "O05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sesame-001-p213-014",
+   "top1_score": 0.857
+  },
+  {
+   "id": "O06",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sesame-001-p215-021",
+   "top1_score": 0.7
+  },
+  {
+   "id": "O07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sesame-001-p214-020",
+   "top1_score": 0.683
+  },
+  {
+   "id": "O08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "sesame-001-p213-018",
+   "top1_score": 0.639
+  }
+ ]
+}

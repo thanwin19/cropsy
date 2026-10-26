@@ -1,0 +1,1070 @@
+{
+  "description": "Retrieval evaluation set for Cropsy. 'search_text' is the English the understand step should produce for a Tamil or Tanglish question (hand-written here so retrieval can be scored without a model). For answerable questions, a chunk is RELEVANT only if it belongs to one of the listed crops AND its text matches every regex in 'evidence' (case-insensitive). Every evidence regex was chosen by reading the TNAU chunk it points at; tests/test_retrieval_eval.py fails if any answerable question has no matching chunk in the knowledge base, so the dataset cannot silently drift from it. 'policy' says what Cropsy should do: answer (from the knowledge base), abstain (the knowledge base has no source; give general guidance, clearly labelled) or clarify (ask the farmer for the crop or the symptom).",
+  "questions": [
+    {
+      "id": "R01",
+      "lang": "en",
+      "question": "How much zinc sulphate should I apply per hectare for rice before transplanting?",
+      "search_text": "zinc sulphate per hectare rice before transplanting",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "zinc sulphate|ZnSO4",
+        "kg/ha|kg of zinc|kg per ha"
+      ],
+      "key_facts": [
+        "37.5 kg zinc sulphate per ha mixed with sand and spread on the levelled field"
+      ],
+      "evidence_note": "regex widened after reading the top results: the TNAU text states the same fact in another notation (ZnSO4, 'S as gypsum', lower-case borax, 'spacing of ... cm')"
+    },
+    {
+      "id": "R02",
+      "lang": "en",
+      "question": "How do I manage blast, sheath blight and brown spot together in rice?",
+      "search_text": "combined infection of blast sheath blight and brown spot rice spray",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "azoxystrobin",
+        "tricyclazole"
+      ],
+      "key_facts": [
+        "azoxystrobin 16.7% + tricyclazole 33.3% SC at 500 ml/ha after initial infection"
+      ]
+    },
+    {
+      "id": "R03",
+      "lang": "tanglish",
+      "question": "nel la stem borer ku pheromone trap evlo vaikanum?",
+      "search_text": "rice stem borer pheromone traps per hectare",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "12/ha",
+        "stem borer"
+      ],
+      "key_facts": [
+        "12 pheromone traps per ha to monitor stem borer and leaffolder"
+      ]
+    },
+    {
+      "id": "R04",
+      "lang": "ta",
+      "question": "நெல் நாற்றங்காலில் தண்ணீர் தேங்காமல் இருக்க என்ன செய்ய வேண்டும்?",
+      "search_text": "rice seedbed water management avoid stagnation of water drain after sowing",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "irrigation",
+      "policy": "answer",
+      "evidence": [
+        "stagnation of water",
+        "seedbed"
+      ],
+      "key_facts": [
+        "drain the water 18 to 24 hours after sowing; avoid stagnation on the seedbed"
+      ]
+    },
+    {
+      "id": "R05",
+      "lang": "en",
+      "question": "Is white ponni susceptible to blast?",
+      "search_text": "white ponni susceptible to blast rice variety",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "white ponni",
+        "blast"
+      ],
+      "key_facts": [
+        "white ponni is susceptible to blast; care in plant protection"
+      ]
+    },
+    {
+      "id": "R06",
+      "lang": "en",
+      "question": "How can I reduce BPH and leaffolder in my paddy without more sprays?",
+      "search_text": "rice BPH leaffolder avoid close planting light traps judicious irrigation",
+      "crops": [
+        "Rice"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "BPH",
+        "leaffolder"
+      ],
+      "key_facts": [
+        "avoid close planting, leave 30 cm space every 2.5 m, use irrigation water judiciously"
+      ]
+    },
+    {
+      "id": "R07",
+      "lang": "en",
+      "question": "How do I control fall armyworm in maize?",
+      "search_text": "fall armyworm control maize neem cake seed treatment",
+      "crops": [
+        "Maize"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Fall armyworm",
+        "neem cake"
+      ],
+      "key_facts": [
+        "neem cake 250 kg/ha at the last ploughing and seed treatment"
+      ]
+    },
+    {
+      "id": "R08",
+      "lang": "en",
+      "question": "What spacing should I keep for maize?",
+      "search_text": "maize spacing between plants and rows",
+      "crops": [
+        "Maize"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "25 cm between plants",
+        "60 cm apart"
+      ],
+      "key_facts": [
+        "25 cm between plants in rows 60 cm apart"
+      ]
+    },
+    {
+      "id": "R09",
+      "lang": "tanglish",
+      "question": "maize ku thrips vanthaal enna pannanum?",
+      "search_text": "thrips in maize control carbofuran",
+      "crops": [
+        "Maize"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Thrips",
+        "carbofuran"
+      ],
+      "key_facts": [
+        "carbofuran 3CG 33.3 kg/ha as the TNAU text states"
+      ]
+    },
+    {
+      "id": "R10",
+      "lang": "en",
+      "question": "Which maize hybrids are recommended for the Thaipattam season in Vellore?",
+      "search_text": "maize hybrids agro ecological zone districts season Thaipattam Vellore",
+      "crops": [
+        "Maize"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Thaipattam",
+        "Hybrids"
+      ],
+      "key_facts": [
+        "north eastern zone Jan-Feb (Thaipattam) hybrids"
+      ]
+    },
+    {
+      "id": "R11",
+      "lang": "en",
+      "question": "How many maize plants per square metre should I aim for?",
+      "search_text": "maize plant population per square metre varieties and hybrids baby corn",
+      "crops": [
+        "Maize"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "6\\s*\\W\\s*7 plants",
+        "baby corn"
+      ],
+      "key_facts": [
+        "6 to 7 plants per sq m for varieties and hybrids; 8 to 9 for baby corn"
+      ]
+    },
+    {
+      "id": "R12",
+      "lang": "en",
+      "question": "What should I spray for sigatoka leaf spot in banana?",
+      "search_text": "sigatoka leaf spot banana remove affected leaves spray carbendazim mancozeb",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Sigatoka",
+        "carbendazim"
+      ],
+      "key_facts": [
+        "remove and burn affected leaves; carbendazim 1 g/l or mancozeb 2 g/l as the TNAU text states"
+      ]
+    },
+    {
+      "id": "R13",
+      "lang": "en",
+      "question": "What is the fertigation schedule for banana?",
+      "search_text": "banana fertigation N P2O5 K2O per plant water per day",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "Fertigation",
+        "200:30:300"
+      ],
+      "key_facts": [
+        "200:30:300 g N:P2O5:K2O per plant with 25 litres of water per day"
+      ]
+    },
+    {
+      "id": "R14",
+      "lang": "en",
+      "question": "How can I manage panama wilt and nematodes in banana?",
+      "search_text": "panama wilt nematode complex banana drip planting",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "panama wilt"
+      ],
+      "key_facts": [
+        "a planting method through the drip system to manage panama wilt and the nematode complex"
+      ]
+    },
+    {
+      "id": "R15",
+      "lang": "en",
+      "question": "How do I protect banana bunches from sun scald?",
+      "search_text": "banana bunch cover with banana leaves sun scald flag leaf stalk end rot",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Cover the bunches",
+        "sun scald"
+      ],
+      "key_facts": [
+        "cover bunches with banana leaves; cover the peduncle with the flag leaf"
+      ]
+    },
+    {
+      "id": "R16",
+      "lang": "en",
+      "question": "How do I control banana rhizome weevil?",
+      "search_text": "banana rhizome weevil Cosmopolites sordidus control",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Weevil",
+        "Cosmopolites"
+      ],
+      "key_facts": [
+        "rhizome weevil Cosmopolites sordidus and pseudostem weevil Odiporus longicollis are the listed weevils"
+      ]
+    },
+    {
+      "id": "R17",
+      "lang": "ta",
+      "question": "வாழையில் இலைப்புள்ளி நோய்க்கு என்ன மருந்து தெளிக்கலாம்?",
+      "search_text": "sigatoka leaf spot banana remove affected leaves spray carbendazim mancozeb",
+      "crops": [
+        "Banana"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Sigatoka",
+        "carbendazim"
+      ],
+      "key_facts": [
+        "same as R12"
+      ]
+    },
+    {
+      "id": "R18",
+      "lang": "en",
+      "question": "How much gypsum should I apply to groundnut?",
+      "search_text": "groundnut gypsum soil application 45th day sulphur deficiency",
+      "crops": [
+        "Groundnut"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "gypsum",
+        "45 DAS|45th day|kg/ha"
+      ],
+      "key_facts": [
+        "gypsum 400 kg/ha as soil application on the 45th day after sowing"
+      ],
+      "evidence_note": "regex widened after reading the top results: the TNAU text states the same fact in another notation (ZnSO4, 'S as gypsum', lower-case borax, 'spacing of ... cm')"
+    },
+    {
+      "id": "R19",
+      "lang": "en",
+      "question": "What ridge spacing is used for groundnut sowing?",
+      "search_text": "groundnut ridges and furrows 60 cm spacing sowing on both sides raised bed",
+      "crops": [
+        "Groundnut"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Ridges and furrows",
+        "60cm"
+      ],
+      "key_facts": [
+        "ridges and furrows at 60 cm, sowing on both sides, or a raised bed"
+      ]
+    },
+    {
+      "id": "R20",
+      "lang": "tanglish",
+      "question": "kadalai kaai storage la carbendazim eppadi podanum?",
+      "search_text": "groundnut pods storage pre-storage seed treatment carbendazim per kg",
+      "crops": [
+        "Groundnut"
+      ],
+      "intent": "post_harvest",
+      "policy": "answer",
+      "evidence": [
+        "carbendazim",
+        "pods",
+        "storage"
+      ],
+      "key_facts": [
+        "treat the pods with carbendazim 2 g/kg at 6 to 7 per cent moisture"
+      ]
+    },
+    {
+      "id": "R21",
+      "lang": "en",
+      "question": "Which groundnut variety tolerates late leaf spot and rust?",
+      "search_text": "groundnut variety moderately resistant to late leaf spot rust PBND",
+      "crops": [
+        "Groundnut"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "late leaf spot",
+        "rust"
+      ],
+      "key_facts": [
+        "a listed variety is moderately resistant to late leaf spot, rust and PBND"
+      ]
+    },
+    {
+      "id": "R22",
+      "lang": "en",
+      "question": "How much borax for groundnut?",
+      "search_text": "groundnut borax 10 kg micronutrient application",
+      "crops": [
+        "Groundnut"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "borax"
+      ],
+      "key_facts": [
+        "borax 10 kg as in the TNAU micronutrient recommendation"
+      ],
+      "evidence_note": "regex widened after reading the top results: the TNAU text states the same fact in another notation (ZnSO4, 'S as gypsum', lower-case borax, 'spacing of ... cm')"
+    },
+    {
+      "id": "R23",
+      "lang": "en",
+      "question": "How should I treat sugarcane setts with biofertilizers?",
+      "search_text": "sugarcane sett treatment biofertilizers Azospirillum phosphobacteria slurry",
+      "crops": [
+        "Sugarcane"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Sett treatment",
+        "Azospirillum"
+      ],
+      "key_facts": [
+        "slurry with Azospirillum or Gluconacetobacter and phosphobacteria for sett treatment"
+      ]
+    },
+    {
+      "id": "R24",
+      "lang": "en",
+      "question": "What row spacing is used for sugarcane planting?",
+      "search_text": "sugarcane ridges and furrows spacing 80 cm between rows planting",
+      "crops": [
+        "Sugarcane"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "between rows|row spacing|spacing of|apart",
+        "cm"
+      ],
+      "key_facts": [
+        "ridges and furrows 80 cm apart"
+      ],
+      "evidence_note": "regex widened after reading the top results: the TNAU text states the same fact in another notation (ZnSO4, 'S as gypsum', lower-case borax, 'spacing of ... cm')"
+    },
+    {
+      "id": "R25",
+      "lang": "en",
+      "question": "Which sugarcane variety is moderately resistant to red rot?",
+      "search_text": "sugarcane variety reaction to red rot moderately resistant",
+      "crops": [
+        "Sugarcane"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "red rot",
+        "Moderately resistant"
+      ],
+      "key_facts": [
+        "a listed variety is moderately resistant to red rot"
+      ]
+    },
+    {
+      "id": "R26",
+      "lang": "ta",
+      "question": "கரும்பில் தண்டுப்புழு தாக்குதலைத் தாங்கும் ரகம் எது?",
+      "search_text": "sugarcane variety less susceptible to borer",
+      "crops": [
+        "Sugarcane"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Less susceptible to borer"
+      ],
+      "key_facts": [
+        "a listed variety is less susceptible to borer"
+      ]
+    },
+    {
+      "id": "R27",
+      "lang": "en",
+      "question": "How do I control fruit borer in chilli?",
+      "search_text": "chilli fruit borer integrated pest management pheromone traps Helicoverpa",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Helicoverpa",
+        "12 no"
+      ],
+      "key_facts": [
+        "pheromone traps 12 per ha and the listed IPM steps"
+      ]
+    },
+    {
+      "id": "R28",
+      "lang": "en",
+      "question": "What spacing should I use for chilli varieties and hybrids?",
+      "search_text": "chilli spacing varieties hybrids weed control pendimethalin",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "60 x 45",
+        "75 x 60"
+      ],
+      "key_facts": [
+        "varieties 60 x 45 cm; hybrids 75 x 60 cm"
+      ]
+    },
+    {
+      "id": "R29",
+      "lang": "en",
+      "question": "What is the fertilizer dose for chilli?",
+      "search_text": "chilli fertilizer 120:80:80 kg per hectare crop stage fertigation",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "120:80:80"
+      ],
+      "key_facts": [
+        "120:80:80 kg per ha with the stage-wise fertigation table"
+      ]
+    },
+    {
+      "id": "R30",
+      "lang": "en",
+      "question": "How do I prevent damping off in my chilli nursery?",
+      "search_text": "chilli damping off Pythium nursery management",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "damping off"
+      ],
+      "key_facts": [
+        "the nursery measures in the TNAU text"
+      ]
+    },
+    {
+      "id": "R31",
+      "lang": "en",
+      "question": "My chilli leaves are curling upward and the plants are stunted. What is it?",
+      "search_text": "chilli leaf curl leaves curl towards midrib stunted viral disease aphid",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Leaf curl"
+      ],
+      "key_facts": [
+        "leaf curl virus; border crop to restrict aphid vectors"
+      ]
+    },
+    {
+      "id": "R32",
+      "lang": "tanglish",
+      "question": "milagai la fruit rot dieback vanthaal enna seiyanum?",
+      "search_text": "chilli fruit rot and die back Colletotrichum capsici",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Fruit Rot",
+        "Colletotrichum"
+      ],
+      "key_facts": [
+        "fruit rot and die back is caused by Colletotrichum capsici"
+      ]
+    },
+    {
+      "id": "R33",
+      "lang": "en",
+      "question": "How do I manage powdery mildew in chilli?",
+      "search_text": "chilli powdery mildew Leveillula taurica",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Powdery mildew",
+        "Leveillula"
+      ],
+      "key_facts": [
+        "powdery mildew of chilli is caused by Leveillula taurica"
+      ]
+    },
+    {
+      "id": "R34",
+      "lang": "en",
+      "question": "How do I prepare a chilli nursery with cocopeat?",
+      "search_text": "chilli protected nursery cocopeat neem cake Azospirillum phosphobacteria protrays",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "cocopeat"
+      ],
+      "key_facts": [
+        "sterilised cocopeat with neem cake, Azospirillum and phosphobacteria"
+      ]
+    },
+    {
+      "id": "R35",
+      "lang": "en",
+      "question": "What spacing should I use for blackgram?",
+      "search_text": "blackgram spacing irrigated rainfed dibble seeds",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "30 x 10",
+        "25 cm x 10"
+      ],
+      "key_facts": [
+        "irrigated 30 x 10 cm; rainfed 25 x 10 cm"
+      ]
+    },
+    {
+      "id": "R36",
+      "lang": "en",
+      "question": "Which blackgram varieties resist yellow mosaic?",
+      "search_text": "blackgram variety resistant to yellow mosaic virus MYMV",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Yellow Mosaic",
+        "Resistant"
+      ],
+      "key_facts": [
+        "listed varieties are resistant to MYMV and leaf crinkle"
+      ]
+    },
+    {
+      "id": "R37",
+      "lang": "tanglish",
+      "question": "ulundu seed ku rhizobium eppadi treat pannanum?",
+      "search_text": "blackgram seed treatment Rhizobial culture phosphobacteria per hectare",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Rhizobial",
+        "Phosphobacteria"
+      ],
+      "key_facts": [
+        "200 g each of rhizobial culture and phosphobacteria for the seed required for 1 ha"
+      ]
+    },
+    {
+      "id": "R38",
+      "lang": "en",
+      "question": "When should I spray DAP on blackgram?",
+      "search_text": "blackgram foliar spray 2% DAP flowering",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "2% DAP"
+      ],
+      "key_facts": [
+        "foliar spray of 2% DAP as the TNAU text recommends"
+      ]
+    },
+    {
+      "id": "R39",
+      "lang": "en",
+      "question": "How do I reduce flower drop in blackgram?",
+      "search_text": "blackgram flower drop NAA 40 mg per litre pre-flowering",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "NAA 40"
+      ],
+      "key_facts": [
+        "NAA 40 mg/litre at pre-flowering and 15 days later"
+      ]
+    },
+    {
+      "id": "R40",
+      "lang": "en",
+      "question": "How often should blackgram be irrigated?",
+      "search_text": "blackgram irrigation immediately after sowing life irrigation third day intervals",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "irrigation",
+      "policy": "answer",
+      "evidence": [
+        "Irrigate immediately after sowing"
+      ],
+      "key_facts": [
+        "irrigate after sowing, life irrigation on the third day, then at intervals"
+      ]
+    },
+    {
+      "id": "R41",
+      "lang": "en",
+      "question": "What is the economic threshold level for aphids in blackgram?",
+      "search_text": "blackgram pest management economic threshold level aphids pod borer",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Economic threshold level",
+        "Aphids"
+      ],
+      "key_facts": [
+        "aphids ETL 20 nos per 2.5 cm shoot length as the TNAU table states"
+      ]
+    },
+    {
+      "id": "R42",
+      "lang": "en",
+      "question": "How do I manage powdery mildew in blackgram?",
+      "search_text": "blackgram powdery mildew Erysiphe polygoni",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Powdery Mildew",
+        "Erysiphe"
+      ],
+      "key_facts": [
+        "powdery mildew of blackgram is caused by Erysiphe polygoni"
+      ]
+    },
+    {
+      "id": "R43",
+      "lang": "en",
+      "question": "What dose of gypsum is needed?",
+      "search_text": "gypsum dose sulphur deficiency soil application",
+      "crops": [
+        "Groundnut",
+        "Cotton",
+        "Rice",
+        "Maize",
+        "Sugarcane"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "gypsum"
+      ],
+      "key_facts": [
+        "no crop is named: any crop with a gypsum recommendation is acceptable, and the answer should say which crop it applies to"
+      ]
+    },
+    {
+      "id": "R44",
+      "lang": "en",
+      "question": "What is the seed treatment before sowing pulses?",
+      "search_text": "seed treatment before sowing carbendazim thiram per kg of seed pulses",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Carbendazim or Thiram",
+        "2 g/kg"
+      ],
+      "key_facts": [
+        "carbendazim or thiram 2 g/kg of seed 24 hours before sowing"
+      ]
+    },
+    {
+      "id": "R45",
+      "lang": "en",
+      "question": "How do I control thrips in chilli?",
+      "search_text": "chilli thrips Scirtothrips dorsalis management intercrop agathi imidacloprid seed treatment",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "thrips",
+        "agathi|imidacloprid"
+      ],
+      "key_facts": [
+        "intercrop with agathi for shade; avoid chilli after sorghum; seed treatment imidacloprid 70% WS 12 g/kg; foliar options listed with doses"
+      ],
+      "added_with": "TNAU chilli pest pages"
+    },
+    {
+      "id": "R46",
+      "lang": "tanglish",
+      "question": "milagai ilai suruttu aphid pesti enna seiyanum?",
+      "search_text": "chilli green peach aphid Myzus persicae leaves curled sticky honeydew management",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "aphid",
+        "honeydew|Myzus"
+      ],
+      "key_facts": [
+        "pale sticky plants, curled leaves, honeydew and sooty mould; seed treatment and sprays listed"
+      ],
+      "added_with": "TNAU chilli pest pages"
+    },
+    {
+      "id": "R47",
+      "lang": "en",
+      "question": "My chilli leaves curl downward and plants are stunted. Could it be mites?",
+      "search_text": "chilli yellow mite Polyphagotarsonemus latus downward curling crinkling leaves stunted",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "mite",
+        "Downward curling"
+      ],
+      "key_facts": [
+        "yellow mite causes downward curling and crinkling of leaves, elongated petiole, stunted growth"
+      ],
+      "added_with": "TNAU chilli pest pages"
+    },
+    {
+      "id": "R48",
+      "lang": "en",
+      "question": "How do I manage tobacco cutworm in chilli?",
+      "search_text": "chilli tobacco cutworm Spodoptera litura management pheromone trap SINPV egg masses",
+      "crops": [
+        "Chilli"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Spodoptera litura",
+        "pheromone"
+      ],
+      "key_facts": [
+        "plough to expose pupae, castor trap crop, pheromone trap, destroy egg masses, SINPV in the evening"
+      ],
+      "added_with": "TNAU chilli pest pages"
+    },
+    {
+      "id": "R49",
+      "lang": "en",
+      "question": "How do I control whitefly in blackgram?",
+      "search_text": "blackgram whitefly Bemisia tabaci symptoms management",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Whitefly",
+        "Bemisia"
+      ],
+      "key_facts": [
+        "the TNAU whitefly page for black and green gram"
+      ],
+      "added_with": "TNAU blackgram pest pages"
+    },
+    {
+      "id": "R50",
+      "lang": "en",
+      "question": "What does the spotted pod borer do to blackgram and how is it managed?",
+      "search_text": "blackgram spotted pod borer Maruca testulalis damage management",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Maruca"
+      ],
+      "key_facts": [
+        "the TNAU spotted pod borer page for black and green gram"
+      ],
+      "added_with": "TNAU blackgram pest pages"
+    },
+    {
+      "id": "R51",
+      "lang": "ta",
+      "question": "உளுந்தில் காய்ப்புழுவை எப்படி கட்டுப்படுத்துவது?",
+      "search_text": "blackgram gram pod borer Helicoverpa armigera management",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Helicoverpa",
+        "pod borer"
+      ],
+      "key_facts": [
+        "the TNAU gram pod borer page for black and green gram"
+      ],
+      "added_with": "TNAU blackgram pest pages"
+    },
+    {
+      "id": "R52",
+      "lang": "en",
+      "question": "How do I deal with blister beetles in blackgram?",
+      "search_text": "blackgram blister beetle Mylabris phalerata",
+      "crops": [
+        "Blackgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Mylabris|blister beetle"
+      ],
+      "key_facts": [
+        "the TNAU blister beetle page for black and green gram"
+      ],
+      "added_with": "TNAU blackgram pest pages"
+    },
+    {
+      "id": "A01",
+      "lang": "en",
+      "question": "How do I grow papaya from seed?",
+      "search_text": "papaya cultivation from seed",
+      "crops": [],
+      "intent": "crop_management",
+      "policy": "abstain",
+      "note": "papaya is not one of the covered crops"
+    },
+    {
+      "id": "A02",
+      "lang": "en",
+      "question": "My mango tree is not flowering. What should I do?",
+      "search_text": "mango tree not flowering",
+      "crops": [],
+      "intent": "crop_management",
+      "policy": "abstain",
+      "note": "mango is not covered"
+    },
+    {
+      "id": "A04",
+      "lang": "tanglish",
+      "question": "cashew maram pruning eppadi seyvathu?",
+      "search_text": "cashew tree pruning",
+      "crops": [],
+      "intent": "crop_management",
+      "policy": "abstain",
+      "note": "cashew is not covered"
+    },
+    {
+      "id": "A05",
+      "lang": "ta",
+      "question": "ரப்பர் மரத்தில் பால் எடுக்க சிறந்த காலம் எது?",
+      "search_text": "rubber tree tapping best season",
+      "crops": [],
+      "intent": "crop_management",
+      "policy": "abstain",
+      "note": "rubber is not covered"
+    },
+    {
+      "id": "A06",
+      "lang": "en",
+      "question": "What is the market price of chilli in Virudhunagar today?",
+      "search_text": "chilli market price today Virudhunagar",
+      "crops": [],
+      "intent": "price",
+      "policy": "abstain",
+      "note": "the knowledge base holds no live prices"
+    },
+    {
+      "id": "A07",
+      "lang": "en",
+      "question": "Which pesticide brand is registered for blackgram this year?",
+      "search_text": "pesticide brand registered for blackgram this year",
+      "crops": [],
+      "intent": "pesticide",
+      "policy": "abstain",
+      "note": "no pesticide registry is held"
+    },
+    {
+      "id": "A08",
+      "lang": "en",
+      "question": "How much fertilizer does tea need per acre?",
+      "search_text": "tea fertilizer per acre",
+      "crops": [],
+      "intent": "fertilizer",
+      "policy": "abstain",
+      "note": "tea is not covered"
+    },
+    {
+      "id": "C01",
+      "lang": "en",
+      "question": "my crop is sick",
+      "search_text": "my crop is sick",
+      "crops": [],
+      "intent": "unknown",
+      "policy": "clarify"
+    },
+    {
+      "id": "C02",
+      "lang": "en",
+      "question": "what fertilizer should I use",
+      "search_text": "what fertilizer should I use",
+      "crops": [],
+      "intent": "fertilizer",
+      "policy": "clarify"
+    },
+    {
+      "id": "C03",
+      "lang": "en",
+      "question": "help",
+      "search_text": "help",
+      "crops": [],
+      "intent": "unknown",
+      "policy": "clarify"
+    },
+    {
+      "id": "C04",
+      "lang": "ta",
+      "question": "என் பயிர் சரியில்லை",
+      "search_text": "my crop is not good",
+      "crops": [],
+      "intent": "unknown",
+      "policy": "clarify"
+    },
+    {
+      "id": "C05",
+      "lang": "tanglish",
+      "question": "payir nalla illa enna pannalam",
+      "search_text": "crop is not good what to do",
+      "crops": [],
+      "intent": "unknown",
+      "policy": "clarify"
+    },
+    {
+      "id": "C06",
+      "lang": "en",
+      "question": "what to do",
+      "search_text": "what to do",
+      "crops": [],
+      "intent": "unknown",
+      "policy": "clarify"
+    }
+  ],
+  "note_removed": "A03 (wheat sowing time in Tamil Nadu, expected to abstain) was removed on 2026-10-16: wheat was added to the knowledge base in Batch A, so the expectation no longer holds. Replaced by A10 in batchA_eval.json."
+}

@@ -1,0 +1,789 @@
+{
+  "description": "Batch A (TNAU Crop Production Guide 2020 pages added after approval). Same schema as retrieval_eval.json. Written AFTER reading the ingested chunks; each evidence regex points at text that exists in a chunk of that crop (checked by tests/test_retrieval_eval.py). Stage 1 = sorghum, cumbu, ragi, wheat; stage 2 = pulses; stage 3 = tomato.",
+  "questions": [
+    {
+      "id": "M01",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How can transplanting reduce shoot fly in sorghum?",
+      "search_text": "sorghum transplanting seedlings shoot fly direct sown crop first 3 weeks",
+      "crops": [
+        "Sorghum"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Shoot fly",
+        "transplant"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M02",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What seed rate should I use for pure sorghum?",
+      "search_text": "sorghum seed rate pure crop 10 kg per ha",
+      "crops": [
+        "Sorghum"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "seed rate",
+        "10\\s*kg/ha"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M03",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "cholam ku blanket fertilizer recommendation evlo?",
+      "search_text": "sorghum transplanted crop blanket recommendation N P K fertilizers",
+      "crops": [
+        "Sorghum"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "blanket recommendation"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M04",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I manage downy mildew in pearl millet with seed treatment?",
+      "search_text": "pearl millet cumbu downy mildew seed treatment metalaxyl 6 g per kg",
+      "crops": [
+        "Cumbu"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "metalaxyl",
+        "downy mildew"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M05",
+      "lang": "ta",
+      "group": "batchA",
+      "question": "கம்பில் எர்கட் நோயைத் தடுக்க விதையை உப்பு நீரில் எப்படி சுத்தம் செய்வது?",
+      "search_text": "pearl millet ergot sclerotia affected seeds float salt solution seed cleaning",
+      "crops": [
+        "Cumbu"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "ergot",
+        "salt"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M06",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What planting spacing is used for pearl millet seedlings?",
+      "search_text": "pearl millet cumbu transplanting spacing 45 x 15 cm",
+      "crops": [
+        "Cumbu"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "45 x 15"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M07",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I control blast in finger millet?",
+      "search_text": "finger millet ragi blast Pyricularia carbendazim spray",
+      "crops": [
+        "Ragi"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Blast",
+        "carbendazim"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M08",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "kelvaragu nadavu spacing evlo vaikanum?",
+      "search_text": "finger millet ragi transplanting spacing 30 x 10 cm seedlings age",
+      "crops": [
+        "Ragi"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "30\\s*x\\s*10"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M09",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How big should a ragi nursery be for one hectare?",
+      "search_text": "ragi nursery area for one hectare of main field cents super phosphate FYM",
+      "crops": [
+        "Ragi"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "12\\.5 cents"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M10",
+      "lang": "en",
+      "group": "batchA",
+      "question": "When should wheat be sown in Tamil Nadu?",
+      "search_text": "wheat ideal sowing time October November Tamil Nadu districts",
+      "crops": [
+        "Wheat"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "15th October"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "M11",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the seed rate for wheat?",
+      "search_text": "wheat seed rate kg per ha",
+      "crops": [
+        "Wheat"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "SEED RATE"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 1
+    },
+    {
+      "id": "B01",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the economic threshold for pod borers in redgram?",
+      "search_text": "redgram pest management economic threshold level pod borers aphids plume moth",
+      "crops": [
+        "Redgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Pod borers",
+        "ETL"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B02",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What spacing should I use for pure redgram?",
+      "search_text": "redgram pure crop spacing low fertility high fertility 45 cm x 30 cm",
+      "crops": [
+        "Redgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "45 cm x 30 cm"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B03",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I manage wilt in redgram?",
+      "search_text": "redgram wilt Fusarium udum P. fluorescens T. asperellum soil application",
+      "crops": [
+        "Redgram"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Wilt",
+        "udum"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B04",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "thuvarai nadavu eppo seiyanum long duration?",
+      "search_text": "redgram transplanting long duration varieties transplant within August poly bag",
+      "crops": [
+        "Redgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Transplant within the month of August"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B05",
+      "lang": "en",
+      "group": "batchA",
+      "question": "Which greengram varieties tolerate yellow mosaic?",
+      "search_text": "greengram variety moderately resistant to yellow mosaic and powdery mildew",
+      "crops": [
+        "Greengram"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Yellow Mosaic"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B06",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What foliar spray is used for greengram in rice fallow?",
+      "search_text": "greengram rice fallow foliar spray TNAU Pulse wonder DAP at flowering",
+      "crops": [
+        "Greengram"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "Pulse wonder"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B07",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I control rust in cowpea?",
+      "search_text": "cowpea rust Uromyces appendiculatus chlorothalonil spray",
+      "crops": [
+        "Cowpea"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Rust",
+        "chlorothalonil"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B08",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the stem fly threshold in cowpea?",
+      "search_text": "cowpea pest management ETL aphids spotted pod borer stem fly",
+      "crops": [
+        "Cowpea"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "ETL",
+        "Stem fly"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B09",
+      "lang": "ta",
+      "group": "batchA",
+      "question": "கொள்ளு பையூர் 2 ரகத்தின் விவரங்கள் என்ன?",
+      "search_text": "horsegram variety Paiyur 2 description year of release",
+      "crops": [
+        "Horsegram"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Paiyur 2"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B10",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I manage wilt in bengal gram?",
+      "search_text": "bengalgram chickpea wilt Fusarium oxysporum f. sp. ciceri P. fluorescens soil application",
+      "crops": [
+        "Bengalgram"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Fusarium oxysporum"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B11",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the seed rate for bengal gram variety CO 3?",
+      "search_text": "bengalgram seed rate CO 3 CO 4 kg per ha",
+      "crops": [
+        "Bengalgram"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "SEED RATE",
+        "90 kg/ha"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "B12",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "konda kadalai la gram caterpillar ku pheromone trap evlo?",
+      "search_text": "bengalgram Helicoverpa armigera gram caterpillar pheromone traps per ha bird perches",
+      "crops": [
+        "Bengalgram"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Pheromone traps",
+        "Helicoverpa"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 2
+    },
+    {
+      "id": "T01",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How many protrays and how much cocopeat for one hectare of tomato?",
+      "search_text": "tomato protray cocopeat seedlings one hectare spacing nursery",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "cocopeat",
+        "protray"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T02",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What mulch should I use in tomato?",
+      "search_text": "tomato mulching black LDPE sheet 25 micron thickness",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "black LDPE"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T03",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I stake tomato hybrids?",
+      "search_text": "tomato hybrids training staking 30 days after planting side branches",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Stake the plants"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T04",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "thakkali la aphid thrips ku enna spray?",
+      "search_text": "tomato aphid thrips insecticide cyantraniliprole thiamethoxam dose",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Aphid",
+        "Thrips"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T05",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the IPM package for tomato?",
+      "search_text": "IPM package for tomato seed treatment Pseudomonas fluorescens neem cake Trichoderma",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "IPM Package for Tomato"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T06",
+      "lang": "ta",
+      "group": "batchA",
+      "question": "தக்காளியில் இலை சுருட்டை நோய்க்கு மஞ்சள் ஒட்டுப்பொறி எத்தனை வைக்க வேண்டும்?",
+      "search_text": "tomato leaf curl yellow sticky traps per ha whitefly vector",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "sticky traps"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "T07",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What drip fertigation setup is used for tomato?",
+      "search_text": "tomato drip irrigation main sub main pipes laterals interval drippers superphosphate basal",
+      "crops": [
+        "Tomato"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "drip irrigation"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 3
+    },
+    {
+      "id": "O01",
+      "lang": "en",
+      "group": "batchA",
+      "question": "Can I mix biocontrol agents with fungicide in soybean seed treatment?",
+      "search_text": "soybean seed treatment Rhizobium biocontrol agents fungicides incompatible",
+      "crops": [
+        "Soybean"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Rhizobium",
+        "incompatible"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O02",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I coat soybean seeds with zinc sulphate?",
+      "search_text": "soybean seed coating ZnSO4 300 mg per kg maida",
+      "crops": [
+        "Soybean"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "ZnSO4",
+        "300 mg/kg"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O03",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What insecticide is used for girdle beetle in soybean?",
+      "search_text": "soybean girdle beetle insecticide profenophos thiacloprid",
+      "crops": [
+        "Soybean"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "Girdle beetle"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O04",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "soya bean eppo vidhaikkanum?",
+      "search_text": "soybean sowing season Adipattam Purattasipattam Masipattam rice fallow",
+      "crops": [
+        "Soybean"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "Adipattam|Purattasipattam"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O05",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What spacing is used for sesame?",
+      "search_text": "sesame spacing between rows and plants 30 cm thinning",
+      "crops": [
+        "Sesame"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "30 cm between rows"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O06",
+      "lang": "ta",
+      "group": "batchA",
+      "question": "எள்ளில் வேர் அழுகல் நோயை எப்படி கட்டுப்படுத்துவது?",
+      "search_text": "sesame root rot Macrophomina P. fluorescens T. asperellum soil application",
+      "crops": [
+        "Sesame"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Root rot",
+        "fluorescens"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O07",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is the threshold for shoot and capsule borer in sesame?",
+      "search_text": "sesame pest ETL shoot capsule borer larvae per m2 vegetative reproductive",
+      "crops": [
+        "Sesame"
+      ],
+      "intent": "pest",
+      "policy": "answer",
+      "evidence": [
+        "ETL",
+        "capsule borer"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "O08",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I sow sesame in rice fallow?",
+      "search_text": "sesame rice fallow broadcast seeds thinned 11 plants per m2",
+      "crops": [
+        "Sesame"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "11 plants/m2"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 4
+    },
+    {
+      "id": "P01",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What spacing should I use for castor hybrid YRCH 1?",
+      "search_text": "castor spacing 150 cm x 150 cm YRCH 1 irrigated clay soils TMV 5 60 x 30",
+      "crops": [
+        "Castor"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "150 cm x 150 cm"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P02",
+      "lang": "en",
+      "group": "batchA",
+      "question": "What is nipping in perennial castor?",
+      "search_text": "castor perennial variety YTP 1 nipping primary shoot 10th internode secateurs productive branches",
+      "crops": [
+        "Castor"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "nipping of primary shoot"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P03",
+      "lang": "tanglish",
+      "group": "batchA",
+      "question": "aamanakku la semilooper ku resistant variety edhu?",
+      "search_text": "castor variety resistant to semilooper capsule borer leaf hopper",
+      "crops": [
+        "Castor"
+      ],
+      "intent": "variety",
+      "policy": "answer",
+      "evidence": [
+        "Semilooper"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P04",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How far apart should sunflower ridges be?",
+      "search_text": "sunflower ridges and furrows 60 cm spacing bund former irrigation channels",
+      "crops": [
+        "Sunflower"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "60 cm spacing"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P05",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How do I control Alternaria leaf spot in sunflower?",
+      "search_text": "sunflower disease management Alternaria helianthi leaf spot mancozeb carbendazim seed treatment",
+      "crops": [
+        "Sunflower"
+      ],
+      "intent": "disease",
+      "policy": "answer",
+      "evidence": [
+        "Alternaria",
+        "mancozeb"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P06",
+      "lang": "en",
+      "group": "batchA",
+      "question": "How many bee hives help sunflower seed setting?",
+      "search_text": "sunflower improving seed set bee hives per ha pollen shedding",
+      "crops": [
+        "Sunflower"
+      ],
+      "intent": "crop_management",
+      "policy": "answer",
+      "evidence": [
+        "bee hives at the rate of 5/ha"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    },
+    {
+      "id": "P07",
+      "lang": "ta",
+      "group": "batchA",
+      "question": "சூரியகாந்தியில் போரான் குறைபாட்டுக்கு என்ன செய்வது?",
+      "search_text": "sunflower borax boric acid 0.2 percent boron deficiency gypsum sulphur",
+      "crops": [
+        "Sunflower"
+      ],
+      "intent": "fertilizer",
+      "policy": "answer",
+      "evidence": [
+        "Borax|boric acid"
+      ],
+      "region": "Tamil Nadu",
+      "stage": 5
+    }
+  ],
+  "known_gap": "Wheat STCR equations (guide p136) are numeric tables that fail the chunker's text-quality filter and are not in the knowledge base. A12 was removed from this set for that reason; the rows could be added to app/stcr.py PRESETS after verification."
+}

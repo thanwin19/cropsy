@@ -1,0 +1,197 @@
+[
+ {
+  "id": "Q01",
+  "q": "wheat seed rate per hectare",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['136'], expected ['134']"
+  ],
+  "answer": "For wheat, the seed rate is 100 kg/ha as per TNAU guidelines. Sow seeds to a depth of 5 cm after applying fertilizers, keeping lines 20 cm apart.",
+  "pages": [
+   "136"
+  ]
+ },
+ {
+  "id": "Q02",
+  "q": "bengal gram seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "For Bengalgram, the seed rate is 90 kg/ha for CO 3 and 75 kg/ha for CO 4. Use 90 kg/ha of CO 3 seeds or 75 kg/ha of CO 4 seeds per hectare.",
+  "pages": [
+   "173"
+  ]
+ },
+ {
+  "id": "Q03",
+  "q": "What is the seed rate for cowpea?",
+  "ok": true,
+  "why": [],
+  "answer": "Evidence not available in current knowledge base for the seed rate of cowpea in Tamil Nadu.",
+  "pages": []
+ },
+ {
+  "id": "Q04",
+  "q": "pearl millet seed rate",
+  "ok": false,
+  "why": [
+   "values: missing ['7\\\\.5 cents?'] forbidden-hit []"
+  ],
+  "answer": "Use 5 kg of cumbu seeds per hectare to achieve the optimum population of 1,45,000 per ha. Increase the seed rate up to 12.5 kg per hectare in shoot fly endemic areas. Soaking cumbu seeds in 2% Potassium chloride (KCl) or 3% Sodium Chloride (NaCl) for 16 hours followed by 5 hours shade drying improves germination and stand. Adopt a spacing of 45 x 15 cm for cumbu. If pulse is intercropped, adopt a ",
+  "pages": [
+   "98"
+  ]
+ },
+ {
+  "id": "Q05",
+  "q": "கம்பு விதை அளவு எவ்வளவு",
+  "ok": false,
+  "why": [
+   "values: missing [] forbidden-hit ['3\\\\.75\\\\s*கிலோ\\\\s*முதல்\\\\s*12\\\\.5']"
+  ],
+  "answer": "கும்பு விதைகளுக்கு ஒரு எக்டருக்கு **3.75 கிலோ முதல் 12.5 கிலோ** வரை விதை தேவைப்படுகிறது. சுட்டு பூச்சி பரவலான பகுதிகளில் **12.5 கிலோ/எக்டேர்** விதை பயன்படுத்த வேண்டும். விதைகளை **1 செண்டுக்கு 0.5 கிலோ** விதை வீதம் விதைக்கவும் (7.5 செண்டுகள் = 3.75 கிலோ). விதைகளை **1 செமீ ஆழத்தில்** மட்டுமே விதைக்கவும். ஆழமாக விதைக்காமல் கவனிக்கவும். விதை வீதத்தை **சுட்டு பூச்சி பரவலான பகுதிகளில் 12.5 கிலோ/எக்டேர்*",
+  "pages": [
+   "95"
+  ]
+ },
+ {
+  "id": "Q06",
+  "q": "ragi blast spray dose",
+  "ok": true,
+  "why": [],
+  "answer": "To manage ragi blast, spray carbendazim @ 500 g/ha immediately after symptom development and repeat at flowering stage and 15 days later. Spray carbendazim @ 500 g/ha immediately after symptom development. Repeat the spray at the flowering stage. Apply another spray 15 days after the second application.",
+  "pages": [
+   "113"
+  ]
+ },
+ {
+  "id": "Q07",
+  "q": "cowpea spacing",
+  "ok": false,
+  "why": [
+   "values: missing ['30\\\\s*cm', '10\\\\s*cm'] forbidden-hit []",
+   "citation: cited pages [], expected ['167']",
+   "behaviour: got no_info, expected answer"
+  ],
+  "answer": "Evidence not available in current knowledge base for cowpea spacing in Tamil Nadu.",
+  "pages": []
+ },
+ {
+  "id": "Q08",
+  "q": "What is the sowing time for wheat?",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['136'], expected ['134']"
+  ],
+  "answer": "The ideal sowing time for wheat in Tamil Nadu is between 15th October to the 1st week of November. Sowing must be completed within the first fortnight of November. Sow wheat seeds continuously after application of fertilizers to a depth of 5 cm, lines 20 cm apart.",
+  "pages": [
+   "136"
+  ]
+ },
+ {
+  "id": "Q09",
+  "q": "uram evlo podanum nel ku",
+  "ok": true,
+  "why": [],
+  "answer": "For rice, apply a blanket recommendation of 75:25:37.5 kg N:P2O5:K2O per hectare. Apply a basal dose of 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha). Apply N & K in three splits at 20-25, 40-45 and 60-65 days after germination. Apply 750 kg of FYM enriched with fertilizer phosphorus (P at 25 kg/ha) at the time of transplanting. Apply N & K in three splits at 20-25, 40-45 and 6",
+  "pages": [
+   "48"
+  ]
+ },
+ {
+  "id": "Q10",
+  "q": "ulundhu pooch marundhu",
+  "ok": true,
+  "why": [],
+  "answer": "Use Chlorantraniliprole 18.5% SC @ 150 ml/ha or Flubendiamide 39.35% SC @ 100ml/ha for pest control in ulundhu Spray Chlorantraniliprole 18.5% SC @ 150 ml/ha or Flubendiamide 39.35% SC @ 100ml/ha to control pests in ulundhu",
+  "pages": [
+   "152"
+  ]
+ },
+ {
+  "id": "Q11",
+  "q": "wheat seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "For wheat, adopt a spacing of 45 cm between rows and 15 cm between plants. This is recommended for a pure crop of varieties/hybrids. Sow seeds continuously after applying fertilizers, maintaining a depth of 5 cm and keeping lines 20 cm apart.",
+  "pages": [
+   "136"
+  ]
+ },
+ {
+  "id": "Q12",
+  "q": "TM-999 satellite",
+  "ok": true,
+  "why": [],
+  "answer": "I could not find that parcel. The demo village (Then Malai) has parcels TM-01 to TM-120 (dummy data): pick one on the map or type a valid id such as TM-05.",
+  "pages": []
+ },
+ {
+  "id": "Q13",
+  "q": "what is the price of tomato today",
+  "ok": true,
+  "why": [],
+  "answer": "Market price:\n1. Cropsy does not hold today's market (mandi) prices, so it will not quote one. For a live price, look at your nearest market's board, the Agmarknet site (agmarknet.gov.in) or the eNAM portal (enam.gov.in).",
+  "pages": []
+ },
+ {
+  "id": "Q14",
+  "q": "wheat sowing time",
+  "ok": true,
+  "why": [],
+  "answer": "Wheat sowing time in Tamil Nadu depends on the season and variety, but generally, it is sown in the Rabi season. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Soil Preparation: Ensure the soil is well-prepared by ploughing and harrowing. Aim for a fine tilth to ensure good seed-soil contact. Sowing Time: For most varieties, t",
+  "pages": []
+ },
+ {
+  "id": "Q15",
+  "q": "which fertilizer",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q16",
+  "q": "ground nut leaf spot",
+  "ok": false,
+  "why": [
+   "citation: cited pages ['206', 'Agricultural crops :: Oilseeds :: Groundnut'], expected ['206']"
+  ],
+  "answer": "Groundnut leaf spot is managed with foliar application of Mancozeb (0.3%) or Copper oxychloride (0.3%) or Carbendazim(0.1%). Spray Mancozeb @ 1000 g/ha or Carbendazim @ 500 g/ha or Copper oxychloride @ 1000 g/ha",
+  "pages": [
+   "206",
+   "Agricultural crops :: Oilseeds :: Groundnut"
+  ]
+ },
+ {
+  "id": "Q17",
+  "q": "how to grow brinjal",
+  "ok": true,
+  "why": [],
+  "answer": "Brinjal, or eggplant, is a popular vegetable crop in Tamil Nadu. It requires careful management of water, soil, planting, and pest control. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Use drip irrigation to save water and ensure even moisture distribution. Avoid overhead watering to reduce the risk of fungal diseases. Incor",
+  "pages": []
+ },
+ {
+  "id": "Q18",
+  "q": "TM-05 satellite health this week",
+  "ok": true,
+  "why": [],
+  "answer": "The latest satellite NDVI for your maize parcel (Hybrid CO 6, tasseling, 54 days after planting) is **0.2653** (measured on 2026-09-29), which is a normal value with no meaningful decrease compared to the baseline (0.272). This is a single-day measurement from the latest Sentinel-2 pass, not the monthly composite. (Note: parcel management data is dummy/simulated.) Check the lower leaves for yellow",
+  "pages": []
+ },
+ {
+  "id": "Q19",
+  "q": "what is the seed rate",
+  "ok": true,
+  "why": [],
+  "answer": "Which crop is this for? The amount depends on the crop, so tap one below (or pick a parcel on the map) and I will answer for that crop.",
+  "pages": []
+ },
+ {
+  "id": "Q20",
+  "q": "paddy sowing time in Kerala",
+  "ok": true,
+  "why": [],
+  "answer": "Paddy sowing in Kerala typically depends on the monsoon season and the specific variety of paddy being grown. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer. Prepare the soil well by ploughing and puddling to create a mud layer that helps retain water and suppress weeds. The ideal time for sowing paddy in Kerala is usually betw",
+  "pages": []
+ }
+]

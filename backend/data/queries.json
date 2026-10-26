@@ -1,0 +1,1013 @@
+[
+  {
+    "id": "Q01",
+    "language": "en",
+    "query": "Which growth stage is the crop in survey TM-03 and how many days after planting is it?",
+    "parcel_id": "TM-03",
+    "image": null,
+    "expected_route": "ROUTINE",
+    "expected_tools": [
+      "parcel_lookup",
+      "stage_calendar"
+    ],
+    "answer_must_contain": [
+      "stage",
+      "days_after_planting"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-03": {
+        "parcel_id": "TM-03",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Tillering",
+        "days_after_planting": 39,
+        "area_ha": 1.8,
+        "issue_code": "rice_narrow_brown_spot",
+        "issue": "Narrow brown leaf spot",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 10,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q02",
+    "language": "tanglish",
+    "query": "TM-11 maize ku ippo enna stage? Next enna pannanum?",
+    "parcel_id": "TM-11",
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "parcel_lookup",
+      "stage_calendar",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "stage"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-11": {
+        "parcel_id": "TM-11",
+        "crop": "Maize",
+        "variety": "Hybrid CO 6",
+        "stage": "Silking",
+        "days_after_planting": 70,
+        "area_ha": 6.54,
+        "issue_code": "healthy",
+        "issue": "Healthy crop",
+        "days_since_irrigation": 3,
+        "days_since_fertilizer": 15,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q03",
+    "language": "ta",
+    "query": "TM-14 வாழை நட்டு எத்தனை நாள் ஆகிறது? அடுத்த உரம் எப்போது இட வேண்டும்?",
+    "parcel_id": "TM-14",
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "parcel_lookup",
+      "stage_calendar",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "stage",
+      "days_after_planting"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-14": {
+        "parcel_id": "TM-14",
+        "crop": "Banana",
+        "variety": "Nendran",
+        "stage": "Vegetative",
+        "days_after_planting": 70,
+        "area_ha": 5.0,
+        "issue_code": "healthy",
+        "issue": "Healthy crop",
+        "days_since_irrigation": 2,
+        "days_since_fertilizer": 14,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q04",
+    "language": "en",
+    "query": "Calculate the urea, DAP and MOP quantity for the whole of TM-03 using the TNAU recommendation.",
+    "parcel_id": "TM-03",
+    "image": null,
+    "expected_route": "ROUTINE",
+    "expected_tools": [
+      "parcel_lookup",
+      "fertilizer_calculator",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "area_ha"
+    ],
+    "split": "dev",
+    "inject_failure": "unit_error_in_first_answer",
+    "tests": "verifier catches a wrong unit/number, retries once on Ministral 8B",
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-03": {
+        "parcel_id": "TM-03",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Tillering",
+        "days_after_planting": 39,
+        "area_ha": 1.8,
+        "issue_code": "rice_narrow_brown_spot",
+        "issue": "Narrow brown leaf spot",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 10,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q05",
+    "language": "en",
+    "query": "When was TM-02 last irrigated and is it due again?",
+    "parcel_id": "TM-02",
+    "image": null,
+    "expected_route": "ROUTINE",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather"
+    ],
+    "answer_must_contain": [
+      "days_since_irrigation"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-02": {
+        "parcel_id": "TM-02",
+        "crop": "Banana",
+        "variety": "Grand Naine",
+        "stage": "Bunch Development",
+        "days_after_planting": 271,
+        "area_ha": 0.95,
+        "issue_code": "banana_cordana",
+        "issue": "Cordana leaf spot",
+        "days_since_irrigation": 2,
+        "days_since_fertilizer": 14,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q06",
+    "language": "en",
+    "query": "Will it rain at TM-09 this week? Should I spray fungicide now?",
+    "parcel_id": "TM-09",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "forecast_rain"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-09": {
+        "parcel_id": "TM-09",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Panicle Initiation",
+        "days_after_planting": 54,
+        "area_ha": 7.2,
+        "issue_code": "rice_blast",
+        "issue": "Rice blast",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 12,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q07",
+    "language": "tanglish",
+    "query": "Naalaiku mazhai varuma? TM-13 la fertilizer podalama?",
+    "parcel_id": "TM-13",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "days_since_fertilizer",
+      "forecast_rain"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-13": {
+        "parcel_id": "TM-13",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Flowering",
+        "days_after_planting": 70,
+        "area_ha": 6.54,
+        "issue_code": "rice_sheath_blight",
+        "issue": "Sheath blight",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 16,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q08",
+    "language": "en",
+    "query": "Is TM-15 at risk from the coming rain?",
+    "parcel_id": "TM-15",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "zone",
+      "issue",
+      "forecast_rain"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-15": {
+        "parcel_id": "TM-15",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Tillering",
+        "days_after_planting": 105,
+        "area_ha": 6.54,
+        "issue_code": "cane_waterlogging_chlorosis",
+        "issue": "Waterlogging / iron chlorosis",
+        "days_since_irrigation": 5,
+        "days_since_fertilizer": 28,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q09",
+    "language": "en",
+    "query": "How do I manage sheath blight in rice?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Rice",
+    "facts": {}
+  },
+  {
+    "id": "Q10",
+    "language": "ta",
+    "query": "நெல்லில் குலை நோயை (blast) எப்படி கட்டுப்படுத்துவது?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Rice",
+    "facts": {}
+  },
+  {
+    "id": "Q11",
+    "language": "en",
+    "query": "What spacing and seed rate should I use for Co 86032 sugarcane?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Sugarcane",
+    "facts": {}
+  },
+  {
+    "id": "Q12",
+    "language": "tanglish",
+    "query": "Coconut ku potash eppo, evlo podanum?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Coconut",
+    "facts": {}
+  },
+  {
+    "id": "Q13",
+    "language": "en",
+    "query": "What is wrong with my paddy leaf?",
+    "parcel_id": "TM-09",
+    "image": "images/rice/rice_blast/rice_blast_041.jpg",
+    "expected_route": "VISUAL",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": "rice_blast",
+    "crop": null,
+    "facts": {
+      "TM-09": {
+        "parcel_id": "TM-09",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Panicle Initiation",
+        "days_after_planting": 54,
+        "area_ha": 7.2,
+        "issue_code": "rice_blast",
+        "issue": "Rice blast",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 12,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q14",
+    "language": "tanglish",
+    "query": "Intha karumbu ilai la red color irukku, enna problem?",
+    "parcel_id": "TM-04",
+    "image": "images/sugarcane/cane_red_rot/cane_red_rot_041.jpg",
+    "expected_route": "VISUAL",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": "cane_red_rot",
+    "crop": null,
+    "facts": {
+      "TM-04": {
+        "parcel_id": "TM-04",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Grand Growth",
+        "days_after_planting": 171,
+        "area_ha": 2.1,
+        "issue_code": "cane_red_rot",
+        "issue": "Red rot",
+        "days_since_irrigation": 5,
+        "days_since_fertilizer": 35,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q15",
+    "language": "en",
+    "query": "Is this serious? What should I spray?",
+    "parcel_id": "TM-05",
+    "image": "images/maize/maize_fall_armyworm/maize_fall_armyworm_041.jpg",
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": "maize_fall_armyworm",
+    "crop": null,
+    "facts": {
+      "TM-05": {
+        "parcel_id": "TM-05",
+        "crop": "Maize",
+        "variety": "Hybrid CO 6",
+        "stage": "Tasseling",
+        "days_after_planting": 54,
+        "area_ha": 1.25,
+        "issue_code": "maize_fall_armyworm",
+        "issue": "Fall armyworm",
+        "days_since_irrigation": 3,
+        "days_since_fertilizer": 12,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q16",
+    "language": "en",
+    "query": "Check this banana leaf and tell me the treatment.",
+    "parcel_id": "TM-06",
+    "image": "images/banana/banana_sigatoka/banana_sigatoka_041.jpg",
+    "expected_route": "VISUAL",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": "banana_sigatoka",
+    "crop": null,
+    "facts": {
+      "TM-06": {
+        "parcel_id": "TM-06",
+        "crop": "Banana",
+        "variety": "Nendran",
+        "stage": "Vegetative",
+        "days_after_planting": 136,
+        "area_ha": 1.1,
+        "issue_code": "banana_sigatoka",
+        "issue": "Sigatoka leaf spot",
+        "days_since_irrigation": 2,
+        "days_since_fertilizer": 20,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q17",
+    "language": "en",
+    "query": "Is my sugarcane healthy? Do I need to spray anything?",
+    "parcel_id": "TM-10",
+    "image": "images/sugarcane/healthy/healthy_041.jpg",
+    "expected_route": "VISUAL",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup"
+    ],
+    "answer_must_contain": [
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": "must NOT recommend an unnecessary spray on a healthy crop",
+    "expect_condition": "healthy",
+    "crop": null,
+    "facts": {
+      "TM-10": {
+        "parcel_id": "TM-10",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Grand Growth",
+        "days_after_planting": 216,
+        "area_ha": 6.54,
+        "issue_code": "healthy",
+        "issue": "Healthy crop",
+        "days_since_irrigation": 4,
+        "days_since_fertilizer": 30,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q18",
+    "language": "en",
+    "query": "TM-09 has blast lesions and rain is forecast. What should I do over the next 7 days?",
+    "parcel_id": "TM-09",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage",
+      "forecast_rain"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-09": {
+        "parcel_id": "TM-09",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Panicle Initiation",
+        "days_after_planting": 54,
+        "area_ha": 7.2,
+        "issue_code": "rice_blast",
+        "issue": "Rice blast",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 12,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q19",
+    "language": "en",
+    "query": "TM-13 is at flowering with sheath blight, heavy rain is coming and fertilizer was applied 10 days ago. Plan the next week.",
+    "parcel_id": "TM-13",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue",
+      "stage",
+      "forecast_rain"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-13": {
+        "parcel_id": "TM-13",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Flowering",
+        "days_after_planting": 70,
+        "area_ha": 6.54,
+        "issue_code": "rice_sheath_blight",
+        "issue": "Sheath blight",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 16,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q20",
+    "language": "ta",
+    "query": "TM-15 கரும்பு வயலில் இலை மஞ்சளாக உள்ளது, மழை வரப்போகிறது. என்ன செய்யலாம்?",
+    "parcel_id": "TM-15",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "weather",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "zone",
+      "issue",
+      "forecast_rain"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-15": {
+        "parcel_id": "TM-15",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Tillering",
+        "days_after_planting": 105,
+        "area_ha": 6.54,
+        "issue_code": "cane_waterlogging_chlorosis",
+        "issue": "Waterlogging / iron chlorosis",
+        "days_since_irrigation": 5,
+        "days_since_fertilizer": 28,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q21",
+    "language": "en",
+    "query": "Compare the yield history and current problems of TM-04 and TM-10 and suggest what to change this season.",
+    "parcel_id": "TM-04",
+    "image": null,
+    "expected_route": "COMPLEX",
+    "expected_tools": [
+      "parcel_lookup",
+      "history",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "issue"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-04": {
+        "parcel_id": "TM-04",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Grand Growth",
+        "days_after_planting": 171,
+        "area_ha": 2.1,
+        "issue_code": "cane_red_rot",
+        "issue": "Red rot",
+        "days_since_irrigation": 5,
+        "days_since_fertilizer": 35,
+        "zone": "valley"
+      },
+      "TM-10": {
+        "parcel_id": "TM-10",
+        "crop": "Sugarcane",
+        "variety": "Co 86032",
+        "stage": "Grand Growth",
+        "days_after_planting": 216,
+        "area_ha": 6.54,
+        "issue_code": "healthy",
+        "issue": "Healthy crop",
+        "days_since_irrigation": 4,
+        "days_since_fertilizer": 30,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q22",
+    "language": "en",
+    "query": "My banana leaves have big brown spots with a yellow halo. What is the treatment?",
+    "parcel_id": "TM-02",
+    "image": "images/banana/banana_cordana/banana_cordana_041.jpg",
+    "expected_route": "INSUFFICIENT",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "says_evidence_insufficient",
+      "refers_to_expert"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": "corpus has no TNAU advice for Cordana -> must NOT invent a dose",
+    "expect_condition": "banana_cordana",
+    "crop": null,
+    "facts": {
+      "TM-02": {
+        "parcel_id": "TM-02",
+        "crop": "Banana",
+        "variety": "Grand Naine",
+        "stage": "Bunch Development",
+        "days_after_planting": 271,
+        "area_ha": 0.95,
+        "issue_code": "banana_cordana",
+        "issue": "Cordana leaf spot",
+        "days_since_irrigation": 2,
+        "days_since_fertilizer": 14,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q23",
+    "language": "en",
+    "query": "What pesticide dose should I use for pink bollworm in cotton at TM-05?",
+    "parcel_id": "TM-05",
+    "image": null,
+    "expected_route": "OUT_OF_SCOPE",
+    "expected_tools": [
+      "parcel_lookup"
+    ],
+    "answer_must_contain": [
+      "crop_mismatch_flagged"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": "parcel grows maize; cotton is outside the corpus -> flag mismatch, do not answer from memory",
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-05": {
+        "parcel_id": "TM-05",
+        "crop": "Maize",
+        "variety": "Hybrid CO 6",
+        "stage": "Tasseling",
+        "days_after_planting": 54,
+        "area_ha": 1.25,
+        "issue_code": "maize_fall_armyworm",
+        "issue": "Fall armyworm",
+        "days_since_irrigation": 3,
+        "days_since_fertilizer": 12,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q24",
+    "language": "en",
+    "query": "How many parcels in Then Malai are growing rice, and what is their total area?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ROUTINE",
+    "expected_tools": [
+      "village_query"
+    ],
+    "answer_must_contain": [
+      "count",
+      "total_area_ha"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "rice_parcel_count": 29,
+      "rice_total_area_ha": 69.63
+    }
+  },
+  {
+    "id": "Q25",
+    "language": "en",
+    "query": "This is a photo of my paddy field. Which stage is it in and does it look healthy?",
+    "parcel_id": "TM-03",
+    "image": "images/rice/field_scene/rice_tm-03_wide_field.jpg",
+    "expected_route": "VISUAL",
+    "expected_tools": [
+      "vision_symptoms",
+      "image_retrieval",
+      "parcel_lookup",
+      "stage_calendar"
+    ],
+    "answer_must_contain": [
+      "crop",
+      "stage"
+    ],
+    "split": "unseen",
+    "inject_failure": null,
+    "tests": "wide field photo: crop from photo, stage from planting date, must NOT claim a confident disease diagnosis",
+    "expect_condition": "field_scene",
+    "crop": null,
+    "facts": {
+      "TM-03": {
+        "parcel_id": "TM-03",
+        "crop": "Rice",
+        "variety": "ADT 45",
+        "stage": "Tillering",
+        "days_after_planting": 39,
+        "area_ha": 1.8,
+        "issue_code": "rice_narrow_brown_spot",
+        "issue": "Narrow brown leaf spot",
+        "days_since_irrigation": 1,
+        "days_since_fertilizer": 10,
+        "zone": "valley"
+      }
+    }
+  },
+  {
+    "id": "Q26",
+    "language": "en",
+    "query": "What is the weather at TM-05 for the next 3 days?",
+    "parcel_id": "TM-05",
+    "image": null,
+    "expected_route": "ROUTINE",
+    "expected_tools": [
+      "weather"
+    ],
+    "answer_must_contain": [
+      "forecast_rain",
+      "marks_cached_data"
+    ],
+    "split": "dev",
+    "inject_failure": "open_meteo_timeout",
+    "tests": "live weather fails -> falls back to cached forecast and says so",
+    "expect_condition": null,
+    "crop": null,
+    "facts": {
+      "TM-05": {
+        "parcel_id": "TM-05",
+        "crop": "Maize",
+        "variety": "Hybrid CO 6",
+        "stage": "Tasseling",
+        "days_after_planting": 54,
+        "area_ha": 1.25,
+        "issue_code": "maize_fall_armyworm",
+        "issue": "Fall armyworm",
+        "days_since_irrigation": 3,
+        "days_since_fertilizer": 12,
+        "zone": "terrace"
+      }
+    }
+  },
+  {
+    "id": "Q27",
+    "language": "en",
+    "query": "How do I control rust and leaf spot in groundnut?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Groundnut",
+    "facts": {}
+  },
+  {
+    "id": "Q28",
+    "language": "en",
+    "query": "Which pre-emergence herbicide is recommended for cotton?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Cotton",
+    "facts": {}
+  },
+  {
+    "id": "Q29",
+    "language": "tanglish",
+    "query": "Ulundu la yellow mosaic varama irukku, enna pannanum?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Blackgram",
+    "facts": {}
+  },
+  {
+    "id": "Q30",
+    "language": "en",
+    "query": "What is the spacing for chilli and which fungicide for leaf spot?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Chilli",
+    "facts": {}
+  },
+  {
+    "id": "Q31",
+    "language": "en",
+    "query": "How do I prevent rhizome rot in turmeric?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Turmeric",
+    "facts": {}
+  },
+  {
+    "id": "Q32",
+    "language": "en",
+    "query": "Which cotton variety should I plant for long staple?",
+    "parcel_id": null,
+    "image": null,
+    "expected_route": "ADVISORY",
+    "expected_tools": [
+      "tnau_rag"
+    ],
+    "answer_must_contain": [
+      "cited_source"
+    ],
+    "split": "dev",
+    "inject_failure": null,
+    "tests": null,
+    "expect_condition": null,
+    "crop": "Cotton",
+    "facts": {}
+  }
+]

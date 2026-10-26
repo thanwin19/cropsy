@@ -1,0 +1,645 @@
+{
+ "mode": "dense/pipeline",
+ "n_questions": 66,
+ "n_answerable": 52,
+ "hit@1": 0.615,
+ "hit@3": 0.769,
+ "hit@5": 0.923,
+ "mrr": 0.717,
+ "crop_precision@5": 0.95,
+ "citation_complete": 1.0,
+ "answerable_not_blocked_by_gate": 1.0,
+ "clarify_handled": 1.0,
+ "abstain_handled": 1.0,
+ "by_crop_hit@3": {
+  "Rice": 0.333,
+  "Maize": 0.8,
+  "Banana": 0.5,
+  "Groundnut": 0.667,
+  "Sugarcane": 1.0,
+  "Chilli": 1.0,
+  "Blackgram": 0.846
+ },
+ "by_language_hit@3": {
+  "en": 0.786,
+  "tanglish": 0.667,
+  "ta": 0.75
+ },
+ "misses": [
+  {
+   "id": "R02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-010",
+   "top1_score": 0.625
+  },
+  {
+   "id": "R03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-001-p73-119",
+   "top1_score": 0.454
+  },
+  {
+   "id": "R04",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "rice-001-p37-038",
+   "top1_score": 0.563
+  },
+  {
+   "id": "R06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-023",
+   "top1_score": 0.546
+  },
+  {
+   "id": "R09",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "maize-001-p125-032",
+   "top1_score": 0.43
+  },
+  {
+   "id": "R13",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "banana-web-120",
+   "top1_score": 0.762
+  },
+  {
+   "id": "R15",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "banana-web-065",
+   "top1_score": 0.603
+  },
+  {
+   "id": "R16",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "banana-web-140",
+   "top1_score": 0.569
+  },
+  {
+   "id": "R19",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "groundnut-001-p201-023",
+   "top1_score": 0.664
+  },
+  {
+   "id": "R21",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "groundnut-web-004",
+   "top1_score": 0.569
+  },
+  {
+   "id": "R36",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "blackgram-web-008",
+   "top1_score": 0.714
+  },
+  {
+   "id": "R41",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "blackgram-web-003",
+   "top1_score": 0.565
+  }
+ ],
+ "policy_misses": [],
+ "detail": [
+  {
+   "id": "R01",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "rice-001-p35-032",
+   "top1_score": 0.691
+  },
+  {
+   "id": "R02",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-010",
+   "top1_score": 0.625
+  },
+  {
+   "id": "R03",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-001-p73-119",
+   "top1_score": 0.454
+  },
+  {
+   "id": "R04",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "rice-001-p37-038",
+   "top1_score": 0.563
+  },
+  {
+   "id": "R05",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "rice-001-p18-005",
+   "top1_score": 0.657
+  },
+  {
+   "id": "R06",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "rice-web-023",
+   "top1_score": 0.546
+  },
+  {
+   "id": "R07",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "maize-001-p126-033",
+   "top1_score": 0.534
+  },
+  {
+   "id": "R08",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p119-012",
+   "top1_score": 0.684
+  },
+  {
+   "id": "R09",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "maize-001-p125-032",
+   "top1_score": 0.43
+  },
+  {
+   "id": "R10",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p115-002",
+   "top1_score": 0.766
+  },
+  {
+   "id": "R11",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "maize-001-p119-012",
+   "top1_score": 0.573
+  },
+  {
+   "id": "R12",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-web-079",
+   "top1_score": 0.703
+  },
+  {
+   "id": "R13",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "banana-web-120",
+   "top1_score": 0.762
+  },
+  {
+   "id": "R14",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-web-222",
+   "top1_score": 0.641
+  },
+  {
+   "id": "R15",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "banana-web-065",
+   "top1_score": 0.603
+  },
+  {
+   "id": "R16",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "banana-web-140",
+   "top1_score": 0.569
+  },
+  {
+   "id": "R17",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "banana-web-079",
+   "top1_score": 0.703
+  },
+  {
+   "id": "R18",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p199-022",
+   "top1_score": 0.604
+  },
+  {
+   "id": "R19",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 4,
+   "top1": "groundnut-001-p201-023",
+   "top1_score": 0.664
+  },
+  {
+   "id": "R20",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p208-045",
+   "top1_score": 0.666
+  },
+  {
+   "id": "R21",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "groundnut-web-004",
+   "top1_score": 0.569
+  },
+  {
+   "id": "R22",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p201-026",
+   "top1_score": 0.469
+  },
+  {
+   "id": "R23",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sugarcane-001-p307-029",
+   "top1_score": 0.712
+  },
+  {
+   "id": "R24",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "sugarcane-001-p308-032",
+   "top1_score": 0.643
+  },
+  {
+   "id": "R25",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "sugarcane-web-009",
+   "top1_score": 0.666
+  },
+  {
+   "id": "R26",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "sugarcane-001-p315-049",
+   "top1_score": 0.6
+  },
+  {
+   "id": "R27",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p89-007",
+   "top1_score": 0.553
+  },
+  {
+   "id": "R28",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p88-003",
+   "top1_score": 0.591
+  },
+  {
+   "id": "R29",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 3,
+   "top1": "chilli-002-p88-004",
+   "top1_score": 0.767
+  },
+  {
+   "id": "R30",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-002",
+   "top1_score": 0.674
+  },
+  {
+   "id": "R31",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "chilli-web-010",
+   "top1_score": 0.624
+  },
+  {
+   "id": "R32",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-003",
+   "top1_score": 0.893
+  },
+  {
+   "id": "R33",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-004",
+   "top1_score": 0.791
+  },
+  {
+   "id": "R34",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-002-p87-002",
+   "top1_score": 0.424
+  },
+  {
+   "id": "R35",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p151-012",
+   "top1_score": 0.7
+  },
+  {
+   "id": "R36",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": null,
+   "top1": "blackgram-web-008",
+   "top1_score": 0.714
+  },
+  {
+   "id": "R37",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 2,
+   "top1": "blackgram-001-p154-024",
+   "top1_score": 0.584
+  },
+  {
+   "id": "R38",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p150-010",
+   "top1_score": 0.593
+  },
+  {
+   "id": "R39",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p154-022",
+   "top1_score": 0.528
+  },
+  {
+   "id": "R40",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p151-013",
+   "top1_score": 0.571
+  },
+  {
+   "id": "R41",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 5,
+   "top1": "blackgram-web-003",
+   "top1_score": 0.565
+  },
+  {
+   "id": "R42",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-005",
+   "top1_score": 0.805
+  },
+  {
+   "id": "R43",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "groundnut-001-p201-026",
+   "top1_score": 0.621
+  },
+  {
+   "id": "R44",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-001-p149-007",
+   "top1_score": 0.716
+  },
+  {
+   "id": "R45",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-010",
+   "top1_score": 0.604
+  },
+  {
+   "id": "R46",
+   "lang": "tanglish",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-011",
+   "top1_score": 0.78
+  },
+  {
+   "id": "R47",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-014",
+   "top1_score": 0.767
+  },
+  {
+   "id": "R48",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "chilli-web-012",
+   "top1_score": 0.78
+  },
+  {
+   "id": "R49",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-021",
+   "top1_score": 0.604
+  },
+  {
+   "id": "R50",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-014",
+   "top1_score": 0.651
+  },
+  {
+   "id": "R51",
+   "lang": "ta",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-013",
+   "top1_score": 0.61
+  },
+  {
+   "id": "R52",
+   "lang": "en",
+   "policy": "answer",
+   "first_relevant_rank": 1,
+   "top1": "blackgram-web-022",
+   "top1_score": 0.611
+  },
+  {
+   "id": "A01",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.463,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A02",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.415,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A03",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.52,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A04",
+   "lang": "tanglish",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.337,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A05",
+   "lang": "ta",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.375,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "A06",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.4,
+   "via": "weak match"
+  },
+  {
+   "id": "A07",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.522,
+   "via": "weak match"
+  },
+  {
+   "id": "A08",
+   "lang": "en",
+   "policy": "abstain",
+   "handled": true,
+   "top1_score": 0.51,
+   "via": "router: uncovered plant"
+  },
+  {
+   "id": "C01",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C02",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C03",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C04",
+   "lang": "ta",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C05",
+   "lang": "tanglish",
+   "policy": "clarify",
+   "handled": true
+  },
+  {
+   "id": "C06",
+   "lang": "en",
+   "policy": "clarify",
+   "handled": true
+  }
+ ]
+}

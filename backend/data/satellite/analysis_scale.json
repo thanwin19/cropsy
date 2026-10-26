@@ -1,0 +1,967 @@
+{
+ "month": "2026-09",
+ "rules": "classes (NOT agronomically calibrated; they exist to show WHERE inside a field and HOW MUCH of it looks weak):\n  bare_or_no_crop        NDVI < 0.20\n  good                   NDVI >= 0.50 and NDMI >= 0.10\n  irrigation_attention   NDVI >= 0.35 and NDMI < 0.10      (green cover but low canopy water)\n  critical               0.20 <= NDVI < 0.35 and NDMI < 0.10 (weak cover and dry canopy)\n  crop_attention         everything else                     (moderate vigour with adequate water)",
+ "parcels": {
+  "TM-01": {
+   "good": 0.145,
+   "bare_or_no_crop": 0.138,
+   "irrigation_attention": 0.167,
+   "critical": 0.551,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-02": {
+   "good": 0.288,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.679,
+   "critical": 0.032,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-03": {
+   "good": 0.069,
+   "bare_or_no_crop": 0.476,
+   "irrigation_attention": 0.041,
+   "critical": 0.4,
+   "crop_attention": 0.014,
+   "clear_fraction": 1.0
+  },
+  "TM-04": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.345,
+   "irrigation_attention": 0.083,
+   "critical": 0.572,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-05": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.196,
+   "irrigation_attention": 0.14,
+   "critical": 0.664,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-06": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.042,
+   "irrigation_attention": 0.424,
+   "critical": 0.535,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-07": {
+   "good": 0.335,
+   "bare_or_no_crop": 0.004,
+   "irrigation_attention": 0.402,
+   "critical": 0.232,
+   "crop_attention": 0.027,
+   "clear_fraction": 1.0
+  },
+  "TM-08": {
+   "good": 0.573,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.245,
+   "critical": 0.166,
+   "crop_attention": 0.016,
+   "clear_fraction": 1.0
+  },
+  "TM-09": {
+   "good": 0.666,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.195,
+   "critical": 0.12,
+   "crop_attention": 0.019,
+   "clear_fraction": 1.0
+  },
+  "TM-10": {
+   "good": 0.522,
+   "bare_or_no_crop": 0.114,
+   "irrigation_attention": 0.187,
+   "critical": 0.127,
+   "crop_attention": 0.05,
+   "clear_fraction": 1.0
+  },
+  "TM-11": {
+   "good": 0.358,
+   "bare_or_no_crop": 0.015,
+   "irrigation_attention": 0.358,
+   "critical": 0.243,
+   "crop_attention": 0.026,
+   "clear_fraction": 1.0
+  },
+  "TM-12": {
+   "good": 0.055,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.895,
+   "critical": 0.05,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-13": {
+   "good": 0.2,
+   "bare_or_no_crop": 0.121,
+   "irrigation_attention": 0.201,
+   "critical": 0.453,
+   "crop_attention": 0.024,
+   "clear_fraction": 1.0
+  },
+  "TM-14": {
+   "good": 0.071,
+   "bare_or_no_crop": 0.559,
+   "irrigation_attention": 0.105,
+   "critical": 0.261,
+   "crop_attention": 0.005,
+   "clear_fraction": 1.0
+  },
+  "TM-15": {
+   "good": 0.349,
+   "bare_or_no_crop": 0.274,
+   "irrigation_attention": 0.123,
+   "critical": 0.231,
+   "crop_attention": 0.022,
+   "clear_fraction": 1.0
+  },
+  "TM-16": {
+   "good": 0.307,
+   "bare_or_no_crop": 0.159,
+   "irrigation_attention": 0.129,
+   "critical": 0.393,
+   "crop_attention": 0.012,
+   "clear_fraction": 1.0
+  },
+  "TM-17": {
+   "good": 0.968,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.013,
+   "critical": 0.0,
+   "crop_attention": 0.019,
+   "clear_fraction": 1.0
+  },
+  "TM-18": {
+   "good": 0.146,
+   "bare_or_no_crop": 0.131,
+   "irrigation_attention": 0.328,
+   "critical": 0.38,
+   "crop_attention": 0.015,
+   "clear_fraction": 1.0
+  },
+  "TM-19": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.006,
+   "irrigation_attention": 0.535,
+   "critical": 0.459,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-20": {
+   "good": 0.581,
+   "bare_or_no_crop": 0.006,
+   "irrigation_attention": 0.256,
+   "critical": 0.151,
+   "crop_attention": 0.006,
+   "clear_fraction": 1.0
+  },
+  "TM-21": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.035,
+   "irrigation_attention": 0.171,
+   "critical": 0.794,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-22": {
+   "good": 0.016,
+   "bare_or_no_crop": 0.198,
+   "irrigation_attention": 0.251,
+   "critical": 0.524,
+   "crop_attention": 0.011,
+   "clear_fraction": 1.0
+  },
+  "TM-23": {
+   "good": 0.299,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.357,
+   "critical": 0.344,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-24": {
+   "good": 0.03,
+   "bare_or_no_crop": 0.01,
+   "irrigation_attention": 0.493,
+   "critical": 0.468,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-25": {
+   "good": 0.988,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.012,
+   "critical": 0.0,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-26": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.006,
+   "irrigation_attention": 0.864,
+   "critical": 0.13,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-27": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.579,
+   "irrigation_attention": 0.0,
+   "critical": 0.421,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-28": {
+   "good": 0.594,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.38,
+   "critical": 0.021,
+   "crop_attention": 0.005,
+   "clear_fraction": 1.0
+  },
+  "TM-29": {
+   "good": 0.162,
+   "bare_or_no_crop": 0.475,
+   "irrigation_attention": 0.111,
+   "critical": 0.212,
+   "crop_attention": 0.04,
+   "clear_fraction": 1.0
+  },
+  "TM-30": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.121,
+   "irrigation_attention": 0.26,
+   "critical": 0.619,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-31": {
+   "good": 0.783,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.151,
+   "critical": 0.019,
+   "crop_attention": 0.047,
+   "clear_fraction": 1.0
+  },
+  "TM-32": {
+   "good": 0.516,
+   "bare_or_no_crop": 0.158,
+   "irrigation_attention": 0.084,
+   "critical": 0.232,
+   "crop_attention": 0.011,
+   "clear_fraction": 1.0
+  },
+  "TM-33": {
+   "good": 0.655,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.345,
+   "critical": 0.0,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-34": {
+   "good": 0.764,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.226,
+   "critical": 0.0,
+   "crop_attention": 0.009,
+   "clear_fraction": 1.0
+  },
+  "TM-35": {
+   "good": 0.357,
+   "bare_or_no_crop": 0.218,
+   "irrigation_attention": 0.273,
+   "critical": 0.105,
+   "crop_attention": 0.046,
+   "clear_fraction": 1.0
+  },
+  "TM-36": {
+   "good": 0.075,
+   "bare_or_no_crop": 0.088,
+   "irrigation_attention": 0.211,
+   "critical": 0.626,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-37": {
+   "good": 0.14,
+   "bare_or_no_crop": 0.116,
+   "irrigation_attention": 0.308,
+   "critical": 0.419,
+   "crop_attention": 0.017,
+   "clear_fraction": 1.0
+  },
+  "TM-38": {
+   "good": 0.266,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.472,
+   "critical": 0.234,
+   "crop_attention": 0.028,
+   "clear_fraction": 1.0
+  },
+  "TM-39": {
+   "good": 0.685,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.274,
+   "critical": 0.018,
+   "crop_attention": 0.023,
+   "clear_fraction": 1.0
+  },
+  "TM-40": {
+   "good": 0.483,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.156,
+   "critical": 0.34,
+   "crop_attention": 0.02,
+   "clear_fraction": 1.0
+  },
+  "TM-41": {
+   "good": 0.202,
+   "bare_or_no_crop": 0.183,
+   "irrigation_attention": 0.29,
+   "critical": 0.275,
+   "crop_attention": 0.05,
+   "clear_fraction": 1.0
+  },
+  "TM-42": {
+   "good": 0.99,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.01,
+   "critical": 0.0,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-43": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.816,
+   "irrigation_attention": 0.014,
+   "critical": 0.17,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-44": {
+   "good": 0.7,
+   "bare_or_no_crop": 0.006,
+   "irrigation_attention": 0.212,
+   "critical": 0.05,
+   "crop_attention": 0.031,
+   "clear_fraction": 1.0
+  },
+  "TM-45": {
+   "good": 0.074,
+   "bare_or_no_crop": 0.364,
+   "irrigation_attention": 0.148,
+   "critical": 0.395,
+   "crop_attention": 0.019,
+   "clear_fraction": 1.0
+  },
+  "TM-46": {
+   "good": 0.793,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.093,
+   "critical": 0.067,
+   "crop_attention": 0.047,
+   "clear_fraction": 1.0
+  },
+  "TM-47": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.16,
+   "irrigation_attention": 0.193,
+   "critical": 0.647,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-48": {
+   "good": 0.98,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.007,
+   "critical": 0.0,
+   "crop_attention": 0.013,
+   "clear_fraction": 1.0
+  },
+  "TM-49": {
+   "good": 0.405,
+   "bare_or_no_crop": 0.189,
+   "irrigation_attention": 0.054,
+   "critical": 0.254,
+   "crop_attention": 0.097,
+   "clear_fraction": 1.0
+  },
+  "TM-50": {
+   "good": 0.447,
+   "bare_or_no_crop": 0.005,
+   "irrigation_attention": 0.359,
+   "critical": 0.147,
+   "crop_attention": 0.041,
+   "clear_fraction": 1.0
+  },
+  "TM-51": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.117,
+   "irrigation_attention": 0.058,
+   "critical": 0.825,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-52": {
+   "good": 0.713,
+   "bare_or_no_crop": 0.009,
+   "irrigation_attention": 0.143,
+   "critical": 0.109,
+   "crop_attention": 0.026,
+   "clear_fraction": 1.0
+  },
+  "TM-53": {
+   "good": 0.016,
+   "bare_or_no_crop": 0.628,
+   "irrigation_attention": 0.093,
+   "critical": 0.264,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-54": {
+   "good": 0.351,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.601,
+   "critical": 0.019,
+   "crop_attention": 0.029,
+   "clear_fraction": 1.0
+  },
+  "TM-55": {
+   "good": 0.098,
+   "bare_or_no_crop": 0.506,
+   "irrigation_attention": 0.184,
+   "critical": 0.178,
+   "crop_attention": 0.034,
+   "clear_fraction": 1.0
+  },
+  "TM-56": {
+   "good": 0.159,
+   "bare_or_no_crop": 0.005,
+   "irrigation_attention": 0.524,
+   "critical": 0.288,
+   "crop_attention": 0.024,
+   "clear_fraction": 1.0
+  },
+  "TM-57": {
+   "good": 0.354,
+   "bare_or_no_crop": 0.117,
+   "irrigation_attention": 0.296,
+   "critical": 0.193,
+   "crop_attention": 0.04,
+   "clear_fraction": 1.0
+  },
+  "TM-58": {
+   "good": 0.861,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.129,
+   "critical": 0.0,
+   "crop_attention": 0.01,
+   "clear_fraction": 1.0
+  },
+  "TM-59": {
+   "good": 0.382,
+   "bare_or_no_crop": 0.018,
+   "irrigation_attention": 0.393,
+   "critical": 0.195,
+   "crop_attention": 0.011,
+   "clear_fraction": 1.0
+  },
+  "TM-60": {
+   "good": 0.723,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.218,
+   "critical": 0.037,
+   "crop_attention": 0.021,
+   "clear_fraction": 1.0
+  },
+  "TM-61": {
+   "good": 0.738,
+   "bare_or_no_crop": 0.018,
+   "irrigation_attention": 0.054,
+   "critical": 0.155,
+   "crop_attention": 0.036,
+   "clear_fraction": 1.0
+  },
+  "TM-62": {
+   "good": 0.116,
+   "bare_or_no_crop": 0.772,
+   "irrigation_attention": 0.035,
+   "critical": 0.058,
+   "crop_attention": 0.019,
+   "clear_fraction": 1.0
+  },
+  "TM-63": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.824,
+   "irrigation_attention": 0.02,
+   "critical": 0.157,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-64": {
+   "good": 0.133,
+   "bare_or_no_crop": 0.287,
+   "irrigation_attention": 0.2,
+   "critical": 0.367,
+   "crop_attention": 0.013,
+   "clear_fraction": 1.0
+  },
+  "TM-65": {
+   "good": 0.914,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.039,
+   "critical": 0.0,
+   "crop_attention": 0.047,
+   "clear_fraction": 1.0
+  },
+  "TM-66": {
+   "good": 0.089,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.772,
+   "critical": 0.139,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-67": {
+   "good": 0.181,
+   "bare_or_no_crop": 0.155,
+   "irrigation_attention": 0.166,
+   "critical": 0.477,
+   "crop_attention": 0.021,
+   "clear_fraction": 1.0
+  },
+  "TM-68": {
+   "good": 0.112,
+   "bare_or_no_crop": 0.214,
+   "irrigation_attention": 0.33,
+   "critical": 0.32,
+   "crop_attention": 0.024,
+   "clear_fraction": 1.0
+  },
+  "TM-69": {
+   "good": 0.141,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.68,
+   "critical": 0.18,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-70": {
+   "good": 0.095,
+   "bare_or_no_crop": 0.063,
+   "irrigation_attention": 0.284,
+   "critical": 0.532,
+   "crop_attention": 0.026,
+   "clear_fraction": 1.0
+  },
+  "TM-71": {
+   "good": 0.274,
+   "bare_or_no_crop": 0.072,
+   "irrigation_attention": 0.351,
+   "critical": 0.26,
+   "crop_attention": 0.043,
+   "clear_fraction": 1.0
+  },
+  "TM-72": {
+   "good": 0.308,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.41,
+   "critical": 0.269,
+   "crop_attention": 0.013,
+   "clear_fraction": 1.0
+  },
+  "TM-73": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.417,
+   "irrigation_attention": 0.046,
+   "critical": 0.538,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-74": {
+   "good": 0.218,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.276,
+   "critical": 0.437,
+   "crop_attention": 0.069,
+   "clear_fraction": 1.0
+  },
+  "TM-75": {
+   "good": 0.192,
+   "bare_or_no_crop": 0.075,
+   "irrigation_attention": 0.212,
+   "critical": 0.452,
+   "crop_attention": 0.068,
+   "clear_fraction": 1.0
+  },
+  "TM-76": {
+   "good": 0.591,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.269,
+   "critical": 0.14,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-77": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.145,
+   "irrigation_attention": 0.167,
+   "critical": 0.688,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-78": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.157,
+   "irrigation_attention": 0.094,
+   "critical": 0.749,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-79": {
+   "good": 0.126,
+   "bare_or_no_crop": 0.126,
+   "irrigation_attention": 0.487,
+   "critical": 0.262,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-80": {
+   "good": 0.972,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.007,
+   "critical": 0.0,
+   "crop_attention": 0.021,
+   "clear_fraction": 1.0
+  },
+  "TM-81": {
+   "good": 0.295,
+   "bare_or_no_crop": 0.025,
+   "irrigation_attention": 0.443,
+   "critical": 0.213,
+   "crop_attention": 0.025,
+   "clear_fraction": 1.0
+  },
+  "TM-82": {
+   "good": 0.044,
+   "bare_or_no_crop": 0.154,
+   "irrigation_attention": 0.392,
+   "critical": 0.407,
+   "crop_attention": 0.004,
+   "clear_fraction": 1.0
+  },
+  "TM-83": {
+   "good": 0.034,
+   "bare_or_no_crop": 0.097,
+   "irrigation_attention": 0.462,
+   "critical": 0.393,
+   "crop_attention": 0.014,
+   "clear_fraction": 1.0
+  },
+  "TM-84": {
+   "good": 0.111,
+   "bare_or_no_crop": 0.093,
+   "irrigation_attention": 0.472,
+   "critical": 0.31,
+   "crop_attention": 0.014,
+   "clear_fraction": 1.0
+  },
+  "TM-85": {
+   "good": 0.445,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.342,
+   "critical": 0.178,
+   "crop_attention": 0.034,
+   "clear_fraction": 1.0
+  },
+  "TM-86": {
+   "good": 0.16,
+   "bare_or_no_crop": 0.084,
+   "irrigation_attention": 0.311,
+   "critical": 0.37,
+   "crop_attention": 0.076,
+   "clear_fraction": 1.0
+  },
+  "TM-87": {
+   "good": 0.144,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.856,
+   "critical": 0.0,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-88": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.473,
+   "irrigation_attention": 0.014,
+   "critical": 0.512,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-89": {
+   "good": 0.136,
+   "bare_or_no_crop": 0.037,
+   "irrigation_attention": 0.347,
+   "critical": 0.471,
+   "crop_attention": 0.008,
+   "clear_fraction": 1.0
+  },
+  "TM-90": {
+   "good": 0.198,
+   "bare_or_no_crop": 0.04,
+   "irrigation_attention": 0.337,
+   "critical": 0.356,
+   "crop_attention": 0.069,
+   "clear_fraction": 1.0
+  },
+  "TM-91": {
+   "good": 0.008,
+   "bare_or_no_crop": 0.075,
+   "irrigation_attention": 0.375,
+   "critical": 0.542,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-92": {
+   "good": 0.5,
+   "bare_or_no_crop": 0.007,
+   "irrigation_attention": 0.224,
+   "critical": 0.149,
+   "crop_attention": 0.119,
+   "clear_fraction": 1.0
+  },
+  "TM-93": {
+   "good": 0.893,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.053,
+   "critical": 0.033,
+   "crop_attention": 0.021,
+   "clear_fraction": 1.0
+  },
+  "TM-94": {
+   "good": 0.186,
+   "bare_or_no_crop": 0.031,
+   "irrigation_attention": 0.419,
+   "critical": 0.349,
+   "crop_attention": 0.016,
+   "clear_fraction": 1.0
+  },
+  "TM-95": {
+   "good": 0.04,
+   "bare_or_no_crop": 0.08,
+   "irrigation_attention": 0.518,
+   "critical": 0.353,
+   "crop_attention": 0.009,
+   "clear_fraction": 1.0
+  },
+  "TM-96": {
+   "good": 0.021,
+   "bare_or_no_crop": 0.148,
+   "irrigation_attention": 0.436,
+   "critical": 0.395,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-97": {
+   "good": 0.67,
+   "bare_or_no_crop": 0.004,
+   "irrigation_attention": 0.116,
+   "critical": 0.172,
+   "crop_attention": 0.039,
+   "clear_fraction": 1.0
+  },
+  "TM-98": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.513,
+   "critical": 0.487,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-99": {
+   "good": 0.942,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.0,
+   "critical": 0.0,
+   "crop_attention": 0.058,
+   "clear_fraction": 1.0
+  },
+  "TM-100": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.448,
+   "irrigation_attention": 0.066,
+   "critical": 0.486,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-101": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.487,
+   "irrigation_attention": 0.082,
+   "critical": 0.43,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-102": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.416,
+   "critical": 0.584,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-103": {
+   "good": 0.064,
+   "bare_or_no_crop": 0.379,
+   "irrigation_attention": 0.082,
+   "critical": 0.433,
+   "crop_attention": 0.043,
+   "clear_fraction": 1.0
+  },
+  "TM-104": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.01,
+   "irrigation_attention": 0.061,
+   "critical": 0.929,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-105": {
+   "good": 0.6,
+   "bare_or_no_crop": 0.05,
+   "irrigation_attention": 0.15,
+   "critical": 0.075,
+   "crop_attention": 0.125,
+   "clear_fraction": 1.0
+  },
+  "TM-106": {
+   "good": 0.079,
+   "bare_or_no_crop": 0.425,
+   "irrigation_attention": 0.079,
+   "critical": 0.417,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-107": {
+   "good": 0.786,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.136,
+   "critical": 0.029,
+   "crop_attention": 0.05,
+   "clear_fraction": 1.0
+  },
+  "TM-108": {
+   "good": 0.885,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.0,
+   "critical": 0.0,
+   "crop_attention": 0.115,
+   "clear_fraction": 1.0
+  },
+  "TM-109": {
+   "good": 0.106,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.743,
+   "critical": 0.151,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-110": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.495,
+   "irrigation_attention": 0.111,
+   "critical": 0.394,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-111": {
+   "good": 0.582,
+   "bare_or_no_crop": 0.057,
+   "irrigation_attention": 0.156,
+   "critical": 0.156,
+   "crop_attention": 0.05,
+   "clear_fraction": 1.0
+  },
+  "TM-112": {
+   "good": 0.922,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.047,
+   "critical": 0.005,
+   "crop_attention": 0.026,
+   "clear_fraction": 1.0
+  },
+  "TM-113": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.825,
+   "critical": 0.175,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-114": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.0,
+   "irrigation_attention": 0.845,
+   "critical": 0.155,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-115": {
+   "good": 0.835,
+   "bare_or_no_crop": 0.01,
+   "irrigation_attention": 0.053,
+   "critical": 0.078,
+   "crop_attention": 0.024,
+   "clear_fraction": 1.0
+  },
+  "TM-116": {
+   "good": 0.052,
+   "bare_or_no_crop": 0.644,
+   "irrigation_attention": 0.081,
+   "critical": 0.222,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-117": {
+   "good": 0.041,
+   "bare_or_no_crop": 0.02,
+   "irrigation_attention": 0.264,
+   "critical": 0.655,
+   "crop_attention": 0.02,
+   "clear_fraction": 1.0
+  },
+  "TM-118": {
+   "good": 0.374,
+   "bare_or_no_crop": 0.207,
+   "irrigation_attention": 0.138,
+   "critical": 0.224,
+   "crop_attention": 0.057,
+   "clear_fraction": 1.0
+  },
+  "TM-119": {
+   "good": 0.0,
+   "bare_or_no_crop": 0.368,
+   "irrigation_attention": 0.157,
+   "critical": 0.475,
+   "crop_attention": 0.0,
+   "clear_fraction": 1.0
+  },
+  "TM-120": {
+   "good": 0.211,
+   "bare_or_no_crop": 0.386,
+   "irrigation_attention": 0.088,
+   "critical": 0.281,
+   "crop_attention": 0.035,
+   "clear_fraction": 1.0
+  }
+ },
+ "note": "Rule-of-thumb health classes from real Sentinel-2 NDVI and NDMI; not agronomically calibrated."
+}

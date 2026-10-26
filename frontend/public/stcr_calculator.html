@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TNAU STCR-IPNS Fertilizer Calculator | Cropsy</title>
+<style>
+  :root {
+    --green:  #2d7a3a;
+    --lime:   #6bbf4e;
+    --amber:  #e8a020;
+    --soil:   #7a5230;
+    --sky:    #e8f5e9;
+    --card:   #ffffff;
+    --border: #c8e6c9;
+    --text:   #1a2e1a;
+    --muted:  #607d60;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    min-height: 100vh; color: var(--text);
+  }
+  header {
+    background: var(--green);
+    color: #fff; padding: 16px 24px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  header h1 { font-size: 1.25rem; font-weight: 700; }
+  header small { font-size: 0.78rem; opacity: 0.85; display: block; }
+  .badge {
+    background: var(--lime); color: #fff;
+    font-size: 0.7rem; padding: 2px 8px; border-radius: 12px;
+    font-weight: 600; letter-spacing: 0.05em;
+  }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+
+  /* ── Equation banner ─────────────────────────────────────── */
+  .eq-card {
+    background: var(--card); border-left: 4px solid var(--lime);
+    border-radius: 10px; padding: 18px 22px; margin-bottom: 24px;
+    box-shadow: var(--shadow);
+  }
+  .eq-card h2 { font-size: 0.95rem; color: var(--green); margin-bottom: 10px; font-weight: 700; }
+  .eq-row { font-size: 1.05rem; font-family: 'Courier New', monospace; color: #333; line-height: 2; }
+  .eq-legend { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 0.82rem; color: var(--muted); }
+  .eq-legend span b { color: var(--text); }
+
+  /* ── Two-col layout ──────────────────────────────────────── */
+  .grid { display: grid; grid-template-columns: 360px 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+
+  /* ── Input panel ─────────────────────────────────────────── */
+  .panel {
+    background: var(--card); border-radius: 12px;
+    box-shadow: var(--shadow); overflow: hidden;
+  }
+  .panel-header {
+    background: var(--green); color: #fff;
+    padding: 12px 18px; font-weight: 700; font-size: 0.9rem;
+  }
+  .panel-body { padding: 18px; }
+  .field-group { margin-bottom: 16px; }
+  .field-group label {
+    display: block; font-size: 0.82rem; font-weight: 600;
+    color: var(--muted); margin-bottom: 5px;
+  }
+  select, input[type="number"] {
+    width: 100%; padding: 9px 12px;
+    border: 1.5px solid var(--border); border-radius: 8px;
+    font-size: 0.95rem; color: var(--text);
+    background: var(--sky); transition: border 0.2s;
+  }
+  select:focus, input[type="number"]:focus {
+    outline: none; border-color: var(--lime);
+  }
+  .hint { font-size: 0.75rem; color: var(--muted); margin-top: 3px; }
+  .divider { border: none; border-top: 1.5px dashed var(--border); margin: 14px 0; }
+
+  .btn-calc {
+    width: 100%; padding: 13px; background: var(--green); color: #fff;
+    border: none; border-radius: 10px; font-size: 1rem; font-weight: 700;
+    cursor: pointer; transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.02em;
+  }
+  .btn-calc:hover { background: #245e2e; }
+  .btn-calc:active { transform: scale(0.98); }
+  .btn-reset {
+    width: 100%; padding: 9px; background: transparent;
+    color: var(--muted); border: 1.5px solid var(--border);
+    border-radius: 10px; font-size: 0.85rem; cursor: pointer;
+    margin-top: 8px; transition: all 0.2s;
+  }
+  .btn-reset:hover { background: var(--sky); }
+
+  /* ── Results panel ───────────────────────────────────────── */
+  .results-header {
+    background: var(--green); color: #fff;
+    padding: 12px 18px; font-weight: 700; font-size: 0.9rem;
+    border-radius: 12px 12px 0 0;
+  }
+  .results-body { padding: 20px; }
+
+  .nutrient-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin-bottom: 22px;
+  }
+  @media (max-width: 500px) { .nutrient-cards { grid-template-columns: 1fr; } }
+
+  .nutrient-card {
+    border-radius: 10px; padding: 16px 14px; text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  }
+  .nutrient-card.N { background: linear-gradient(135deg,#e3f2fd,#bbdefb); border-top: 4px solid #1976d2; }
+  .nutrient-card.P { background: linear-gradient(135deg,#fff8e1,#ffe082); border-top: 4px solid #f9a825; }
+  .nutrient-card.K { background: linear-gradient(135deg,#f3e5f5,#ce93d8); border-top: 4px solid #8e24aa; }
+
+  .nutrient-card .symbol { font-size: 1.5rem; font-weight: 800; }
+  .nutrient-card .label  { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
+  .nutrient-card .value  { font-size: 2.2rem; font-weight: 800; line-height: 1; }
+  .nutrient-card .unit   { font-size: 0.78rem; color: var(--muted); }
+  .nutrient-card .saved  { font-size: 0.75rem; color: #4caf50; font-weight: 600; margin-top: 4px; }
+
+  /* Source info table */
+  .info-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  .info-table th {
+    text-align: left; padding: 8px 10px;
+    background: var(--sky); color: var(--green); font-weight: 700;
+    border-bottom: 2px solid var(--border);
+  }
+  .info-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); }
+  .info-table tr:last-child td { border-bottom: none; }
+  .info-table tr:hover td { background: var(--sky); }
+
+  .alert-box {
+    border-radius: 8px; padding: 12px 16px; margin-top: 16px;
+    font-size: 0.85rem; line-height: 1.6;
+  }
+  .alert-warn { background: #fff8e1; border-left: 4px solid var(--amber); }
+  .alert-info { background: #e8f5e9; border-left: 4px solid var(--lime); }
+  .alert-zero { background: #fce4ec; border-left: 4px solid #e91e63; color: #880e4f; font-weight: 600; }
+
+  .placeholder {
+    text-align: center; color: var(--muted); padding: 60px 20px;
+  }
+  .placeholder svg { width: 60px; opacity: 0.25; margin-bottom: 12px; }
+  .placeholder p { font-size: 0.9rem; }
+
+  /* Tanglish note */
+  .tn-note { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-top: 4px; }
+
+  /* Dose breakdown section */
+  .dose-section { margin-top: 22px; }
+  .dose-section h3 { font-size: 0.9rem; font-weight: 700; color: var(--green); margin-bottom: 12px; }
+  .dose-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 500px) { .dose-grid { grid-template-columns: 1fr; } }
+  .dose-item {
+    background: var(--sky); border-radius: 8px; padding: 12px 14px;
+    border: 1px solid var(--border);
+  }
+  .dose-item .stage { font-size: 0.75rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.05em; }
+  .dose-item .qty   { font-size: 1.3rem; font-weight: 800; color: var(--text); }
+  .dose-item .desc  { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
+  footer {
+    text-align: center; padding: 20px; font-size: 0.78rem; color: var(--muted);
+    border-top: 1px solid var(--border); margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🌾 TNAU STCR-IPNS Fertilizer Calculator</h1>
+    <small>Soil Test Crop Response · Integrated Plant Nutrition System · Tamil Nadu</small>
+  </div>
+  <span class="badge">Cropsy</span>
+</header>
+
+<main>
+
+  <!-- Equation display -->
+  <div class="eq-card">
+    <h2>📐 IPNS Equations (TNAU calibrated constants)</h2>
+    <div class="eq-row">
+      F<sub>N</sub> = a·T &minus; b·SN &minus; c·ON &nbsp;|&nbsp;
+      F<sub>P₂O₅</sub> = a·T &minus; b·SP &minus; c·OP &nbsp;|&nbsp;
+      F<sub>K₂O</sub> = a·T &minus; b·SK &minus; c·OK
+    </div>
+    <div class="eq-legend">
+      <span><b>T</b> = Target yield (q/ha)</span>
+      <span><b>SN/SP/SK</b> = Available soil N/P/K (kg/ha)</span>
+      <span><b>ON/OP/OK</b> = Organic manure N/P/K (kg/ha)</span>
+      <span><b>a,b,c</b> = TNAU calibration constants (crop &amp; soil specific)</span>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <!-- INPUT PANEL -->
+    <div class="panel">
+      <div class="panel-header">📋 Soil Test &amp; Field Details</div>
+      <div class="panel-body">
+
+        <div class="field-group">
+          <label>Crop &amp; Soil Series</label>
+          <select id="cropSoil">
+            <optgroup label="Rice (Oryza sativa)">
+              <option value="rice_noyyal_kharif">Rice – Kharif – Noyyal (River Alluvium)</option>
+              <option value="rice_noyyal_rabi">Rice – Rabi – Noyyal (River Alluvium)</option>
+              <option value="rice_manakkarai_kharif">Rice – Kharif – Manakkarai (River Alluvium)</option>
+              <option value="rice_kalathur_kharif">Rice – Kharif – Kalathur (Black Alluvium)</option>
+              <option value="rice_kalathur_rabi">Rice – Rabi – Kalathur (Black Alluvium)</option>
+              <option value="rice_adanur_rabi">Rice – Rabi – Adanur (Black Alluvium)</option>
+              <option value="rice_irugur_rabi">Rice – Rabi – Irugur (Red Sandy Loam)</option>
+            </optgroup>
+            <optgroup label="Maize (Zea mays)">
+              <option value="maize_palaviduthi">Maize – Palaviduthi (Red Sandy Loam)</option>
+              <option value="maize_perianaickenpalayam">Maize – Perianaickenpalayam (Mixed Black)</option>
+              <option value="maize_pilamedu">Maize – Pilamedu (Black Calcareous)</option>
+            </optgroup>
+            <optgroup label="Cotton (Gossypium sp.)">
+              <option value="cotton_variety_pn">Cotton – Variety – Perianaickenpalayam</option>
+              <option value="cotton_drip_pn">Cotton – Drip – Perianaickenpalayam</option>
+              <option value="cotton_variety_irugur">Cotton – Variety – Irugur (Red Sandy Loam)</option>
+            </optgroup>
+            <optgroup label="Sorghum & Millets">
+              <option value="sorghum_irugur">Sorghum (Cholam) – Irugur (Red Sandy Loam)</option>
+              <option value="ragi_pn">Ragi – Perianaickenpalayam (Mixed Black)</option>
+            </optgroup>
+            <optgroup label="Oilseeds & Cash Crops">
+              <option value="groundnut_pn">Groundnut – Perianaickenpalayam</option>
+              <option value="sugarcane_pn">Sugarcane – Perianaickenpalayam (Coimbatore/Erode)</option>
+              <option value="sugarcane_pilamedu">Sugarcane – Pilamedu (Vertisols)</option>
+              <option value="sugarcane_irugur">Sugarcane – Irugur (Inceptisols)</option>
+            </optgroup>
+            <optgroup label="Horticulture (Vegetables)">
+              <option value="onion_small_irugur">Small Onion (Multiplier) – Irugur Series</option>
+              <option value="onion_bellary_irugur">Bellary Onion (Big) – Irugur Series</option>
+            </optgroup>
+          </select>
+          <p class="tn-note">மண் வரிசை &amp; பயிர் / Soil series &amp; crop</p>
+        </div>
+
+        <div class="field-group">
+          <label>Target Yield &nbsp;<span id="yieldUnitLabel" style="font-weight:700;color:var(--green);">(q/ha)</span> &nbsp;<span style="font-weight:400;color:#888">— T</span></label>
+          <input type="number" id="targetYield" min="0" max="500" step="1" placeholder="e.g. 60 for rice">
+          <p class="hint" id="yieldHint">Realistic attainable yield; typical rice: 50–70 q/ha</p>
+        </div>
+
+        <hr class="divider">
+        <div style="font-size:0.82rem;font-weight:700;color:var(--green);margin-bottom:10px;">
+          Soil Test Values (Olsen/KMnO₄) — kg/ha
+        </div>
+
+        <div class="field-group">
+          <label>Available Soil N (SN) &nbsp;<span style="font-weight:400;color:#888">KMnO₄ method</span></label>
+          <input type="number" id="sn" min="0" max="600" step="1" placeholder="Typical: 150–350 kg/ha">
+        </div>
+        <div class="field-group">
+          <label>Available Soil P (SP) &nbsp;<span style="font-weight:400;color:#888">Olsen / Bray P1</span></label>
+          <input type="number" id="sp" min="0" max="200" step="1" placeholder="Typical: 10–60 kg/ha">
+        </div>
+        <div class="field-group">
+          <label>Available Soil K (SK) &nbsp;<span style="font-weight:400;color:#888">NH₄OAc extractable</span></label>
+          <input type="number" id="sk" min="0" max="600" step="1" placeholder="Typical: 100–400 kg/ha">
+        </div>
+
+        <hr class="divider">
+        <div style="font-size:0.82rem;font-weight:700;color:var(--soil);margin-bottom:10px;">
+          Organic Manure Applied (FYM/Compost) — tonnes/ha
+        </div>
+        <div class="field-group">
+          <label>FYM quantity (t/ha)</label>
+          <input type="number" id="fymTons" min="0" max="30" step="0.5" value="0" placeholder="0 if no manure">
+          <p class="hint">Standard FYM ≈ 0.5% N, 0.25% P₂O₅, 0.5% K₂O (efficiency ~30%)</p>
+        </div>
+
+        <button class="btn-calc" onclick="calculate()">⚡ Calculate Fertilizer Dose</button>
+        <button class="btn-reset" onclick="resetForm()">↺ Reset</button>
+      </div>
+    </div>
+
+    <!-- RESULTS PANEL -->
+    <div class="panel" id="resultsPanel">
+      <div class="results-header">📊 Fertilizer Recommendation</div>
+      <div class="results-body" id="resultsBody">
+        <div class="placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+          </svg>
+          <p>Fill in your soil test values and target yield,<br>then click <b>Calculate</b>.</p>
+          <p style="margin-top:8px">மண் சோதனை மதிப்புகளை உள்ளிட்டு கணக்கிடுங்கள்.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+</main>
+
+<footer>
+  TNAU STCR-IPNS constants sourced from published field trial data. Always cross-verify with TNAU Soil Testing Lab results.
+  &nbsp;|&nbsp; Cropsy Agricultural AI &nbsp;|&nbsp; Tamil Nadu
+</footer>
+
+<script>
+// ── STCR Calibration Constants Database ───────────────────────────────────────
+// Format: { aN, bN, cN, aP, bP, cP, aK, bK, cK, label, districtHint, typicalYield }
+const DB = {
+  // Rice
+  rice_noyyal_kharif:        { aN:4.39,bN:0.52,cN:0.80, aP:2.22,bP:3.63,cP:0.98, aK:2.44,bK:0.39,cK:0.72, label:"Rice – Kharif – Noyyal (River Alluvium)", districtHint:"Coimbatore, Erode", typicalYield:60 },
+  rice_noyyal_rabi:          { aN:4.63,bN:0.56,cN:0.90, aP:1.98,bP:3.18,cP:0.99, aK:2.57,bK:0.42,cK:0.67, label:"Rice – Rabi – Noyyal (River Alluvium)",  districtHint:"Coimbatore, Erode", typicalYield:55 },
+  rice_manakkarai_kharif:    { aN:4.25,bN:0.60,cN:0.79, aP:2.71,bP:4.39,cP:0.89, aK:3.83,bK:0.60,cK:0.82, label:"Rice – Kharif – Manakkarai (River Alluvium)", districtHint:"Coimbatore, Namakkal", typicalYield:60 },
+  rice_kalathur_kharif:      { aN:5.29,bN:0.75,cN:0.89, aP:1.65,bP:1.76,cP:0.78, aK:2.73,bK:0.37,cK:0.82, label:"Rice – Kharif – Kalathur (Black Alluvium)", districtHint:"Thanjavur, Nagapattinam, Tiruvarur", typicalYield:65 },
+  rice_kalathur_rabi:        { aN:5.34,bN:0.67,cN:0.73, aP:1.90,bP:1.86,cP:0.70, aK:2.81,bK:0.33,cK:0.80, label:"Rice – Rabi – Kalathur (Black Alluvium)",  districtHint:"Delta districts", typicalYield:60 },
+  rice_adanur_rabi:          { aN:2.80,bN:0.29,cN:0.89, aP:1.35,bP:1.28,cP:1.78, aK:2.50,bK:0.42,cK:1.14, label:"Rice – Rabi – Adanur (Black Alluvium)",   districtHint:"Vellore, Ranipet", typicalYield:50 },
+  rice_irugur_rabi:          { aN:4.88,bN:0.68,cN:0.72, aP:2.06,bP:2.91,cP:2.27, aK:2.89,bK:0.47,cK:0.59, label:"Rice – Rabi – Irugur (Red Sandy Loam)",   districtHint:"Coimbatore", typicalYield:55 },
+
+  // Maize
+  maize_palaviduthi:         { aN:3.96,bN:0.62,cN:0.69, aP:1.56,bP:1.93,cP:0.60, aK:1.66,bK:0.27,cK:0.49, label:"Maize – Palaviduthi (Red Sandy Loam)",    districtHint:"Dharmapuri, Salem", typicalYield:80 },
+  maize_perianaickenpalayam: { aN:4.01,bN:0.76,cN:0.83, aP:1.57,bP:2.71,cP:0.61, aK:2.09,bK:0.26,cK:0.65, label:"Maize – Perianaickenpalayam (Mixed Black)", districtHint:"Coimbatore", typicalYield:85 },
+  maize_pilamedu:            { aN:3.78,bN:0.78,cN:0.89, aP:1.47,bP:2.02,cP:0.91, aK:1.79,bK:0.14,cK:0.62, label:"Maize – Pilamedu (Black Calcareous)",     districtHint:"Coimbatore", typicalYield:80 },
+
+  // Cotton
+  cotton_variety_pn:         { aN:8.81,bN:0.62,cN:0.00, aP:2.53,bP:1.36,cP:0.00, aK:4.92,bK:0.25,cK:0.00, label:"Cotton – Variety – Perianaickenpalayam",  districtHint:"Coimbatore, Erode", typicalYield:20, noOrganic:true },
+  cotton_drip_pn:            { aN:8.51,bN:0.40,cN:0.73, aP:4.41,bP:2.25,cP:0.75, aK:6.59,bK:0.18,cK:0.66, label:"Cotton – Drip – Perianaickenpalayam",     districtHint:"Coimbatore, Erode", typicalYield:25 },
+  cotton_variety_irugur:     { aN:7.66,bN:0.43,cN:0.71, aP:3.22,bP:3.27,cP:0.87, aK:5.97,bK:0.50,cK:0.66, label:"Cotton – Variety – Irugur (Red Sandy Loam)", districtHint:"Coimbatore", typicalYield:20 },
+
+  // Sorghum / Cholam
+  sorghum_irugur:            { aN:4.86,bN:0.53,cN:0.98, aP:1.63,bP:0.87,cP:0.90, aK:4.56,bK:0.59,cK:0.76, label:"Sorghum (Cholam) – Irugur (Red Sandy Loam)", districtHint:"Coimbatore, Erode, Tiruppur", typicalYield:40 },
+
+  // Ragi (Finger Millet)
+  ragi_pn:                   { aN:4.35,bN:0.37,cN:0.98, aP:1.18,bP:1.03,cP:0.80, aK:2.68,bK:0.14,cK:0.40, label:"Ragi – Perianaickenpalayam (Mixed Black)", districtHint:"Dharmapuri, Krishnagiri", typicalYield:35 },
+
+  // Groundnut
+  groundnut_pn:              { aN:7.50,bN:0.33,cN:0.45, aP:3.50,bP:1.67,cP:0.55, aK:6.78,bK:0.31,cK:0.43, label:"Groundnut – Perianaickenpalayam (Mixed Black)", districtHint:"Tiruvannamalai, Vellore, Salem", typicalYield:25 },
+
+  // Sugarcane (Yield Target T in t/ha)
+  sugarcane_pn:              { aN:4.17,bN:1.09,cN:1.11, aP:1.01,bP:2.56,cP:1.01, aK:3.44,bK:0.84,cK:1.03, label:"Sugarcane – Perianaickenpalayam Series", districtHint:"Coimbatore and Erode STL Jurisdiction", typicalYield:120, unit:"t/ha" },
+  sugarcane_gadillum:        { aN:4.06,bN:0.74,cN:0.87, aP:0.71,bP:1.09,cP:0.72, aK:2.67,bK:0.57,cK:1.30, label:"Sugarcane – Gadillum Series (Red Laterite)", districtHint:"Cuddalore STL Jurisdiction", typicalYield:120, unit:"t/ha" },
+  sugarcane_irugur:          { aN:3.42,bN:0.56,cN:0.93, aP:1.15,bP:1.94,cP:0.98, aK:3.16,bK:0.73,cK:0.99, label:"Sugarcane – Irugur Series (Inceptisols)", districtHint:"Coimbatore, Erode, Trichy, Salem STL", typicalYield:120, unit:"t/ha" },
+
+  // Horticultural Crops (Part XXI - Yield Target T in t/ha)
+  onion_small_irugur:        { aN:0.99,bN:0.37,cN:0.58, aP:0.58,bP:1.43,cP:0.69, aK:0.67,bK:0.25,cK:0.44, label:"Small Onion (Multiplier) – Irugur Series", districtHint:"Dindigul, Perambalur, Tiruppur", typicalYield:18, unit:"t/ha" },
+  onion_bellary_irugur:      { aN:0.80,bN:0.60,cN:0.84, aP:0.58,bP:2.10,cP:0.87, aK:0.61,bK:0.33,cK:0.70, label:"Bellary Onion (Big) – Irugur Series", districtHint:"Perambalur, Trichy", typicalYield:30, unit:"t/ha" },
+  tomato_palaviduthi:        { aN:0.45,bN:0.63,cN:0.72, aP:0.42,bP:4.18,cP:0.73, aK:0.40,bK:0.48,cK:0.66, label:"Tomato – Palaviduthi Series (Red Sandy Loam)", districtHint:"Dharmapuri, Krishnagiri, Salem", typicalYield:85, unit:"t/ha" },
+};
+
+// FYM nutrient content (average values, efficiency adjusted)
+const FYM_N_PCT  = 0.5 / 100;   // 0.5% N
+const FYM_P_PCT  = 0.25 / 100;  // 0.25% P2O5
+const FYM_K_PCT  = 0.5 / 100;   // 0.5% K2O
+const FYM_EFF    = 0.30;         // 30% efficiency for organic fraction
+
+// Split-application schedules (fraction at each stage)
+const SPLITS = {
+  rice: [
+    { stage:"Basal (transplanting)",       fn:0.50, fp:1.00, fk:0.50 },
+    { stage:"1st top dress (21–25 DAT)",   fn:0.25, fp:0.00, fk:0.50 },
+    { stage:"2nd top dress (45–50 DAT)",   fn:0.25, fp:0.00, fk:0.00 },
+  ],
+  maize: [
+    { stage:"Basal",                        fn:0.33, fp:1.00, fk:1.00 },
+    { stage:"1st side dress (25–30 DAS)",   fn:0.33, fp:0.00, fk:0.00 },
+    { stage:"2nd side dress (45–50 DAS)",   fn:0.34, fp:0.00, fk:0.00 },
+  ],
+  cotton: [
+    { stage:"Basal (FYM + P + K + 1/4 N)", fn:0.25, fp:1.00, fk:1.00 },
+    { stage:"1st top dress (30 DAS)",       fn:0.25, fp:0.00, fk:0.00 },
+    { stage:"2nd top dress (60 DAS)",       fn:0.25, fp:0.00, fk:0.00 },
+    { stage:"3rd top dress (90 DAS)",       fn:0.25, fp:0.00, fk:0.00 },
+  ],
+  sugarcane: [
+    { stage:"Basal (planting)",             fn:0.25, fp:1.00, fk:0.25 },
+    { stage:"1st top dress (30–45 DAP)",    fn:0.25, fp:0.00, fk:0.25 },
+    { stage:"2nd top dress (75–90 DAP)",    fn:0.25, fp:0.00, fk:0.25 },
+    { stage:"Final earthing up (120 DAP)",  fn:0.25, fp:0.00, fk:0.25 },
+  ],
+  sorghum: [
+    { stage:"Basal",                        fn:0.50, fp:1.00, fk:1.00 },
+    { stage:"Top dress (30 DAS)",           fn:0.50, fp:0.00, fk:0.00 },
+  ],
+  ragi: [
+    { stage:"Basal",                        fn:0.50, fp:1.00, fk:1.00 },
+    { stage:"Top dress (15–20 DAT)",        fn:0.50, fp:0.00, fk:0.00 },
+  ],
+  groundnut: [
+    { stage:"Basal",                        fn:0.50, fp:1.00, fk:1.00 },
+    { stage:"Flowering / Pegging (35–45 DAS)", fn:0.50, fp:0.00, fk:0.00 },
+  ],
+  onion: [
+    { stage:"Basal",                        fn:0.50, fp:1.00, fk:0.50 },
+    { stage:"Top dress (30 DAT)",           fn:0.50, fp:0.00, fk:0.50 },
+  ],
+};
+
+function getCropType(key) {
+  if (key.startsWith("rice"))      return "rice";
+  if (key.startsWith("maize"))     return "maize";
+  if (key.startsWith("cotton"))    return "cotton";
+  if (key.startsWith("sugarcane")) return "sugarcane";
+  if (key.startsWith("sorghum"))   return "sorghum";
+  if (key.startsWith("ragi"))      return "ragi";
+  if (key.startsWith("groundnut")) return "groundnut";
+  if (key.startsWith("onion"))     return "onion";
+  return "rice";
+}
+
+function getNum(id) { return parseFloat(document.getElementById(id).value) || 0; }
+
+function resetForm() {
+  ["cropSoil","targetYield","sn","sp","sk","fymTons"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el.tagName === "SELECT") el.selectedIndex = 0;
+    else el.value = id === "fymTons" ? "0" : "";
+  });
+  document.getElementById("resultsBody").innerHTML = `
+    <div class="placeholder">
+      <p>Fill in your soil test values and target yield, then click <b>Calculate</b>.</p>
+    </div>`;
+}
+
+function calculate() {
+  const key  = document.getElementById("cropSoil").value;
+  const c    = DB[key];
+  const T    = getNum("targetYield");
+  const SN   = getNum("sn");
+  const SP   = getNum("sp");
+  const SK   = getNum("sk");
+  const fym  = getNum("fymTons");
+
+  // Convert FYM tonnes → kg/ha nutrient supply (with efficiency)
+  const fymKgHa = fym * 1000;
+  const ON = fymKgHa * FYM_N_PCT * FYM_EFF;
+  const OP = fymKgHa * FYM_P_PCT * FYM_EFF;
+  const OK = fymKgHa * FYM_K_PCT * FYM_EFF;
+
+  // IPNS equations
+  let FN = (c.aN * T) - (c.bN * SN) - (c.cN * ON);
+  let FP = (c.aP * T) - (c.bP * SP) - (c.cP * OP);
+  let FK = (c.aK * T) - (c.bK * SK) - (c.cK * OK);
+
+  // Floor at 0 (soil/organic may fully cover requirement)
+  FN = Math.max(0, FN);
+  FP = Math.max(0, FP);
+  FK = Math.max(0, FK);
+
+  // Warnings
+  const warnings = [];
+  if (T <= 0)  warnings.push("⚠ Enter a target yield greater than 0.");
+  if (SN <= 0) warnings.push("⚠ Soil N not entered – assuming 0. Actual dose may be lower.");
+  if (SP <= 0) warnings.push("⚠ Soil P not entered – assuming 0. Actual dose may be lower.");
+  if (SK <= 0) warnings.push("⚠ Soil K not entered – assuming 0. Actual dose may be lower.");
+  if (c.noOrganic && fym > 0) warnings.push("ℹ Organic efficiency (c) not calibrated for this crop-soil combination; organic contribution excluded from calculation.");
+
+  const cropType  = getCropType(key);
+  const splits    = SPLITS[cropType] || SPLITS.rice;
+
+  // Calculate split doses
+  const splitRows = splits.map(s => ({
+    stage: s.stage,
+    N:     (FN * s.fn).toFixed(1),
+    P:     (FP * s.fp).toFixed(1),
+    K:     (FK * s.fk).toFixed(1),
+  }));
+
+  // Organic savings (vs zero-manure scenario)
+  const FN0 = Math.max(0, (c.aN * T) - (c.bN * SN));
+  const FP0 = Math.max(0, (c.aP * T) - (c.bP * SP));
+  const FK0 = Math.max(0, (c.aK * T) - (c.bK * SK));
+  const saveN = (FN0 - FN).toFixed(1);
+  const saveP = (FP0 - FP).toFixed(1);
+  const saveK = (FK0 - FK).toFixed(1);
+
+  document.getElementById("resultsBody").innerHTML = `
+
+    <!-- Nutrient summary cards -->
+    <div class="nutrient-cards">
+      <div class="nutrient-card N">
+        <div class="label">Nitrogen</div>
+        <div class="symbol">N</div>
+        <div class="value">${FN.toFixed(1)}</div>
+        <div class="unit">kg N / ha</div>
+        ${parseFloat(saveN) > 0 ? `<div class="saved">&#9650; saved ${saveN} kg vs no FYM</div>` : ""}
+      </div>
+      <div class="nutrient-card P">
+        <div class="label">Phosphorus</div>
+        <div class="symbol">P₂O₅</div>
+        <div class="value">${FP.toFixed(1)}</div>
+        <div class="unit">kg P₂O₅ / ha</div>
+        ${parseFloat(saveP) > 0 ? `<div class="saved">&#9650; saved ${saveP} kg vs no FYM</div>` : ""}
+      </div>
+      <div class="nutrient-card K">
+        <div class="label">Potassium</div>
+        <div class="symbol">K₂O</div>
+        <div class="value">${FK.toFixed(1)}</div>
+        <div class="unit">kg K₂O / ha</div>
+        ${parseFloat(saveK) > 0 ? `<div class="saved">&#9650; saved ${saveK} kg vs no FYM</div>` : ""}
+      </div>
+    </div>
+
+  const unit = c.unit || "q/ha";
+
+  document.getElementById("resultsBody").innerHTML = `
+
+    <!-- Nutrient summary cards -->
+    <div class="nutrient-cards">
+      <div class="nutrient-card N">
+        <div class="label">Nitrogen</div>
+        <div class="symbol">N</div>
+        <div class="value">${FN.toFixed(1)}</div>
+        <div class="unit">kg N / ha</div>
+        ${parseFloat(saveN) > 0 ? `<div class="saved">&#9650; saved ${saveN} kg vs no FYM</div>` : ""}
+      </div>
+      <div class="nutrient-card P">
+        <div class="label">Phosphorus</div>
+        <div class="symbol">P₂O₅</div>
+        <div class="value">${FP.toFixed(1)}</div>
+        <div class="unit">kg P₂O₅ / ha</div>
+        ${parseFloat(saveP) > 0 ? `<div class="saved">&#9650; saved ${saveP} kg vs no FYM</div>` : ""}
+      </div>
+      <div class="nutrient-card K">
+        <div class="label">Potassium</div>
+        <div class="symbol">K₂O</div>
+        <div class="value">${FK.toFixed(1)}</div>
+        <div class="unit">kg K₂O / ha</div>
+        ${parseFloat(saveK) > 0 ? `<div class="saved">&#9650; saved ${saveK} kg vs no FYM</div>` : ""}
+      </div>
+    </div>
+
+    <!-- Source info table -->
+    <table class="info-table">
+      <tr><th colspan="2">📌 Calculation Details</th></tr>
+      <tr><td>Crop &amp; Soil</td><td>${c.label}</td></tr>
+      <tr><td>STL Jurisdiction (CPG Note)</td><td>${c.districtHint}</td></tr>
+      <tr><td>Target Yield</td><td><b>${T} ${unit}</b></td></tr>
+      <tr><td>Soil N / P / K</td><td>${SN} / ${SP} / ${SK} kg/ha</td></tr>
+      <tr><td>FYM applied</td><td>${fym} t/ha → ON=${ON.toFixed(1)}, OP=${OP.toFixed(1)}, OK=${OK.toFixed(1)} kg/ha</td></tr>
+      <tr><td>Constants (a, b, c) – N</td><td>${c.aN}, ${c.bN}, ${c.cN}</td></tr>
+      <tr><td>Constants (a, b, c) – P₂O₅</td><td>${c.aP}, ${c.bP}, ${c.cP}</td></tr>
+      <tr><td>Constants (a, b, c) – K₂O</td><td>${c.aK}, ${c.bK}, ${c.cK}</td></tr>
+    </table>
+
+    <!-- Split application schedule -->
+    <div class="dose-section">
+      <h3>📅 Split Application Schedule (${cropType.charAt(0).toUpperCase()+cropType.slice(1)})</h3>
+      <div class="dose-grid">
+        ${splitRows.map(r => `
+          <div class="dose-item">
+            <div class="stage">${r.stage}</div>
+            <div class="qty">N: ${r.N} &nbsp; P: ${r.P} &nbsp; K: ${r.K}</div>
+            <div class="desc">kg/ha of nutrient</div>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+
+    <!-- Fertiliser source equivalents -->
+    <div class="alert-box alert-info" style="margin-top:18px">
+      <b>Fertiliser equivalents (approximate):</b><br>
+      Urea (46% N): <b>${(FN/0.46).toFixed(0)} kg/ha</b> &nbsp;|&nbsp;
+      DAP (18% N, 46% P₂O₅): <b>${(FP/0.46).toFixed(0)} kg/ha</b> &nbsp;|&nbsp;
+      MOP (60% K₂O): <b>${(FK/0.60).toFixed(0)} kg/ha</b>
+      <br><small style="color:#607d60">After accounting for DAP-N, reduce Urea accordingly.</small>
+    </div>
+
+    ${warnings.length > 0 ? `
+    <div class="alert-box alert-warn">
+      <b>Notes:</b><br>${warnings.join("<br>")}
+    </div>` : ""}
+
+    <div class="alert-box" style="background:#e8eaf6;border-left:4px solid #5c6bc0;margin-top:12px;font-size:0.8rem;">
+      <b>Disclaimer:</b> These recommendations are based on published TNAU calibration constants for specific soil series.
+      Always confirm with your nearest TNAU Soil Testing Laboratory before applying.
+      TNAU STCR Lab: <a href="https://www.tnau.ac.in" target="_blank" style="color:#3949ab">tnau.ac.in</a>
+    </div>
+  `;
+}
+
+// Pre-fill typical yield hint and dynamic unit label when crop changes
+document.getElementById("cropSoil").addEventListener("change", function() {
+  const c = DB[this.value];
+  if (c) {
+    const unit = c.unit || "q/ha";
+    document.getElementById("yieldUnitLabel").textContent = `(${unit})`;
+    document.getElementById("yieldHint").textContent = `Realistic attainable yield; typical ${c.label.split('–')[0].trim()}: ${c.typicalYield} ${unit}`;
+    const el = document.getElementById("targetYield");
+    if (!el.value) el.placeholder = `Typical: ${c.typicalYield} ${unit}`;
+  }
+});
+</script>
+</body>
+</html>

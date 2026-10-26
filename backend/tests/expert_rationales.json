@@ -1,0 +1,197 @@
+{
+ "_how_to": "An agronomist (TNAU / KVK / agriculture officer) writes ONE sentence per question: the key reason the recommendation should give. Leave blank to skip. Do not copy Cropsy's answer.",
+ "items": {
+  "Q01": {
+   "query": "Which growth stage is the crop in survey TM-03 and how many days after planting is it?",
+   "parcel_id": "TM-03",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q02": {
+   "query": "TM-11 maize ku ippo enna stage? Next enna pannanum?",
+   "parcel_id": "TM-11",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q03": {
+   "query": "TM-14 வாழை நட்டு எத்தனை நாள் ஆகிறது? அடுத்த உரம் எப்போது இட வேண்டும்?",
+   "parcel_id": "TM-14",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q04": {
+   "query": "Calculate the urea, DAP and MOP quantity for the whole of TM-03 using the TNAU recommendation.",
+   "parcel_id": "TM-03",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q05": {
+   "query": "When was TM-02 last irrigated and is it due again?",
+   "parcel_id": "TM-02",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q06": {
+   "query": "Will it rain at TM-09 this week? Should I spray fungicide now?",
+   "parcel_id": "TM-09",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q07": {
+   "query": "Naalaiku mazhai varuma? TM-13 la fertilizer podalama?",
+   "parcel_id": "TM-13",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q08": {
+   "query": "Is TM-15 at risk from the coming rain?",
+   "parcel_id": "TM-15",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q09": {
+   "query": "How do I manage sheath blight in rice?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q10": {
+   "query": "நெல்லில் குலை நோயை (blast) எப்படி கட்டுப்படுத்துவது?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q11": {
+   "query": "What spacing and seed rate should I use for Co 86032 sugarcane?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q12": {
+   "query": "Coconut ku potash eppo, evlo podanum?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q13": {
+   "query": "What is wrong with my paddy leaf?",
+   "parcel_id": "TM-09",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q14": {
+   "query": "Intha karumbu ilai la red color irukku, enna problem?",
+   "parcel_id": "TM-04",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q15": {
+   "query": "Is this serious? What should I spray?",
+   "parcel_id": "TM-05",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q16": {
+   "query": "Check this banana leaf and tell me the treatment.",
+   "parcel_id": "TM-06",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q17": {
+   "query": "Is my sugarcane healthy? Do I need to spray anything?",
+   "parcel_id": "TM-10",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q18": {
+   "query": "TM-09 has blast lesions and rain is forecast. What should I do over the next 7 days?",
+   "parcel_id": "TM-09",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q19": {
+   "query": "TM-13 is at flowering with sheath blight, heavy rain is coming and fertilizer was applied 10 days ago. Plan the next week.",
+   "parcel_id": "TM-13",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q20": {
+   "query": "TM-15 கரும்பு வயலில் இலை மஞ்சளாக உள்ளது, மழை வரப்போகிறது. என்ன செய்யலாம்?",
+   "parcel_id": "TM-15",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q21": {
+   "query": "Compare the yield history and current problems of TM-04 and TM-10 and suggest what to change this season.",
+   "parcel_id": "TM-04",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q22": {
+   "query": "My banana leaves have big brown spots with a yellow halo. What is the treatment?",
+   "parcel_id": "TM-02",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q23": {
+   "query": "What pesticide dose should I use for pink bollworm in cotton at TM-05?",
+   "parcel_id": "TM-05",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q24": {
+   "query": "How many parcels in Then Malai are growing rice, and what is their total area?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q25": {
+   "query": "This is a photo of my paddy field. Which stage is it in and does it look healthy?",
+   "parcel_id": "TM-03",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q26": {
+   "query": "What is the weather at TM-05 for the next 3 days?",
+   "parcel_id": "TM-05",
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q27": {
+   "query": "How do I control rust and leaf spot in groundnut?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q28": {
+   "query": "Which pre-emergence herbicide is recommended for cotton?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q29": {
+   "query": "Ulundu la yellow mosaic varama irukku, enna pannanum?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q30": {
+   "query": "What is the spacing for chilli and which fungicide for leaf spot?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q31": {
+   "query": "How do I prevent rhizome rot in turmeric?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  },
+  "Q32": {
+   "query": "Which cotton variety should I plant for long staple?",
+   "parcel_id": null,
+   "expert_rationale": "",
+   "written_by": ""
+  }
+ }
+}

@@ -1,0 +1,454 @@
+{
+  "healthy": {
+    "label": "Healthy crop",
+    "crop": "any",
+    "kind": "none",
+    "severity": "none",
+    "symptoms": [
+      "uniform green canopy",
+      "no visible lesions or pests"
+    ],
+    "photo_class": "healthy",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "rice_blast": {
+    "label": "Rice blast",
+    "crop": "Rice",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "spindle-shaped spots with grey centres",
+      "brown margins on leaves"
+    ],
+    "photo_class": "Blast",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "rice_sheath_blight": {
+    "label": "Sheath blight",
+    "crop": "Rice",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "oval greenish-grey lesions on sheath near water line",
+      "lesions spreading upward"
+    ],
+    "photo_class": "Sheath_Blight",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "rice_narrow_brown_spot": {
+    "label": "Narrow brown leaf spot",
+    "crop": "Rice",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "short narrow brown linear lesions on leaves",
+      "lesions parallel to veins"
+    ],
+    "photo_class": "Narrow_Brown_Spot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "rice_tungro": {
+    "label": "Rice tungro",
+    "crop": "Rice",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "orange-yellow discolouration of leaves",
+      "stunted plants",
+      "reduced tillering"
+    ],
+    "photo_class": "Tungro",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "banana_sigatoka": {
+    "label": "Sigatoka leaf spot",
+    "crop": "Banana",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "yellow streaks turning brown",
+      "grey-centred spots on older leaves"
+    ],
+    "photo_class": "sigatoka",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "banana_cordana": {
+    "label": "Cordana leaf spot",
+    "crop": "Banana",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "large oval brown lesions with yellow halo",
+      "lesions drying from the centre"
+    ],
+    "photo_class": "cordana",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "banana_pestalotiopsis": {
+    "label": "Pestalotiopsis leaf spot",
+    "crop": "Banana",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "dark brown irregular spots with grey centres",
+      "spots often on leaf margins"
+    ],
+    "photo_class": "pestalotiopsis",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "banana_k_deficiency": {
+    "label": "Potassium deficiency",
+    "crop": "Banana",
+    "kind": "nutrient",
+    "severity": "mild",
+    "symptoms": [
+      "scorched yellow leaf margins on older leaves",
+      "premature leaf drying"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "groundnut_rust": {
+    "label": "Groundnut rust",
+    "crop": "Groundnut",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "orange-brown pustules on the underside of leaves",
+      "leaves drying early"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "groundnut_leaf_spot": {
+    "label": "Early / late leaf spot",
+    "crop": "Groundnut",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "dark brown to black circular spots on leaves",
+      "yellow halo, premature leaf fall"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "groundnut_root_rot": {
+    "label": "Root rot",
+    "crop": "Groundnut",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "sudden wilting of plants",
+      "rotted dark roots and collar"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cotton_bacterial_blight": {
+    "label": "Bacterial blight",
+    "crop": "Cotton",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "angular water-soaked leaf spots",
+      "black arm on stems in severe cases"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cotton_alternaria_leaf_spot": {
+    "label": "Alternaria leaf spot",
+    "crop": "Cotton",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "brown circular spots with concentric rings",
+      "premature leaf drop"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cotton_wilt": {
+    "label": "Fusarium wilt / damping off",
+    "crop": "Cotton",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "yellowing and wilting of plants",
+      "brown discolouration of stem vessels"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "blackgram_yellow_mosaic": {
+    "label": "Yellow mosaic",
+    "crop": "Blackgram",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "bright yellow patches on leaves",
+      "stunting, few pods"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "blackgram_powdery_mildew": {
+    "label": "Powdery mildew",
+    "crop": "Blackgram",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "white powdery growth on leaves",
+      "leaves drying"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "blackgram_rust": {
+    "label": "Rust",
+    "crop": "Blackgram",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "reddish-brown pustules on leaves"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "blackgram_leaf_spot": {
+    "label": "Cercospora leaf spot",
+    "crop": "Blackgram",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "small brown spots with grey centres on leaves"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "chilli_leaf_spot": {
+    "label": "Leaf spot",
+    "crop": "Chilli",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "brown spots on leaves",
+      "leaf drop"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "chilli_powdery_mildew": {
+    "label": "Powdery mildew",
+    "crop": "Chilli",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "white powdery patches on the underside of leaves",
+      "yellowing and leaf drop"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "chilli_anthracnose": {
+    "label": "Anthracnose",
+    "crop": "Chilli",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "sunken dark spots on ripe fruits"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "chilli_die_back_fruit_rot": {
+    "label": "Die-back and fruit rot",
+    "crop": "Chilli",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "drying of twigs from the tip",
+      "rotting fruits"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "turmeric_rhizome_rot": {
+    "label": "Rhizome rot",
+    "crop": "Turmeric",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "yellowing of lower leaves",
+      "soft rotting rhizomes"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "turmeric_leaf_spot": {
+    "label": "Leaf blotch and leaf spot",
+    "crop": "Turmeric",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "brown spots on leaves merging into blotches"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cane_red_rot": {
+    "label": "Red rot",
+    "crop": "Sugarcane",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "reddening of leaf midrib",
+      "drying of top leaves",
+      "red internal stalk tissue with white patches"
+    ],
+    "photo_class": "RedRot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cane_rust": {
+    "label": "Sugarcane rust",
+    "crop": "Sugarcane",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "small elongated reddish-brown pustules on both leaf surfaces",
+      "leaf yellowing and drying"
+    ],
+    "photo_class": "Rust",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cane_mosaic": {
+    "label": "Sugarcane mosaic",
+    "crop": "Sugarcane",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "light and dark green mosaic pattern on leaves",
+      "stunting"
+    ],
+    "photo_class": "Mosaic",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cane_yellow_leaf": {
+    "label": "Yellow leaf disease",
+    "crop": "Sugarcane",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "yellowing of leaf midrib from the underside",
+      "leaf yellowing from the tip"
+    ],
+    "photo_class": "Yellow",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "cane_waterlogging_chlorosis": {
+    "label": "Waterlogging / iron chlorosis",
+    "crop": "Sugarcane",
+    "kind": "abiotic",
+    "severity": "moderate",
+    "symptoms": [
+      "yellow young leaves with green veins",
+      "standing water in furrows"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "maize_fall_armyworm": {
+    "label": "Fall armyworm",
+    "crop": "Maize",
+    "kind": "pest",
+    "severity": "moderate",
+    "symptoms": [
+      "ragged holes in leaves",
+      "sawdust-like frass in whorl"
+    ],
+    "photo_class": "Fall_Armyworm",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "maize_gray_leaf_spot": {
+    "label": "Gray leaf spot",
+    "crop": "Maize",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "rectangular grey-tan lesions between veins",
+      "lesions merge on lower leaves"
+    ],
+    "photo_class": "Gray_Spot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "maize_leaf_blight": {
+    "label": "Leaf blight",
+    "crop": "Maize",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "long elliptical grey-green to tan lesions",
+      "lesions spreading across leaf"
+    ],
+    "photo_class": "Leaf_Blight",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "maize_n_deficiency": {
+    "label": "Nitrogen deficiency",
+    "crop": "Maize",
+    "kind": "nutrient",
+    "severity": "mild",
+    "symptoms": [
+      "V-shaped yellowing from leaf tip",
+      "pale lower leaves"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "coconut_gray_leaf_spot": {
+    "label": "Gray leaf spot",
+    "crop": "Coconut",
+    "kind": "disease",
+    "severity": "mild",
+    "symptoms": [
+      "small brown spots with grey centres and yellow halo on leaflets"
+    ],
+    "photo_class": "gray_leaf_spot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "coconut_bud_rot": {
+    "label": "Bud rot",
+    "crop": "Coconut",
+    "kind": "disease",
+    "severity": "severe",
+    "symptoms": [
+      "spindle leaf yellowing and drooping",
+      "rotting of the central bud"
+    ],
+    "photo_class": "bud_rot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "coconut_leaf_rot": {
+    "label": "Leaf rot",
+    "crop": "Coconut",
+    "kind": "disease",
+    "severity": "moderate",
+    "symptoms": [
+      "rotting and browning of leaflet tips and fronds"
+    ],
+    "photo_class": "leaf_rot",
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  },
+  "coconut_k_deficiency": {
+    "label": "Potassium deficiency",
+    "crop": "Coconut",
+    "kind": "nutrient",
+    "severity": "mild",
+    "symptoms": [
+      "orange-yellow mottling on lower fronds",
+      "necrosis on leaflet tips"
+    ],
+    "photo_class": null,
+    "symptoms_source": "general agronomy description - verify against TNAU before citing"
+  }
+}

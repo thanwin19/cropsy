@@ -1,0 +1,259 @@
+{
+ "about": "Gold set for the answer-correctness phase. Expected values were read by the author (an AI) from the original passages in knowledge/chunks.jsonl (chunk ids and pages below); they are NOT agronomist-reviewed. 'evidence' names the passage that proves the claim. 'behavior': answer = a TNAU-backed answer; no_info = says the guides have no such figure and cites nothing; clarify = asks a question; general = labelled general guidance, no TNAU citation; card = fixed card. 'pages' = the cited page(s) must be among these. 'all' = every regex must match the answer plus recommendations; 'forbid' = none may match.",
+ "questions": [
+  {
+   "id": "Q01",
+   "q": "wheat seed rate per hectare",
+   "behavior": "answer",
+   "all": [
+    "\\b100\\s*kg"
+   ],
+   "pages": [
+    "134",
+    "136"
+   ],
+   "evidence": "wheat-001-p134-003: SEED RATE: 100 kg/ha",
+   "notes": "figure sits beside the variety table on the guide page"
+  },
+  {
+   "id": "Q02",
+   "q": "bengal gram seed rate",
+   "behavior": "answer",
+   "all": [
+    "90",
+    "75",
+    "CO ?3",
+    "CO ?4"
+   ],
+   "pages": [
+    "173",
+    "176"
+   ],
+   "evidence": "bengalgram-001-p173-003: CO 3 - 90 kg/ha, CO 4 - 75 kg/ha",
+   "notes": "The answer may also quote the seed-treatment line on p176; that page is a valid support."
+  },
+  {
+   "id": "Q03",
+   "q": "What is the seed rate for cowpea?",
+   "behavior": "general",
+   "evidence": "no cowpea chunk contains a seed rate (checked by search of chunks.jsonl)",
+   "all": [
+    "\\?"
+   ],
+   "forbid": [
+    "\\d+(\\.\\d+)?\\s*(kg|g|cm|x)\b"
+   ],
+   "notes": "Expected: says the guides do not have it, explains what decides it, asks one follow-up question, gives no figure, cites nothing."
+  },
+  {
+   "id": "Q04",
+   "q": "pearl millet seed rate",
+   "behavior": "answer",
+   "all": [
+    "5\\s*kg"
+   ],
+   "forbid": [
+    "3\\.75\\s*kg\\s*(to|-|–)\\s*12\\.5",
+    "3\\.75\\s*kg\\s*(per|/)\\s*(ha|hectare)"
+   ],
+   "pages": [
+    "95",
+    "98",
+    "101",
+    "103"
+   ],
+   "evidence": "cumbu-001-p95-009: nursery 3.75 kg of seeds in 7.5 cents; up to 12.5 kg per ha in shoot-fly endemic area. cumbu-001-p98-019: 5 kg seed per ha (intercrop furrows)",
+   "notes": "the field rate is 5 kg/ha (p98); 12.5 kg/ha applies to shoot-fly areas (p95/p98); the nursery 3.75 kg is per 7.5 cents and must never be given per hectare"
+  },
+  {
+   "id": "Q05",
+   "q": "கம்பு விதை அளவு எவ்வளவு",
+   "behavior": "answer",
+   "forbid": [
+    "3\\.75[^.]{0,40}(எக்டர்|ஹெக்டேர்)",
+    "3\\.75\\s*கிலோ\\s*முதல்\\s*12\\.5"
+   ],
+   "evidence": "same passages as Q04",
+   "notes": "Tamil version of Q04: the earlier answer joined 3.75 and 12.5 kg per hectare"
+  },
+  {
+   "id": "Q06",
+   "q": "ragi blast spray dose",
+   "behavior": "answer",
+   "all": [
+    "carbendazim",
+    "500\\s*g"
+   ],
+   "pages": [
+    "113"
+   ],
+   "evidence": "ragi-001-p113-028: carbendazim @ 500 g or iprobenphos 500 ml/ha immediately after symptoms, repeat at flowering and 15 days later"
+  },
+  {
+   "id": "Q07",
+   "q": "cowpea spacing",
+   "behavior": "general",
+   "evidence": "no cowpea chunk gives a spacing (searched chunks.jsonl for spacing, cm and x-patterns); the earlier 30 x 10 / 30 x 15 cm answers were not in the evidence",
+   "notes": "was wrongly expected to answer; found and fixed: the model supplied a spacing from its own knowledge Expected: says the guides do not have it, explains what decides it, asks one follow-up question, gives no figure, cites nothing.",
+   "all": [
+    "\\?"
+   ],
+   "forbid": [
+    "\\d+(\\.\\d+)?\\s*(kg|g|cm|x)\b"
+   ]
+  },
+  {
+   "id": "Q08",
+   "q": "What is the sowing time for wheat?",
+   "behavior": "answer",
+   "all": [
+    "15(th)?\\s*October",
+    "November"
+   ],
+   "pages": [
+    "134",
+    "136"
+   ],
+   "evidence": "wheat-001-p134-002: Ideal sowing time is 15th October to 1st week of November"
+  },
+  {
+   "id": "Q09",
+   "q": "uram evlo podanum nel ku",
+   "behavior": "answer",
+   "all": [
+    "N:P2?O5?:K2?O|kg N"
+   ],
+   "forbid": [
+    "sowing time",
+    "irrigat"
+   ],
+   "pages": [
+    "44",
+    "46",
+    "48"
+   ],
+   "evidence": "rice-001-p46-068 (50:25:25) and rice-001-p48-077 (75:25:37.5): blanket recommendations by duration/system",
+   "notes": "must be read as a rice FERTILIZER question"
+  },
+  {
+   "id": "Q10",
+   "q": "ulundhu pooch marundhu",
+   "behavior": "answer",
+   "all": [
+    "3750|150\\s*ml|100\\s*ml|220\\s*g|333\\s*ml"
+   ],
+   "pages": [
+    "152",
+    "153"
+   ],
+   "evidence": "blackgram-001-p152-018: chlorpyriphos 20 EC 3750 ml/ha; chlorantraniliprole 150 ml/ha; flubendiamide 100 ml/ha",
+   "notes": "pesticide status of these products is NOT verified The TNAU web page also lists emamectin benzoate and indoxacarb for blue butterflies; any grounded product with its dose is accepted."
+  },
+  {
+   "id": "Q11",
+   "q": "wheat seed rate",
+   "follow": "and the spacing?",
+   "behavior": "answer",
+   "all": [
+    "20\\s*cm"
+   ],
+   "pages": [
+    "136"
+   ],
+   "evidence": "wheat-001-p136-005: lines 20 cm apart, depth 5 cm",
+   "notes": "follow-up inherits the crop"
+  },
+  {
+   "id": "Q12",
+   "q": "TM-999 satellite",
+   "behavior": "clarify",
+   "all": [
+    "could not find that parcel"
+   ]
+  },
+  {
+   "id": "Q13",
+   "q": "what is the price of tomato today",
+   "behavior": "card",
+   "all": [
+    "does not hold"
+   ]
+  },
+  {
+   "id": "Q14",
+   "q": "wheat sowing time",
+   "region": {
+    "country": "India",
+    "state": "Punjab"
+   },
+   "behavior": "general",
+   "forbid": [
+    "15(th)?\\s*October to"
+   ],
+   "evidence": "no Punjab source is held: answer must not present the Tamil Nadu dates as Punjab advice"
+  },
+  {
+   "id": "Q15",
+   "q": "which fertilizer",
+   "behavior": "clarify",
+   "all": [
+    "Which crop"
+   ]
+  },
+  {
+   "id": "Q16",
+   "q": "ground nut leaf spot",
+   "behavior": "answer",
+   "all": [
+    "(500\\s*g|1000\\s*g|1\\.5 to 2 kg|0\\.3\\s*%)"
+   ],
+   "forbid": [
+    "Alternaria"
+   ],
+   "pages": [
+    "205",
+    "206"
+   ],
+   "evidence": "groundnut-001-p206-040: early leaf spot (Cercospora arachidicola) and late leaf spot: carbendazim 500 g/ha or mancozeb 1000 g/ha or chlorothalonil 1000 g/ha, repeat after 15 days",
+   "notes": "'leaf spot' in groundnut: the Crop Production Guide (p206) gives carbendazim 500 g/ha, mancozeb 1000 g/ha, chlorothalonil; the TNAU Agritech web pages give foliar mancozeb 0.3%. Either source is accepted; Alternaria must not be named as the diagnosis.",
+   "pages_optional": true
+  },
+  {
+   "id": "Q17",
+   "q": "how to grow brinjal",
+   "behavior": "general",
+   "evidence": "brinjal is not in the knowledge base: labelled general guidance, no TNAU citation"
+  },
+  {
+   "id": "Q18",
+   "q": "TM-05 satellite health this week",
+   "behavior": "answer",
+   "all": [
+    "NDVI",
+    "2026-09-29|September 29"
+   ],
+   "evidence": "field_analysis for TM-05: latest scene 2026-09-29"
+  },
+  {
+   "id": "Q19",
+   "q": "what is the seed rate",
+   "behavior": "clarify",
+   "all": [
+    "Which crop"
+   ]
+  },
+  {
+   "id": "Q20",
+   "q": "paddy sowing time in Kerala",
+   "region": {
+    "country": "India",
+    "state": "Kerala"
+   },
+   "behavior": "general",
+   "forbid": [
+    "Ponmani|Thaladi"
+   ],
+   "evidence": "no Kerala source is held"
+  }
+ ]
+}

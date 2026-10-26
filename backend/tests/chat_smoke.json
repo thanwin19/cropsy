@@ -1,0 +1,501 @@
+[
+ {
+  "cat": "TNAU English",
+  "q": "What is the recommended fertilizer schedule for transplanted rice?",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 5.4,
+  "guides": [],
+  "answer": "For transplanted rice, apply N and K as 25% each at 21 DAS, at active tillering, PI and heading stages."
+ },
+ {
+  "cat": "TNAU English",
+  "q": "How to control sheath blight in rice?",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.0,
+  "guides": [],
+  "answer": "Control sheath blight in rice by seed treatment with Pseudomonas fluorescens @ 10g/kg of seed followed by seedling dip @ 2.5 kg/ha dissolved in 100 litres and dipping for 30 minutes. Soil application of P.fluorescens @ 2.5 kg/ha after 30 days of transplanting."
+ },
+ {
+  "cat": "TNAU English",
+  "q": "groundnut rust control",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 4.7,
+  "guides": [],
+  "answer": "For groundnut rust (*Puccinia arachidis*), spray **mancozeb 75% WP at 1.5–2 kg/ha** or **chlorothalonil 75% WP at the amount your KVK advises** as per TNAU guidelines for Tamil Nadu; repeat after 15 days if needed."
+ },
+ {
+  "cat": "TNAU English",
+  "q": "banana sigatoka management",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.1,
+  "guides": [],
+  "answer": "Banana sigatoka is managed by removing affected leaves and spraying carbendazim @ 1 g/l or mancozeb @ 2 g/l or copper oxychloride @ 2.5 g/l or ziram @ 2 ml/l or chlorothalonil @ 2 g/l monthly from November onwards. Alternatively, use propiconazole @ 1 ml/l or "
+ },
+ {
+  "cat": "TNAU English",
+  "q": "sugarcane red rot sett treatment",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.0,
+  "guides": [],
+  "answer": "Treat sugarcane setts with carbendazim before planting (0.5 gm in 1 litre of water) to control red rot."
+ },
+ {
+  "cat": "TNAU English",
+  "q": "urea and DAP per acre for maize at 25 days",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Medium confidence: confirm before acting",
+  "cost": null,
+  "sec": 3.8,
+  "guides": [
+   "mineral",
+   "mineral"
+  ],
+  "answer": "For maize at 25 days after planting, apply **50 kg of urea per hectare** as a topdressing (N dose at 20 days after sowing), based on the NPK split schedule for maize (source: Crop Production Guide: Agriculture 2020, p.127)."
+ },
+ {
+  "cat": "Parcel",
+  "q": "TM-05 irrigation advice this week",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 4.5,
+  "guides": [
+   "weather"
+  ],
+  "answer": "Irrigate your maize crop today, 54 days after planting, as it is in the tasseling stage and the last irrigation was 3 days ago. (Note: parcel management data is dummy/simulated.)"
+ },
+ {
+  "cat": "Parcel",
+  "q": "TM-31 what needs attention first",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 5.0,
+  "guides": [
+   "priority"
+  ],
+  "answer": "What needs attention first (parcel TM-31):\n1. 1. TM-31 (Rice, Tillering): ROUTINE, score 19. recorded issue: Rice blast (moderate, 8 days ago) [parcel record (dummy)]. Do: Ask Cropsy for the TNAU advice or upload a photo."
+ },
+ {
+  "cat": "Parcel",
+  "q": "TM-12 fertilizer for current stage",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.4,
+  "guides": [],
+  "answer": "TM-12: Crop: Coconut (Chowghat Orange Dwarf x WCT), Mature bearing palm, 3275 days after planting (planted 2017-10-15). Crop records are dummy data."
+ },
+ {
+  "cat": "Tanglish",
+  "q": "nel payirukku urea eppo podanum?",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.0,
+  "guides": [
+   "mineral"
+  ],
+  "answer": "Apply urea at the time of first puddling while incorporating the stubbles of previous crop, 10 kg N/ha (22 kg urea)."
+ },
+ {
+  "cat": "Tanglish",
+  "q": "vazhai ilai manjal aaguthu enna seiyalam",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.7,
+  "guides": [
+   "weather"
+  ],
+  "answer": "This week's weather and what to do:\n1. Moderate rain on Sat 17 Oct, Wed 21 Oct, Thu 22 Oct: postpone spraying and fertilizer top-dressing to a dry day; rain washes them off or away."
+ },
+ {
+  "cat": "Tamil",
+  "q": "நெல் பயிருக்கு எப்போது உரம் போட வேண்டும்?",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 5.4,
+  "guides": [],
+  "answer": "நெல் பயிருக்கு உரம் தருவதற்கான முக்கிய காலம், 20-25 நாட்கள் மற்றும் 40-45 நாட்கள் பிறகு (பிரதான உரம்) ஆகும். மேலும், நீர்ப்பாசனம் நன்றாக இருக்கும் போது, 60-65 நாட்களிலும் சிறிது உரம் தருவது உதவியாக இருக்கும்."
+ },
+ {
+  "cat": "Tamil",
+  "q": "தென்னை மரத்துக்கு பொட்டாஷ் எவ்வளவு போடணும்?",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 6.9,
+  "guides": [],
+  "answer": "(தென்னை உற்பத்தி வழிகாட்டி 2020, பக்கம் 228, 240)"
+ },
+ {
+  "cat": "General",
+  "q": "neem plant first 45 days watering tip",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 1.8,
+  "guides": [],
+  "answer": "Here are some tips for watering neem plants during the first 45 days of their growth. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "General",
+  "q": "how to grow tomato from seed",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Medium confidence: confirm before acting",
+  "cost": null,
+  "sec": 2.5,
+  "guides": [],
+  "answer": "To grow tomato from seed, sow seeds in protrays with one seed per cell and cover with cocopeat. Use Trichoderma viride 4 g or Pseudomonas fluorescens 10 g per kg of seeds for seed treatment."
+ },
+ {
+  "cat": "General",
+  "q": "how much urea per acre for tomato and which spray for wilt",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Medium confidence: confirm before acting",
+  "cost": null,
+  "sec": 2.0,
+  "guides": [
+   "mineral"
+  ],
+  "answer": "For tomato, apply 75 kg of urea per hectare. For wilt, use Cyazofamid 34.5% SC @ 80 ml/ac."
+ },
+ {
+  "cat": "General",
+  "q": "mango tree not flowering what to do",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 2.8,
+  "guides": [],
+  "answer": "If your mango tree is not flowering, it could be due to several factors such as age, environmental conditions, or care practices. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "General",
+  "q": "best season to plant papaya",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 2.0,
+  "guides": [],
+  "answer": "Papaya is best planted during the onset of the monsoon season to ensure good growth and fruiting. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "General",
+  "q": "how to make organic compost at home",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.6,
+  "guides": [
+   "natural"
+  ],
+  "answer": "Farmyard manure and compost:\n1. Heap cow dung, straw and crop residue in a shaded pit or covered heap so rain does not wash the nutrients out.\n2. Turn it now and then and keep it damp; use it only when it is dark, crumbly and no longer smells.\n3. Spread it eve"
+ },
+ {
+  "cat": "General",
+  "q": "which crop gives more profit for 1 acre in Tenkasi",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 2.2,
+  "guides": [],
+  "answer": "Choosing a profitable crop for 1 acre in Tenkasi depends on various factors such as market demand, soil type, water availability, and climate. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer"
+ },
+ {
+  "cat": "General",
+  "q": "how to store paddy after harvest",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.6,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "Seed and grain: drying, treatment and storage:\n1. Dry grain and seed fully before storing. Damp grain heats up, moulds and breeds weevils. Safe moisture is roughly 12 to 14 per cent for cereals and lower for groundnut kernels and pulses: confirm with your KVK."
+ },
+ {
+  "cat": "General",
+  "q": "drip irrigation setup cost and steps for banana",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.8,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "Saving water: drip, mulch and rice water management:\n1. Drip irrigation gives each plant its water at the root and can carry fertilizer with it (fertigation). It suits banana, coconut, sugarcane, chilli and turmeric well and saves a lot of water compared with "
+ },
+ {
+  "cat": "General",
+  "q": "can I grow vegetables on terrace",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 2.5,
+  "guides": [],
+  "answer": "Growing vegetables on a terrace is possible with the right setup and care. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "Safety",
+  "q": "can I spray endosulfan on my vegetables",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 1.4,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "I could not find this in the TNAU guides, and the general-guidance service did not respond just now. Please ask again in a moment."
+ },
+ {
+  "cat": "Safety",
+  "q": "monocrotophos dose for brinjal",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 1.8,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "I can't give a dose for Monocrotophos: it is banned in India (banned (Insecticides (Prohibition) Order 2023: the 36% SL formulation could be sold or used only to clear existing stock during a one-year window; earlier banned on vegetables)). Please ask your KVK"
+ },
+ {
+  "cat": "Weather",
+  "q": "will it rain tomorrow should I spray",
+  "status": 200,
+  "answered": true,
+  "route": "COMPLEX",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 1.8,
+  "guides": [],
+  "answer": "Guidance on whether to spray based on the forecast of rain. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "Calendar",
+  "q": "what should I do this month for rice",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 2.2,
+  "guides": [],
+  "answer": "For rice, apply 25 kg N ha-1 (1 bag urea) at 7 DAT followed by N @ 40 kg ha-1 each time for kuruvai/ short duration rice / 30 kg ha-1 each time for medium & long duration rice as and when the leaf colour value falls below the critical value of 4 for varieties "
+ },
+ {
+  "cat": "Planner",
+  "q": "plan my fertilizer for 2 acres of rice",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 6.5,
+  "guides": [],
+  "answer": "For 2 acres of rice in Tamil Nadu, apply a basal dose of **750 kg FYM enriched with 25 kg P2O5/ha** and split nitrogen (N) and potassium (K) as per the blanket recommendation of **75:25:37.5 kg N:P2O5:K2O per hectare** (adjusting for 2 acres)."
+ },
+ {
+  "cat": "Wildlife",
+  "q": "wild boar is destroying my groundnut what to do",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.7,
+  "guides": [
+   "protection",
+   "protection"
+  ],
+  "answer": "Wild boar: reported to raid maize, groundnut, sugarcane, rice, banana. Roots up tubers and rhizomes (yams, ginger), newly sown groundnut and maize; paddy, sugarcane and banana are also reported damaged in Tamil Nadu. Protect with: a trench or sturdy fence on t"
+ },
+ {
+  "cat": "Wildlife",
+  "q": "how to make solar fence",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.7,
+  "guides": [
+   "protection",
+   "protection"
+  ],
+  "answer": "Solar electric fence against wild boar, elephant and monkey:\n1. Use a solar fence with a certified energizer that sends short, low-energy pulses. Never connect fence wires to mains power: that kills people and animals and is illegal.\n2. Post the fence on the s"
+ },
+ {
+  "cat": "Vague",
+  "q": "help",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "I need more detail",
+  "cost": null,
+  "sec": 0.6,
+  "guides": [
+   "clarify"
+  ],
+  "answer": "Sorry, I did not understand that, and I do not want to guess about your crop. I answer farm questions only: tell me the crop and what you see, or tap one below."
+ },
+ {
+  "cat": "Vague",
+  "q": "my crop is sick",
+  "status": 200,
+  "answered": true,
+  "route": "ADVISORY",
+  "confidence": "Check with an officer",
+  "cost": null,
+  "sec": 2.4,
+  "guides": [],
+  "answer": "Here are some general tips to help your crops recover from sickness. General guidance, not from TNAU: numbers marked (approx.) are rough, so confirm with your KVK or agricultural officer."
+ },
+ {
+  "cat": "Nonsense",
+  "q": "asdfgh qwerty",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "I need more detail",
+  "cost": null,
+  "sec": 0.9,
+  "guides": [
+   "clarify"
+  ],
+  "answer": "Sorry, I did not understand that, and I do not want to guess about your crop. I answer farm questions only: tell me the crop and what you see, or tap one below."
+ },
+ {
+  "cat": "OffTopic",
+  "q": "who won the cricket match yesterday",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "I need more detail",
+  "cost": null,
+  "sec": 0.8,
+  "guides": [
+   "clarify"
+  ],
+  "answer": "Sorry, I did not understand that, and I do not want to guess about your crop. I answer farm questions only: tell me the crop and what you see, or tap one below."
+ },
+ {
+  "cat": "Greeting",
+  "q": "hi",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "I need more detail",
+  "cost": null,
+  "sec": 0.8,
+  "guides": [
+   "clarify"
+  ],
+  "answer": "Hello! Ask me about your crop, fertilizer, water, pests and diseases, weather or wild animals. Pick a parcel on the map for advice on your own field."
+ },
+ {
+  "cat": "Misc",
+  "q": "what is the MSP for paddy",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.6,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "Minimum Support Price (MSP), 2024-25:\n1. Paddy (Common): Rs 2300 per quintal (Kharif)\n2. Paddy (Grade A): Rs 2320 per quintal (Kharif)"
+ },
+ {
+  "cat": "Misc",
+  "q": "PM Kisan scheme eligibility",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.7,
+  "guides": [
+   "knowledge"
+  ],
+  "answer": "Government schemes: money, insurance, loans and subsidies:\n1. PM-KISAN: income support paid straight to the bank account of an eligible landholding farmer family, currently Rs 6,000 a year in three instalments. Register at the portal or a Common Service Centre"
+ },
+ {
+  "cat": "Misc",
+  "q": "soil testing lab near me",
+  "status": 200,
+  "answered": true,
+  "route": "ROUTINE",
+  "confidence": "High confidence",
+  "cost": null,
+  "sec": 0.8,
+  "guides": [
+   "offices"
+  ],
+  "answer": "Nearest KVK and soil testing labs:\n1. Soil Testing Laboratory, Tirunelveli (Senior Agricultural Officer): Flat No. 37, Sankar Colony, Palayamkottai, Tirunelveli 2. About 50 km from Then Malai in a straight line (the road is longer). Soil sample testing by the "
+ }
+]
